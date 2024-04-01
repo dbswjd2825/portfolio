@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/jquery-3.7.1.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
     <script src="js/common.js"></script>
     <script src="js/contents.js"></script>
@@ -90,230 +92,276 @@
             </section>
             <section class="info">
                 <div class="wrapper">
-                    <strong>Welcome</strong>
-                    <span class="">달콤한 해태제과</span>
-                    <strong>Sweet World</strong>
-                    <span>달콤한 평생친구</span>
-                    <p>좋은 제품을 끊임없이 연구하여 고객과 함께하는 달콤한 해태제과</p>
-                    <p>새로운 것을 상상하는 달콤한 기업</p>
-                    <p>고객을 지켜주는 달콤한 평생친구</p>
+                    <div class="text01" data-aos="fade-left">
+                        <strong>Welcome</strong>
+                        <span>달콤한 해태제과</span>
+                    </div>
+                    <div class="text02" data-aos="fade-left" data-aos-delay="300">
+                        <strong>Sweet World</strong>
+                        <span>달콤한 평생친구</span>
+                    </div>
+                    <p data-aos="fade-left"data-aos-delay="500">좋은 제품을 끊임없이 연구하여 고객과 함께하는 달콤한 해태제과</p>
+                    <p data-aos="fade-left" data-aos-delay="1000">새로운 것을 상상하는 달콤한 기업</p>
+                    <p data-aos="fade-left" data-aos-delay="1500">고객을 지켜주는 달콤한 평생친구</p>
                 </div>
-            </section>
+            </section> <!-- info -->
             <section class="best">
                 <div class="wrapper">
                     <strong>달콤한 즐거움</strong>
                     <h2>Best Product</h2>
                     <div class="list">
                         <ul>
-                            <li class="on">
+                            <li class="list_on">
                                 <button>비스켓</button>
                                 <div class="detail">
                                     <ul>
                                         <li>
                                             <a href="#n">
+                                                <div class="photo"><img src="images/list_oyes.png" alt="오예스 사진"></div>
+                                                <div class="photo_hover"><img src="images/list_oyes_hover.png" alt="오예스 사진"></div>
                                                 <h3>오예스</h3>
                                                 <p>촉촉하고 부드러운 리얼 케이크<br>촉촉한 케익에 달콤하고 진한 초코크림이 가득!</p>
                                                 <span>용량 : 360g</span>
                                                 <span>열량 : 1800Kcal</span>
-                                                <span>보관 : 실온보관</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#n">
+                                                <div class="photo"><img src="images/list_home.png" alt="홈런볼 사진"></div>
+                                                <div class="photo_hover"><img src="images/list_home_hover.png" alt="홈런볼 사진"></div>
                                                 <h3>홈런볼</h3>
                                                 <p>달콤한 초코슈 과자<br>부드러운 슈안에 초코크림이 듬뿍! 달콤한 풍미가 가득</p>
                                                 <span>용량 : 46g</span>
                                                 <span>열량 : 270Kcal</span>
-                                                <span>보관 : 실온보관</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#n">
+                                                <div class="photo"><img src="images/list_aice.png" alt="에이스 사진"></div>
+                                                <div class="photo_hover"><img src="images/list_aice_hover.png" alt="에이스 사진"></div>
                                                 <h3>에이스</h3>
                                                 <p>담백하고 부드러운 크래커<br>크레커의 대명사! 에이스! You are my ACE!</p>
                                                 <span>용량 : 121g</span>
                                                 <span>열량 : 650Kcal</span>
-                                                <span>보관 : 실온보관</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                             <li>
-                                <button>비스켓</button>
+                                <button>스낵</button>
                                 <div class="detail">
                                     <ul>
                                         <li>
                                             <a href="#n">
-                                                <h3>오예스</h3>
-                                                <p>촉촉하고 부드러운 리얼 케이크<br>촉촉한 케익에 달콤하고 진한 초코크림이 가득!</p>
-                                                <span>용량 : 360g</span>
-                                                <span>열량 : 1800Kcal</span>
-                                                <span>보관 : 실온보관</span>
+                                                <div class="photo"><img src="images/list_mat.png" alt="맛동산 사진"></div>
+                                                <div class="photo_hover"><img src="images/list_mat_hover.png" alt="맛동산 사진"></div>
+                                                <h3>맛동산</h3>
+                                                <p>땅콩으로 버무려 고소한 스낵<br>유산균 발효 & 음악 공법 발효로 바삭함을 UP!</p>
+                                                <span>용량 : 85g</span>
+                                                <span>열량 : 430Kcal</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#n">
-                                                <h3>홈런볼</h3>
-                                                <p>달콤한 초코슈 과자<br>부드러운 슈안에 초코크림이 듬뿍! 달콤한 풍미가 가득</p>
-                                                <span>용량 : 46g</span>
-                                                <span>열량 : 270Kcal</span>
-                                                <span>보관 : 실온보관</span>
+                                                <div class="photo"><img src="images/list_hony.png" alt="허니버터칩 사진"></div>
+                                                <div class="photo_hover"><img src="images/list_hony_hover.png" alt="허니버터칩 사진"></div>
+                                                <h3>허니버터칩</h3>
+                                                <p>12시간의 발효과정을 거쳐 만들어진<br>프랑스산 버터가 들어간 달콤한 맛이 일품인 감자</p>
+                                                <span>용량 : 60g</span>
+                                                <span>열량 : 345Kcal</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#n">
-                                                <h3>에이스</h3>
-                                                <p>담백하고 부드러운 크래커<br>크레커의 대명사! 에이스! You are my ACE!</p>
+                                                <div class="photo"><img src="images/list_jaga.png" alt="자가비 사진"></div>
+                                                <h3>자가비</h3>
+                                                <p>바삭한 식감! 진정한 감자의 풍미!<br>겉은 바삭! 속은 부드러운~ 감자의 맛을 그대로 살린~</p>
                                                 <span>용량 : 121g</span>
                                                 <span>열량 : 650Kcal</span>
-                                                <span>보관 : 실온보관</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                             <li>
-                                <button>비스켓</button>
+                                <button>껌</button>
                                 <div class="detail">
                                     <ul>
                                         <li>
                                             <a href="#n">
-                                                <h3>오예스</h3>
-                                                <p>촉촉하고 부드러운 리얼 케이크<br>촉촉한 케익에 달콤하고 진한 초코크림이 가득!</p>
-                                                <span>용량 : 360g</span>
-                                                <span>열량 : 1800Kcal</span>
-                                                <span>보관 : 실온보관</span>
+                                                <div class="photo"><img src="images/list_kids.png" alt="키즈톨 사진"></div>
+                                                <h3>키즈톨</h3>
+                                                <p>아이에게 좋은 자일리톨은 기본!<br>캐릭터가 새겨져 있고 칼슘과 비타민이 들어있는 껌!</p>
+                                                <span>용량 : 30g</span>
+                                                <span>열량 : 80Kcal</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#n">
-                                                <h3>홈런볼</h3>
-                                                <p>달콤한 초코슈 과자<br>부드러운 슈안에 초코크림이 듬뿍! 달콤한 풍미가 가득</p>
-                                                <span>용량 : 46g</span>
-                                                <span>열량 : 270Kcal</span>
-                                                <span>보관 : 실온보관</span>
+                                                <div class="photo"><img src="images/list_ice.png" alt="아이스쿨 사진"></div>
+                                                <h3>아이스쿨</h3>
+                                                <p>청정얼음같은 상쾌함! 자일리톨 54% 함유!<br>부드러운 큐브형태의 껌!</p>
+                                                <span>용량 : 103g</span>
+                                                <span>열량 : 0Kcal</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#n">
-                                                <h3>에이스</h3>
-                                                <p>담백하고 부드러운 크래커<br>크레커의 대명사! 에이스! You are my ACE!</p>
-                                                <span>용량 : 121g</span>
-                                                <span>열량 : 650Kcal</span>
-                                                <span>보관 : 실온보관</span>
+                                                <div class="photo"><img src="images/list_jali.png" alt="자일리톨 사진"></div>
+                                                <h3>자일리톨</h3>
+                                                <p>입안 속 상쾌함 UP!<br>자일리톨 60% 함유 !</p>
+                                                <span>용량 : 160g</span>
+                                                <span>열량 : 0Kcal</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                             <li>
-                                <button>비스켓</button>
+                                <button>초코</button>
                                 <div class="detail">
                                     <ul>
                                         <li>
                                             <a href="#n">
-                                                <h3>오예스</h3>
-                                                <p>촉촉하고 부드러운 리얼 케이크<br>촉촉한 케익에 달콤하고 진한 초코크림이 가득!</p>
-                                                <span>용량 : 360g</span>
-                                                <span>열량 : 1800Kcal</span>
-                                                <span>보관 : 실온보관</span>
+                                                <div class="photo"><img src="images/list_jau.png" alt="자유시간 사진"></div>
+                                                <h3>자유시간</h3>
+                                                <p>땅콩, 아몬드를 곁들인 누가에 <br>달콤한 카라멜로 코팅하고 리얼초콜릿으로 또 한번!</p>
+                                                <span>용량 : 36g</span>
+                                                <span>열량 : 172Kcal</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#n">
-                                                <h3>홈런볼</h3>
-                                                <p>달콤한 초코슈 과자<br>부드러운 슈안에 초코크림이 듬뿍! 달콤한 풍미가 가득</p>
-                                                <span>용량 : 46g</span>
-                                                <span>열량 : 270Kcal</span>
-                                                <span>보관 : 실온보관</span>
+                                                <div class="photo"><img src="images/list_jau_a.png" alt="자유시간 아몬드 사진"></div>
+                                                <h3>자유시간 아몬드</h3>
+                                                <p>대한민국 1등 초코바! 자유시간 "아몬드"</p>
+                                                <span>용량 : 36g</span>
+                                                <span>열량 : 163Kcal</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#n">
-                                                <h3>에이스</h3>
-                                                <p>담백하고 부드러운 크래커<br>크레커의 대명사! 에이스! You are my ACE!</p>
-                                                <span>용량 : 121g</span>
-                                                <span>열량 : 650Kcal</span>
-                                                <span>보관 : 실온보관</span>
+                                                <div class="photo"><img src="images/list_earl.png" alt="얼려먹는 초코만들기 사진"></div>
+                                                <h3>얼려먹는 초코만들기</h3>
+                                                <p>내손으로 만드는 재미있는 초콜릿!</p>
+                                                <span>용량 : 36g</span>
+                                                <span>열량 : 190Kcal</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                             <li>
-                                <button>비스켓</button>
+                                <button>캔디</button>
                                 <div class="detail">
                                     <ul>
                                         <li>
                                             <a href="#n">
-                                                <h3>오예스</h3>
-                                                <p>촉촉하고 부드러운 리얼 케이크<br>촉촉한 케익에 달콤하고 진한 초코크림이 가득!</p>
-                                                <span>용량 : 360g</span>
-                                                <span>열량 : 1800Kcal</span>
-                                                <span>보관 : 실온보관</span>
+                                                <div class="photo"><img src="images/list_yeon.png" alt="연양갱 사진"></div>
+                                                <h3>연양갱</h3>
+                                                <p>아이에게 좋은 자일리톨은 기본!<br>캐릭터가 새겨져 있고 칼슘과 비타민이 들어있는 껌</p>
+                                                <span>용량 : 55g</span>
+                                                <span>열량 : 145Kcal</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#n">
-                                                <h3>홈런볼</h3>
-                                                <p>달콤한 초코슈 과자<br>부드러운 슈안에 초코크림이 듬뿍! 달콤한 풍미가 가득</p>
-                                                <span>용량 : 46g</span>
-                                                <span>열량 : 270Kcal</span>
-                                                <span>보관 : 실온보관</span>
+                                                <div class="photo"><img src="images/list_sin.png" alt="신쫄이 딸기 사진"></div>
+                                                <h3>신쫄이 딸기</h3>
+                                                <p>멈출 수 없는 신맛!</p>
+                                                <span>용량 : 24g</span>
+                                                <span>열량 : 85Kcal</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#n">
-                                                <h3>에이스</h3>
-                                                <p>담백하고 부드러운 크래커<br>크레커의 대명사! 에이스! You are my ACE!</p>
-                                                <span>용량 : 121g</span>
-                                                <span>열량 : 650Kcal</span>
-                                                <span>보관 : 실온보관</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <button>비스켓</button>
-                                <div class="detail">
-                                    <ul>
-                                        <li>
-                                            <a href="#n">
-                                                <h3>오예스</h3>
-                                                <p>촉촉하고 부드러운 리얼 케이크<br>촉촉한 케익에 달콤하고 진한 초코크림이 가득!</p>
-                                                <span>용량 : 360g</span>
-                                                <span>열량 : 1800Kcal</span>
-                                                <span>보관 : 실온보관</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#n">
-                                                <h3>홈런볼</h3>
-                                                <p>달콤한 초코슈 과자<br>부드러운 슈안에 초코크림이 듬뿍! 달콤한 풍미가 가득</p>
-                                                <span>용량 : 46g</span>
-                                                <span>열량 : 270Kcal</span>
-                                                <span>보관 : 실온보관</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#n">
-                                                <h3>에이스</h3>
-                                                <p>담백하고 부드러운 크래커<br>크레커의 대명사! 에이스! You are my ACE!</p>
-                                                <span>용량 : 121g</span>
-                                                <span>열량 : 650Kcal</span>
-                                                <span>보관 : 실온보관</span>
+                                                <div class="photo"><img src="images/list_sun.png" alt="썬키스트 사진"></div>
+                                                <h3>썬키스트</h3>
+                                                <p>상큼한 3가지맛 과일에 달콤한 과즙쨈이 듬뿍~!</p>
+                                                <span>용량 : 125g</span>
+                                                <span>열량 : 485Kcal</span>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
                         </ul>
-                        <div class="more"><a href="#">more</a></div>
+                    <div class="more"><a href="#">more</a></div>
                     </div><!--list-->
                 </div><!--wrapper-->
+            </section> <!--list-->
+            <section class="event">
+                <div class="wrapper">
+                    <strong>달콤한 선물</strong>
+                    <h2>EVENT</h2>
+                    <div class="list">
+                        <div class="photo_grup">
+                            <div class="photo01"><img src="images/event01.png" alt="연양갱 골드바 이벤트 포스터"></div>
+                            <div class="photo02"><img src="images/event02.png" alt="에이스 신제품 출시기념 이벤트 포스터"></div>
+                            <div class="photo"><img src="images/event03.png" alt="연양갱X이규영 작가 이벤트 포스터"></div>
+                        </div> <!--photo_grup-->
+                        <div class="text_grup">
+                            <div class="detail01">
+                                <h3>연양갱 골드바 이벤트</h3>
+                                <p>골드바 연양갱을 구매 후 재품 내 행운코드를 등록해주세요.<br>연양갱 각인골드바를 드립니다.</p>
+                                <span>이벤트 기간 : 2024.01.15 ~ 2024.03.31</span>
+                                <span>당첨자 발표 : 2024.04.10</span>
+                                <span>경품 : 연양갱 각인 골드바 (1돈-3.75g)(5명) <br> 연양갱 모바일 교환권 1개 (200명)</span>
+                            </div>
+                            <div class="detail">
+                                    <h3>에이스 신제품 출시기념 이벤트</h3>
+                                    <p>씬 에스프레소 구매 후 제품 내 행운코드를 등록해주세요.<br>커피 쿠폰을 드립니다.</p>
+                                    <span>이벤트 기간 : 2024.01.01 ~ 2024.04.30</span>
+                                    <span>당첨자 발표 : 당첨등록 후 익월초 발송예정</span>
+                                    <span>경품 : 스타벅스 커피교환권 (10,000명)</span>
+                            </div>
+                            <div class="detail">
+                                <h3>연양갱X이규영 작가 <br>나의 이야기를 담은 그림선물 받기</h3>
+                                <p>여러분의 달콤한 일상 이야기를 들려주세요. <br>이규영 작가님이 그림선물을 드립니다.</p>
+                                <span>이벤트기간 : 2023-11-01 ~ 2024-04-30</span>
+                                <span>당첨자발표 : 2024-04-30</span>
+                                <span>경품 : 일러스트 by 이규영작가 각 3명 (총9명) <br>연양갱 10팩 2종 각 30명 (총 90명)</span>
+                            </div>
+                        </div> <!--text_grup-->
+                    </div> <!--list-->
+                    <div class="more"><a href="#">more</a></div>
+                </div>
+            </section><!-- event-->
+            <section class="news">
+                <div class="wrapper">
+                    <strong>달콤한 소식</strong>
+                    <h2>NEWS</h2>
+                    <ul>
+                        <li>
+                            <a href="#n">
+                                <strong>해태제과, 두 가지 맛 한 번에 맛보는 홈런볼 2MIX 출격!</strong>
+                                <span>2024-03-19</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#n">
+                                <strong>해태, 아시아 대표 감자칩 ‘가루비 감자칩 오리지널’ 출시!</strong>
+                                <span>2024-03-13</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#n">
+                                <strong>크라운해태제과, ‘양주풍류악회 100회 특별공연’ 성료 !!</strong>
+                                <span>2024-03-08</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#n">
+                                <strong>해태 빨라쪼, 달콤상큼한 딸기로 봄 가득 느끼세요!</strong>
+                                <span>2024-03-05</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="more"><a href="#">more</a></div>
+                </div>  
             </section>
+            <section class="sns"></section>
         </div><!--container-->
         <footer class="footer"></footer>
     </div>
