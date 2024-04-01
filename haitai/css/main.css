@@ -88,11 +88,28 @@
     }
 }
 .info {
-    margin-top: 200px;
+    margin: 200px 0;
 }
 .info strong {
     font-size: 150px;
     font-weight: 900;
     font-family: 'Montserrat Alternates';
     color: #1d1d1d;
+}
+.best strong {
+    display: block;
+    font-size: 20px;
+    color: #3d3d3d;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.best h2 {
+    font-size: 70px;
+    font-weight: 900;
+    font-family: 'Montserrat Alternates';
+    text-align: center;
+}
+
+.best .list > ul >li.on button {
+
 }
