@@ -6,6 +6,24 @@
 */
 
 $(document).ready(function(){
+    /* 
+        브라우저가 스크롤이 되면 header에 fixed 클래스 추가
+        맨위로 다시 올라가면 header에 fixed 클래스 삭제 
+    */
+    let scrolling 
+    function scroll_chk(){
+        scrolling = $(window).scrollTop()
+        if(scrolling > 0){ // 스크롤 O
+            $('.header').addClass('fixed')
+        }else{ // 스크롤X 혹은 다시 상단으로 올라간 경우
+            $('.header').removeClass('fixed')
+        }
+    }
+    scroll_chk() // 문서가 로드되었을때 1번 실행
+    $(window).scroll(function(){
+        scroll_chk()
+    })
+    
     /* pc 버전에서 메뉴 오버 */
     let device_status
     let window_w

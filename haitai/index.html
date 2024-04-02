@@ -7,6 +7,9 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- <script src="js/sticky.min.js"></script> -->
+    <script src="js/jquery.stickystack.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/common.js"></script>
     <script src="js/contents.js"></script>
@@ -115,7 +118,7 @@
                                 <button>비스켓</button>
                                 <div class="detail">
                                     <ul>
-                                        <li>
+                                        <li class="active">
                                             <a href="#n">
                                                 <div class="photo"><img src="images/list_oyes.png" alt="오예스 사진"></div>
                                                 <div class="photo_hover"><img src="images/list_oyes_hover.png" alt="오예스 사진"></div>
@@ -152,7 +155,7 @@
                                 <button>스낵</button>
                                 <div class="detail">
                                     <ul>
-                                        <li>
+                                        <li class="detail">
                                             <a href="#n">
                                                 <div class="photo"><img src="images/list_mat.png" alt="맛동산 사진"></div>
                                                 <div class="photo_hover"><img src="images/list_mat_hover.png" alt="맛동산 사진"></div>
@@ -188,7 +191,7 @@
                                 <button>껌</button>
                                 <div class="detail">
                                     <ul>
-                                        <li>
+                                        <li class="detail">
                                             <a href="#n">
                                                 <div class="photo"><img src="images/list_kids.png" alt="키즈톨 사진"></div>
                                                 <h3>키즈톨</h3>
@@ -222,7 +225,7 @@
                                 <button>초코</button>
                                 <div class="detail">
                                     <ul>
-                                        <li>
+                                        <li class="detail">
                                             <a href="#n">
                                                 <div class="photo"><img src="images/list_jau.png" alt="자유시간 사진"></div>
                                                 <h3>자유시간</h3>
@@ -256,7 +259,7 @@
                                 <button>캔디</button>
                                 <div class="detail">
                                     <ul>
-                                        <li>
+                                        <li class="detail">
                                             <a href="#n">
                                                 <div class="photo"><img src="images/list_yeon.png" alt="연양갱 사진"></div>
                                                 <h3>연양갱</h3>
@@ -295,37 +298,68 @@
                 <div class="wrapper">
                     <strong>달콤한 선물</strong>
                     <h2>EVENT</h2>
-                    <div class="list">
-                        <div class="photo_grup">
-                            <div class="photo01"><img src="images/event01.png" alt="연양갱 골드바 이벤트 포스터"></div>
-                            <div class="photo02"><img src="images/event02.png" alt="에이스 신제품 출시기념 이벤트 포스터"></div>
-                            <div class="photo"><img src="images/event03.png" alt="연양갱X이규영 작가 이벤트 포스터"></div>
+                    <div class="list" data-sticky-container>
+                        <div class="photo_grup" data-sticky >
+                            <div class="item"><div class="item_wrap"><div class="photo"><img src="images/event01.png" alt="2024 홈런왕을 찾아라! 이벤트 포스터"></div></div></div>
+                            <div class="item"><div class="item_wrap"><div class="photo"><img src="images/event02.png" alt="까까 까서먹고 세계여행 갈까? 이벤트 포스터"></div></div></div>
+                            <div class="item"><div class="item_wrap"><div class="photo"><img src="images/event03.png" alt="에이스 신제품 출시기념 이벤트 포스터"></div></div></div>
+                            <div class="item"><div class="item_wrap"><div class="photo"><img src="images/event04.png" alt="연양갱X이규영 작가 이벤트 포스터"></div></div></div>
                         </div> <!--photo_grup-->
                         <div class="text_grup">
-                            <div class="detail01">
+                            <div class="detail">
+                                <h3>2024 홈런왕을 찾아라!</h3>
+                                <strong>매일 3번의 참여가 가능하며 즉석에서 당첨여부 확인이 가능합니다.</strong>
+                                <span>이벤트 기간 : 2024.04.01~ 2024.09.30 (6개월간)</span>
+                                <span>당첨자 발표 : 홈페이지 게시판에 공지 (익월초)</span>
+                                <span>경품 : <br>구단로고볼 (매월40명) <br> 홈런볼 1박스(매월 10명)</span>
+                                <P>이벤트 참여 안내<br>
+                                    - 경품은 당사 사정에 따라 일부 변경될 수 있습니다.<br>
+                                    - 부정적인 방법으로 당첨된 것이 확인될 경우 사전 예고없이 당첨취소 될 수 있습니다.<br>
+                                    - 개인정보 오류로 인한 경품 미배송은 참여자 본인책임으로 재발송 해드리지 않습니다.<br>
+                                    - 당첨되신 후 개인정보를 작성하지 않은 분들은 경품이 지급되지 않을 수 있습니다.</P>
+                            </div>
+                            <div class="detail">
+                                    <h3>까까 까서먹고 세계여행 갈까?</h3>
+                                    <strong>행사 제품을 구매후 참여코드 입력 후 룰렛이벤트에 응모하세요!<br>꽝이 나와도 실망하지 마세요. 꽝 도장을 차곡차곡 10개를 모으면 과자선물을 드립니다!</strong>
+                                    <span>이벤트 기간 : 2024.01.01 ~ 2024.07.31</span>
+                                    <span>당첨자 발표 : 당첨등록 후 익월 초 경품발송</span>
+                                    <span>경품 : <br>1등 여행상품권 100만원(10명) <br>2등 여행상품권 100만원(15명) <br>3등 애플워치 시리즈9 (3명) <br>4등 해태몰 교환권 25,000원(100명)</span>
+                                    <p>이벤트 참여안내<br>
+                                        - 행사제품 내부에 인쇄된 9자리의 참여코드로 룰렛이벤트에 응모하세요.<br>
+                                        - 룰렛이벤트는 코드 1개당 룰렛기회가 1번 부여됩니다.<br>
+                                        - 1~3등 경품에 대한 제세공과금(22%)은 당첨자가 부담합니다.<br>
+                                        - 꽝적립 경품은 선착순 이벤트로 당첨횟수는 1회로 한정합니다.<br>
+                                        - 본 이벤트는 만 18세 이상을 참여대상으로 진행됩니다.<br>
+                                        - 경품 및 프로모션 일정은 당사 사정에 따라 일부 변경될 수 있습니다.</p>
+                            </div>
+                            <div class="detail">
                                 <h3>연양갱 골드바 이벤트</h3>
-                                <p>골드바 연양갱을 구매 후 재품 내 행운코드를 등록해주세요.<br>연양갱 각인골드바를 드립니다.</p>
+                                <strong>골드바 연양갱을 구매 후 재품 내 행운코드를 등록해주세요.<br>연양갱 각인골드바를 드립니다.</strong>
                                 <span>이벤트 기간 : 2024.01.15 ~ 2024.03.31</span>
                                 <span>당첨자 발표 : 2024.04.10</span>
-                                <span>경품 : 연양갱 각인 골드바 (1돈-3.75g)(5명) <br> 연양갱 모바일 교환권 1개 (200명)</span>
+                                <span>경품 : <br> 연양갱 각인 골드바 (1돈-3.75g)(5명) <br> 연양갱 모바일 교환권 1개 (200명)</span>
+                                <P>이벤트 참여안내<br>
+                                    - 행사제품에서 당첨문구와 함께 있는 7자리의 행운코드를 등록해주세요.<br>
+                                    - 본 이벤트는 만 18세 이상을 참여대상으로 진행됩니다.<br>
+                                    - 경품은 당사 사정에 따라 일부 변경될 수 있습니다.<br>
+                                    - 부정한 방법으로 당첨된 것이 확인될 시 당첨은 고지없이 취소될 수 있습니다.<br>
+                                    - 경품 발송은 EVENT1. 골드바 연양갱은 이벤트 종료 후 일괄발송하며 EVENT2. 즉석덩첨연양갱은 당첨 이후 익월초에 등록하신 휴대폰으로 발송됩니다.</P>
                             </div>
                             <div class="detail">
                                     <h3>에이스 신제품 출시기념 이벤트</h3>
-                                    <p>씬 에스프레소 구매 후 제품 내 행운코드를 등록해주세요.<br>커피 쿠폰을 드립니다.</p>
+                                    <strong>씬 에스프레소 구매 후 제품 내 행운코드를 등록해주세요.<br>커피 쿠폰을 드립니다.</strong>
                                     <span>이벤트 기간 : 2024.01.01 ~ 2024.04.30</span>
                                     <span>당첨자 발표 : 당첨등록 후 익월초 발송예정</span>
                                     <span>경품 : 스타벅스 커피교환권 (10,000명)</span>
-                            </div>
-                            <div class="detail">
-                                <h3>연양갱X이규영 작가 <br>나의 이야기를 담은 그림선물 받기</h3>
-                                <p>여러분의 달콤한 일상 이야기를 들려주세요. <br>이규영 작가님이 그림선물을 드립니다.</p>
-                                <span>이벤트기간 : 2023-11-01 ~ 2024-04-30</span>
-                                <span>당첨자발표 : 2024-04-30</span>
-                                <span>경품 : 일러스트 by 이규영작가 각 3명 (총9명) <br>연양갱 10팩 2종 각 30명 (총 90명)</span>
+                                    <P>이벤트 참여안내<br>
+                                        - 행사제품에서 당첨문구와 함께 있는 12자리의 행운코드를 등록해주세요.<br>
+                                        - 본 이벤트는 만 18세 이상을 참여대상으로 진행됩니다.<br>
+                                        - 경품은 당사 사정에 따라 일부 변경될 수 있습니다.<br>
+                                        - 경품 발송은 참여 후 최대 4주정도 소요될 수 있습니다.</P>
                             </div>
                         </div> <!--text_grup-->
+                        <div class="more"><a href="#">more</a></div>
                     </div> <!--list-->
-                    <div class="more"><a href="#">more</a></div>
                 </div>
             </section><!-- event-->
             <section class="news">
@@ -361,9 +395,70 @@
                     <div class="more"><a href="#">more</a></div>
                 </div>  
             </section>
-            <section class="sns"></section>
+            <div class="move_txt">달콤한 즐거움을 주는 시간, 입안을 부드럽게 채워주는 시간! 언제나 해태제과의 맛과 함께하세요. 달콤한 즐거움을 주는 시간, 입안을 부드럽게 채워주는 시간! 언제나 해태제과의 맛과 함께하세요. 달콤한 즐거움을 주는 시간, 입안을 부드럽게 채워주는 시간! 언제나 해태제과의 맛과 함께하세요.</div>
+            <section class="sns">
+                <div class="wrapper">
+                    <strong>달콤한 세상</strong>
+                    <h2>SNS</h2>
+                    <div class="sns_iocn">
+                        <ul>
+                            <li class="insta"><a href="#">인스타그램</a></li>
+                            <li class="naver"><a href="#">네이버 블로그</a></li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li class="naver">
+                                <a href="#">
+                                    <span>해태제과</span>
+                                    <div class="photo"><img src="images/sns01.jpg" alt="연양갱 홍보 포스터"></div>
+                                    <h3>달디달고 쫀득~한 고구마 연양갱🍠</h3>
+                                </a>
+                            </li>
+                            <li class="insta">
+                                <a href="#">
+                                    <span>haitai_co</span>
+                                    <div class="photo"><img src="images/sns02.jpg" alt="시티콘 홍보 포스터"></div>
+                                    <h3>Country에서 City로 갓 이사한 버터<br>옥수수🧈🌽, 시티콘😎</h3>
+                                </a>
+                            </li>
+                            <li class="insta">
+                                <a href="#">
+                                    <span>haitai_co</span>
+                                    <div class="photo"><img src="images/sns03.png" alt="모몌스 홍보 포스터"></div>
+                                    <h3>네모네모 멈뭄미 몌스가 만든 모몌스 듬잠!</h3>
+                                </a>
+                            </li>
+                            <li class="naver">
+                                <a href="#">
+                                    <span>해태제과</span>
+                                    <div class="photo"><img src="images/sns04.jpg" alt="연양갱 홍보 포스터"></div>
+                                    <h3>2가지 맛을 한번에 담았다! 🍫초코&소금우유 2MIX🧂🥛</h3>
+                                </a>
+                            </li>
+                            <li class="insta">
+                                <a href="#">
+                                    <span>haitai_co</span>
+                                    <div class="photo"><img src="images/sns05.jpg" alt="생생감자칩 대파맛 홍보 포스터"></div>
+                                    <h3>여기가 바로 대파맛.zip 💚 요즘 대파크림이 대세라며 ?</h3>
+                                </a>
+                            </li>
+                            <li class="naver">
+                                <a href="#">
+                                    <span>해태제과</span>
+                                    <div class="photo"><img src="images/sns06.png" alt="봄 에디션 홍보 포스터"></div>
+                                    <h3>설레는 봄, 딸기를 머금은 "포키 딸기 스프링 에디션🌸"</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- list-->
+                    <div class="more"><a href="#">more</a></div>
+                </div> <!--wrapper-->
+            </section>
         </div><!--container-->
-        <footer class="footer"></footer>
+        <footer class="footer">
+
+        </footer>
     </div>
 </body>
 </html>
