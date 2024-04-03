@@ -23,7 +23,7 @@ $(document).ready(function(){
     })
 
     //$('.sticky').sticky();
-    //var sticky = new Sticky('[data-sticky]', {});
+    var sticky = new Sticky('[data-sticky]', {});
 
     // $('.event .list').stickyStack({
 	// 	containerElement: '.event .photo_grup',
@@ -80,6 +80,7 @@ $(document).ready(function(){
                     obj_top = $(el2).offset().top - (window_h*0.5)
                     obj_end = $(el2).offset().top + $(el2).height() - (window_h/3)
                     if((scrolling >= obj_top) && (scrolling <= obj_end)){
+                        $('.event .pagination').attr('data-active', index)
                         $(el2).addClass('fixed')
                         $(el2).removeClass('fixed_other')
                     }else{
