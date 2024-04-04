@@ -89,6 +89,8 @@
 }
 .info {
     margin: 200px 0 220px 0;
+    font-size: 0;
+    line-height: 0;
 }
 .info strong {
     display: block;
