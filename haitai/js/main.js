@@ -112,4 +112,49 @@ $(document).ready(function(){
     $(window).resize(function(){
         event_chk()
     })
+
+    
+    $('.sns .list ul li').on('mouseenter', function(){
+        if(device == 'pc'){
+            $(this).index()
+            console.log($(this).index())
+            $('.sns .list ul li').attr('data-hover', '')
+            $(this).attr('data-hover','cur')
+            $('.sns .list ul li').eq($(this).index()-1).attr('data-hover','pre')
+            $('.sns .list ul li').eq($(this).index()+1).attr('data-hover','next')()
+            swiper.destroy();
+        }else{
+            const sns_swiper = new Swiper('.sns .swiper', { /* 팝업을 감싼는 요소의 class명 */
+                slidesPerView: "auto", /* li의 넓이 비율로 안함 - css에서 준 넓이대로 함 */
+                spaceBetween: 16, /* li와 li사이 - 제일 작은 여백 */
+                breakpoints: {
+                    640: {  /* 640px 이상이 되면 적용 */
+                        spaceBetween: 30, 
+                    },
+                    1024: {  /* 1024px 이상이 되면 적용 */
+                        spaceBetween: 40,
+                    },
+                },
+                centeredSlides: true, /* 팝업을 화면에 가운데 정렬(가운데 1번이 옴) */
+                loop: true,  /* 마지막 팝업에서 첫번째 팝업으로 자연스럽게 넘기기 */
+                autoplay: {  /* 팝업 자동 실행 */
+                    delay: 1500,
+                    disableOnInteraction: true,
+                },
+                pagination: {  /* 몇개의 팝업이 있는지 보여주는 동그라미 */
+                    el: '.swiper-pagination', /* 해당 요소의 class명 */
+                    clickable: true,  /* 클릭하면 해당 팝업으로 이동할 것인지 값 */
+                },
+            });
+        }
+    })
+
+    $('.footer .fmailysite button.open').on('click', function(){
+        $('.footer .fmailysite ul').slideDown()
+        $('.footer .fmailysite').addClass('on')
+    })
+    $('.footer .fmailysite button.close').on('click', function(){
+        $('.footer .fmailysite ul').slideUp()
+        $('.footer .fmailysite').removeClass('on')
+    })
 })

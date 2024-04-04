@@ -7,7 +7,9 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+    <!-- swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <script src="js/sticky.min.js"></script>
     <!--<script src="js/jquery.stickystack.min.js"></script>-->
     <script src="js/main.js"></script>
@@ -403,67 +405,93 @@
             </section>
             <div class="move_txt">달콤한 즐거움을 주는 시간, 입안을 부드럽게 채워주는 시간! 언제나 해태제과의 맛과 함께하세요. 달콤한 즐거움을 주는 시간, 입안을 부드럽게 채워주는 시간! 언제나 해태제과의 맛과 함께하세요. 달콤한 즐거움을 주는 시간, 입안을 부드럽게 채워주는 시간! 언제나 해태제과의 맛과 함께하세요.</div>
             <section class="sns">
+                <strong>달콤한 세상</strong>
+                <h2>SNS</h2>
+                <div class="sns_iocn">
+                    <ul>
+                        <li class="insta"><a href="#">인스타그램</a></li>
+                        <li class="naver"><a href="#">네이버 블로그</a></li>
+                    </ul>
+                </div>
+                <div class="list swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="naver swiper-slide">
+                            <a href="#">
+                                <span>해태제과</span>
+                                <div class="photo"><img src="images/sns01.jpg" alt="연양갱 홍보 포스터"></div>
+                                <h3>달디달고 쫀득~한 고구마 연양갱🍠</h3>
+                            </a>
+                        </li>
+                        <li class="insta swiper-slide">
+                            <a href="#">
+                                <span>haitai_co</span>
+                                <div class="photo"><img src="images/sns02.jpg" alt="시티콘 홍보 포스터"></div>
+                                <h3>Country에서 City로 갓 이사한 버터 옥수수🧈🌽, 시티콘😎</h3>
+                            </a>
+                        </li>
+                        <li class="insta swiper-slide">
+                            <a href="#">
+                                <span>haitai_co</span>
+                                <div class="photo"><img src="images/sns03.jpg" alt="모몌스 홍보 포스터"></div>
+                                <h3>네모네모 멈뭄미 몌스가 만든 모몌스 듬잠!</h3>
+                            </a>
+                        </li>
+                        <li class="naver swiper-slide">
+                            <a href="#">
+                                <span>해태제과</span>
+                                <div class="photo"><img src="images/sns04.png" alt="연양갱 홍보 포스터"></div>
+                                <h3>2가지 맛을 한번에 담았다! 🍫초코&소금우유 2MIX🧂🥛</h3>
+                            </a>
+                        </li>
+                        <li class="insta swiper-slide">
+                            <a href="#">
+                                <span>haitai_co</span>
+                                <div class="photo"><img src="images/sns05.jpg" alt="생생감자칩 대파맛 홍보 포스터"></div>
+                                <h3>여기가 바로 대파맛.zip 💚 요즘 대파크림이 대세라며 ?</h3>
+                            </a>
+                        </li>
+                        <li class="naver swiper-slide">
+                            <a href="#">
+                                <span>해태제과</span>
+                                <div class="photo"><img src="images/sns06.png" alt="봄 에디션 홍보 포스터"></div>
+                                <h3>설레는 봄, 딸기를 머금은 "포키 딸기 스프링 에디션🌸"</h3>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div> <!-- list-->
                 <div class="wrapper">
-                    <strong>달콤한 세상</strong>
-                    <h2>SNS</h2>
-                    <div class="sns_iocn">
-                        <ul>
-                            <li class="insta"><a href="#">인스타그램</a></li>
-                            <li class="naver"><a href="#">네이버 블로그</a></li>
-                        </ul>
-                    </div>
-                    <div class="list">
-                        <ul>
-                            <li class="naver">
-                                <a href="#">
-                                    <span>해태제과</span>
-                                    <div class="photo"><img src="images/sns01.jpg" alt="연양갱 홍보 포스터"></div>
-                                    <h3>달디달고 쫀득~한 고구마 연양갱🍠</h3>
-                                </a>
-                            </li>
-                            <li class="insta">
-                                <a href="#">
-                                    <span>haitai_co</span>
-                                    <div class="photo"><img src="images/sns02.jpg" alt="시티콘 홍보 포스터"></div>
-                                    <h3>Country에서 City로 갓 이사한 버터<br>옥수수🧈🌽, 시티콘😎</h3>
-                                </a>
-                            </li>
-                            <li class="insta">
-                                <a href="#">
-                                    <span>haitai_co</span>
-                                    <div class="photo"><img src="images/sns03.png" alt="모몌스 홍보 포스터"></div>
-                                    <h3>네모네모 멈뭄미 몌스가 만든 모몌스 듬잠!</h3>
-                                </a>
-                            </li>
-                            <li class="naver">
-                                <a href="#">
-                                    <span>해태제과</span>
-                                    <div class="photo"><img src="images/sns04.jpg" alt="연양갱 홍보 포스터"></div>
-                                    <h3>2가지 맛을 한번에 담았다! 🍫초코&소금우유 2MIX🧂🥛</h3>
-                                </a>
-                            </li>
-                            <li class="insta">
-                                <a href="#">
-                                    <span>haitai_co</span>
-                                    <div class="photo"><img src="images/sns05.jpg" alt="생생감자칩 대파맛 홍보 포스터"></div>
-                                    <h3>여기가 바로 대파맛.zip 💚 요즘 대파크림이 대세라며 ?</h3>
-                                </a>
-                            </li>
-                            <li class="naver">
-                                <a href="#">
-                                    <span>해태제과</span>
-                                    <div class="photo"><img src="images/sns06.png" alt="봄 에디션 홍보 포스터"></div>
-                                    <h3>설레는 봄, 딸기를 머금은 "포키 딸기 스프링 에디션🌸"</h3>
-                                </a>
-                            </li>
-                        </ul>
-                    </div> <!-- list-->
                     <div class="more"><a href="#">more</a></div>
-                </div> <!--wrapper-->
+                </div>
             </section>
         </div><!--container-->
         <footer class="footer">
-
+            <div class="wrapper">
+                <div class="f_logo"><img src="images/logo_w.png"></div>
+                <div class="f_info">
+                    <div class="f_nav">
+                        <ul>
+                            <li><a href="#n">개인정보처리방침</a></li>
+                            <li><a href="#n">이메일주소 무단 수집 거부</a></li>
+                            <li><a href="#n">고객문의</a></li>
+                        </ul>
+                    </div>
+                    <div class="coryright">COPYRIGHT HAITAI CONFECTIONERY & FOODS CO,LTD. <br>ALL RIGHTS RESERVED.</div>
+                </div>
+                <div class="fmailysite">
+                    <button class="open" title="열기">FAMILY SITE</button>
+                    <ul>
+                        <li><a href="#n">아이부라보</a></li>
+                        <li><a href="#n">해태몰</a></li>
+                        <li><a href="#n">해태제과 페이스북</a></li>
+                        <li><a href="#n">해누리</a></li>
+                        <li><a href="#n">구매사이트</a></li>
+                        <li><a href="#n">아트블럭</a></li>
+                        <li><a href="#n">CHITV</a></li>
+                    </ul>
+                    <button class="close" title="닫기">FAMILY SITE</button>
+                </div>                
+            </div>
         </footer>
     </div>
 </body>
