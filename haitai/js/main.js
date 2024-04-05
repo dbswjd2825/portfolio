@@ -18,8 +18,10 @@ $(document).ready(function(){
     });
 
     $('.best .list > ul >li > .detail > ul > li').on('mouseenter', function(){
+        if(device == 'pc'){
         $('.best .list > ul >li > .detail > ul > li').removeClass('active')
         $(this).addClass('active')
+        }   
     })
 
     //$('.sticky').sticky();

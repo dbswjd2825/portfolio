@@ -302,20 +302,26 @@
 } 
 .best .list > ul >li > .detail > ul > li .photo {
     margin: 80px auto 70px auto;
+    width: 280px;
+    height: 209px;
+    transition: 0.5S;
 }
 .best .list > ul >li > .detail > ul > li.active .photo {
     animation-name: photo_hover_move;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    width: 330px;
 }
 .best .list > ul >li > .detail > ul > li .photo img {
-    width: 280px;
-    height: 209px;
-    transition: 0.5S;
+    
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .best .list > ul >li > .detail > ul > li.active .photo img {
-    width: 330px;
-    height: 240px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 @keyframes photo_hover_move { 
 	0% { transform:translate(0, 0) }  
@@ -351,6 +357,7 @@
 }
 .best .list > ul >li > .detail > ul > li span {
     margin: 0 5px;
+    display: block;
 }
 .best .list > ul >li > .detail > ul > li.active  p,
 .best .list > ul >li > .detail > ul > li.active  span {
@@ -358,7 +365,7 @@
 }
 .best .more {
     position: relative; /* before 정렬의 기준 */
-    margin-top: 710px;
+    margin-top: 750px;
     text-align: right;
 }
 .best .more a {
@@ -418,27 +425,26 @@
     .best .list > ul >li > .detail > ul > li.active > a {
         border: 3px solid #3d3d3d;
     } 
-    .best .list > ul >li > .detail > ul > li .photo img {
+    .best .list > ul >li > .detail > ul > li .photo {
         width: 200px;
-        height: 150px;
     }
-    .best .list > ul >li > .detail > ul > li.active .photo img {
-        width: 237px;
-        height: 177px;
+    .best .list > ul >li > .detail > ul > li.active .photo {
+        width: 200px;
     }
     .best .list > ul >li > .detail > ul > li .photo_hover {
         left: 26px;
         top: 26px;
-    }
-    .best .list > ul >li > .detail > ul > li .photo_hover img {
         width: 270px;
-        object-fit: cover;
+    }
+    .best .list > ul >li > .detail > ul > li .photo_hover img{
+        width: 100%;
+        object-fit: contain;
     }
     .best .list > ul >li > .detail > ul > li p {
         margin: 8px 15px 0 0;
     }
     .best .more {
-        margin-top: 600px;
+        margin-top: 680px;
     }
 }
 @media screen and (max-width:1024px){
@@ -473,14 +479,13 @@
         margin: 0 auto;
         border: 0;
         background-color: #ededed;
-        padding-top: 30px;
         margin-bottom: 20px;
     }
     .best .list > ul >li > .detail > ul > li.active > a {
         border: 0
     } 
     .best .list > ul >li > .detail > ul > li .photo {
-        margin: auto 50px auto 100px;
+        margin: 0 20px 0 100px;
         float: left;
         animation-name: photo_hover_move;
         animation-duration: 2s;
@@ -493,19 +498,19 @@
     }
     .best .list > ul >li > .detail > ul > li.active .photo_hover {
         display: none;
-    }
-    .best .list > ul >li > .detail > ul > li.active .photo img {
         width: 200px;
-        height: 150px;
     }
     .best .list > ul >li > .detail > ul > li h3 {
-        margin-top: 20px;
+        padding-top: 70px;
+        padding-left: 50%;
     }
     .best .list > ul >li > .detail > ul > li p {
-        margin: 10px 15px 20px 0;
+        margin: 10px 0 20px 0;
+        padding-left: 50%;
     }
     .best .list > ul >li > .detail > ul > li span {
-        margin: 0 10px 0 0  ;
+        padding-left: 50%;
+        margin: 0;
     }
     .best .more {
         margin-top: 845px;
@@ -554,19 +559,17 @@
     .best .list > ul >li > .detail > ul > li > a {
         height: 200px;
         border-radius: 40px;
-        padding-top: 35px;
         margin-bottom: 15px;
     }
     .best .list > ul >li > .detail > ul > li .photo {
-        margin: auto 20px auto 10px;
-    }
-    .best .list > ul >li > .detail > ul > li .photo img {
         width: 135px;
-        height: 100px;
+        margin:0 30px 0 60px;
     }
-    .best .list > ul >li > .detail > ul > li.active .photo img {
+    .best .list > ul >li > .detail > ul > li.active .photo {
         width: 135px;
-        height: 100px;
+    }
+    .best .list > ul >li > .detail > ul > li h3 {
+        padding-top: 40px;
     }
     .best .list > ul >li > .detail > ul > li p {
         margin: 10px 10px 0 0;
@@ -597,6 +600,19 @@
     }
     .best h2 {
         font-size: 30px;
+    }
+    .best .list > ul >li > .detail > ul > li .photo {
+        width: 100px;
+        margin:0 30px 0 30px;
+    }
+    .best .list > ul >li > .detail > ul > li.active .photo {
+        width: 100px;
+    }
+    .best .list > ul >li > .detail > ul > li h3 {
+        padding-top: 40px;
+    }
+    .best .list > ul >li > .detail > ul > li p {
+        font-size: 13px;
     }
     .best .list > ul > li button {
         width: 40px;
