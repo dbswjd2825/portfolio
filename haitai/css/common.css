@@ -59,7 +59,7 @@ html, body {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 .wrapper { /* 홈페이지의 넓이를 제한하고 가운데 정렬 */
-    width: 1280PX; /* 홈페이지 넓이 */
+    width: 1280px; /* 홈페이지 넓이 */
     margin: 0 auto; /* 가운데 정렬 */
 }
 #wrap { /* id="wrap"에 적용되는 스타일 */

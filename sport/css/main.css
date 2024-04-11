@@ -9,19 +9,19 @@
     설  명 : 메인페이지에만 들어가는 스타일을 저장
             ( header와 footer 빼고 전부 다 )
 */
-
 .visual .swiper {
     height: 900px;
 } 
 .visual .swiper-slide img {
-    display: block; 
-    width: 100%; 
-    height: 100%; 
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover; 
 } 
 .visual .visual_txt {
     position: absolute;
     left: calc(50% - 640px);
+    width: 1280px;
     top: 340px;
     color: #fff;
 }
@@ -62,17 +62,18 @@
     margin-top: 160px;
     position: relative;
 }
-.sport_list .text_group {
+.sport_list .text {
     position: absolute;
     left: calc(50% - 640px);
     top: 0; 
 }
-.sport_list .text_group span {
+.sport_list .text span {
     display: block;
     font-size: 20px;
     color: #2d2d2d;
+    margin-bottom: 5px;
 }
-.sport_list .text_group h2 {
+.sport_list .text h2 {
     font-size: 40px;
     font-weight: 700;
     color: #1d1d1d;
@@ -100,7 +101,7 @@
 .list a:first-child {
     margin-left: 37.5%;
 }
-.list a::before {
+.list a:hover::before {
     position: absolute;
     left: 0;
     right: 0;
@@ -111,7 +112,6 @@
     background-position: center center;
     background-size: contain;
     content: "";
-    opacity: 0.8;
 }
 .list a.athletics:hover::before {
     background-image: url(../images/list_athletics.png);
@@ -225,7 +225,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: #3d3d3d;
+    color: #fff;
     font-size: 20px;
     display: block; /* 마우스 오버시*/
 }
@@ -260,15 +260,109 @@
 .program {
     margin-top: 180px;
 }
-.program  span {
+.program .text {
+    position: relative;
+    text-align: center;
+}
+.program .text::after {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: -2;
+    width: 100%;
+    height: 1px;
+    background-color: #3d3d3d;
+    content: "";
+}
+.program .text span {
     display: block;
     font-size: 20px;
     color: #2d2d2d;
-    text-align: center;
+    margin-bottom: 5px;
 }
-.program h2 {
+.program .text h2 {
+    position: relative;
+    display: inline-block;
     font-size: 40px;
     font-weight: 700;
     color: #1d1d1d;
+}
+.program .text h2::before {
+    position: absolute;
+    left: -40px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #fff;
+    padding: 0 40px;
+    content: "";
+}
+.program .pro_inner {
+    margin-top: 80px;
+    position: relative;
+    color: #fff;
+}
+.program .pro_inner::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(../images/program_bg.png);
+    content: "";
+}
+.program h3 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 80px;
     text-align: center;
+}
+.program strong {
+    display: block;
+    text-align: center;
+    margin: 15px 0 40px 0;
+}
+.program .ask {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.program .ask a {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    padding: 12px 45px 12px 20px;
+    border: 1px solid #fff;
+}
+.program .ask a::before {
+    position: absolute;
+    right: 15px;
+    top: 14px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.4375 10.0937H4.125V8.90621H8.4375V4.35413H9.56246V8.90621H13.875V10.0937H9.56246V14.6458H8.4375V10.0937Z' fill='white'/%3E%3C/svg%3E%0A");
+    content: "";
+}
+.program .detail {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    margin: 0 100px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.program .detail span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.news {
+    margin-top: 180px;
 }

@@ -81,13 +81,18 @@ a태그중에서 href="#gnb"인 a태그의 스타일 */
     top: 100px;
 }
 
-
+@media screen and (max-width:1320px){
+    .wrapper { 
+        width: auto; 
+        margin: 0 40px; 
+    }
+} 
 @media screen and (max-width:1024px){
     .wrapper { 
         width: auto; 
         margin: 0 20px; 
     }
-} /* media*/
+}
 @media screen and (max-width:1320px){
     html, body {
         font-size: 15px;  /* 글자크기 */
