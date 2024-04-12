@@ -50,7 +50,7 @@ $(document).ready(function(){
             $('header').removeClass('menu_over')
         }
     })
-    $('.header .tnb ul li.haitaimall a').on('focusout', function(){
+    $('header .tnb ul li.lang a').on('focusin', function(){
         if( device_status == 'pc'){
             $('header .gnb .depth1 > li').removeClass('on')
             $('header').removeClass('menu_over')
@@ -63,7 +63,7 @@ $(document).ready(function(){
         하위메뉴를 열어줌 
     */
     $(".header .gnb ul.depth1 > li > a").on("click", function(e){
-        if( device_status = 'mobile'){
+        if( device_status == 'mobile'){
             e.preventDefault();		/* a 태그의 href를 작동 시키지 않음 */
             $(this).parent().toggleClass('on')
         }
