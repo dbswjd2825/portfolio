@@ -106,7 +106,7 @@
     background-color: rgb(255, 255, 255, 0.8);
     border-bottom: 0;
     border-bottom: 1px solid rgb(0, 0, 0, 0.2);
-    box-shadow: 5px, 5px, 5px, rgb(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
 }
 .header.fixed .logo a {
     background-image: url(../images/logo_c.png);
