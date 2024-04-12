@@ -1230,22 +1230,23 @@
     }
     .gallery .list {
         height: 300px;
-        width: 150%;
+        width: calc(100% + 20px);
+        border-bottom: 1px solid #3d3d3d;
     }
     .gallery ul {
         flex-wrap: nowrap;
         overflow-x: auto;
     }
     .gallery ul::-webkit-scrollbar {
-        height: 10px;
-        background-color: #BBC3CE;
+        height: 1px;
+        background-color: #fff;
     }
     .gallery ul::-webkit-scrollbar-thumb {
-        background-color: #1E1D3F;
+        background-color: #fff;
     }
     .gallery ul::-webkit-scrollbar-track {
-        background-color: #BBC3CE;
-        box-shadow: inset 0px 0px 5px white
+        background-color: #fff;
+        box-shadow: inset 0px 0px 5px #fff
     }
     .gallery ul li {
         width: 300px;
