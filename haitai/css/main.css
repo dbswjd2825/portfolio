@@ -259,7 +259,6 @@
     border: 1px solid #3d3d3d;
     border-radius: 100%;
     margin: 0 15px;
-    transition: 0.5s;
 }
 .best .list > ul >li.list_on button,
 .best .list > ul >li button:hover{
