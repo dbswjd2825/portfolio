@@ -1,0 +1,29 @@
+@import url(default.css);
+@import url(common.css);
+
+.header {
+    position: fixed;
+    z-index: 100;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.header h1 {
+    font-size: 0;
+    line-height: 0;
+}
+.header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.visual {
+    height: 900px;
+    background: url(../images/contents/haihai_bg.png) no-repeat center center/ cover;
+}
+.visual .inner {
+    padding-top: 250px;
+}
