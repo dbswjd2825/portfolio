@@ -11,6 +11,10 @@
     padding: 0 40px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+.header.fixed {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
 .header h1 {
     font-size: 0;
     line-height: 0;
@@ -19,11 +23,1022 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 20px;
+    height: 100px;
 }
-.visual {
+.header .nav .back a {
+    display: block;
+    position: relative;
+    line-height: 50px;
+    padding: 0 15px 0 40px ;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+.header .nav .back a::before {
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.3125 14.5625L23.375 14.5625L23.375 15.4375L8.3125 15.4375L15.625 22.75L15 23.375L6.625 15L15 6.625L15.625 7.25L8.3125 14.5625Z' fill='%231D1D1D'/%3E%3C/svg%3E%0A");
+}
+.header .nav .list ul {
+    display: flex;
+}
+.header .nav .list ul .haitai {
+    line-height: 50px;
+    background-color: #ED2985;
+    color: #fff;
+    padding: 0 15px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+.header .nav .list ul .sport {
+    line-height: 50px;
+    color: #666;
+    padding: 0 15px;
+    border-radius: 10px;
+    border: 1px solid #666;
+}
+
+/* 해태제과 */
+.haitai .visual {
+    position: relative;
+    z-index: -100;
     height: 900px;
     background: url(../images/contents/haihai_bg.png) no-repeat center center/ cover;
 }
-.visual .inner {
-    padding-top: 250px;
+.haitai .visual .inner {
+    padding-top: 200px;
+}
+.haitai .visual .inner strong {
+    font-size: 20px;
+    font-weight: 700;
+    color: #3d3d3d;
+}
+.haitai .visual .inner h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #ED2985;
+    margin: 10px 0 15px 0;
+}
+.haitai .visual .inner p {
+    width: 320px;
+    margin-bottom: 30px;
+}
+.haitai .visual .inner .link a{
+    display: inline-block;
+    position: relative;
+    padding: 0 40px 0 15px;
+    border-radius: 10px;
+    line-height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: #fff;
+    color: #2d2d2d;
+}
+.haitai .visual .inner .link  a:hover {
+    transform: translate(7px, -7px);
+}
+.haitai .visual .inner .link a::before {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.7438 10.5166H4.70215V9.93327H14.7438L9.86881 5.05827L10.2855 4.6416L15.8688 10.2249L10.2855 15.8083L9.86881 15.3916L14.7438 10.5166Z' fill='%231D1D1D'/%3E%3C/svg%3E%0A");
+}
+.haitai .visual .inner .link a::after {
+    position: absolute;
+    right: -7px;
+    top: 7px;
+    z-index: -1;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #ED2985;
+    content: "";
+}
+.haitai .visual .detail {
+    margin-top: 100px;
+}
+.haitai .visual .detail > ul > li {
+    margin-bottom: 10px;
+}
+.haitai .visual .detail strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin-bottom: 5px;
+} 
+.haitai .visual .detail .tool ul {
+    display: flex;
+    align-items: center;
+}
+.haitai .visual .detail .tool ul li {
+    margin-right: 5px;
+}
+.haitai .concept {
+    position: relative;
+    margin-top: 260px;
+    text-align: center;
+}
+.haitai .concept strong {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -70px;
+    width: 100%;
+    transform: translate(-50%, 0);
+    font-size: 100px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.1);
+}
+.haitai .concept h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.haitai .concept span {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ED2985;
+    margin: 10px 0 20px 0;
+}
+.haitai .typography {
+    margin-top: 150px;
+    text-align: center;
+}
+.haitai .typography h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.haitai .typography p {
+    margin: 10px 0 40px 0;
+}
+.haitai .typography ul {
+    display: flex;
+    justify-content: space-evenly
+}
+.haitai .typography ul li strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d2d2d;
+}
+.haitai .typography ul li span {
+    display: block;
+    font-size: 20px;
+    color: #2d2d2d;
+    margin: 3px 0 15px 0;
+}
+
+.haitai .color {
+    margin-top: 150px;
+}
+.haitai .color h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.haitai .color p {
+    margin: 10px 0 40px 0;
+}
+.haitai .color .list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.haitai .color .list ul li {
+    position: relative;
+    width: 16.66%;
+    height: 90px;
+    border-radius: 90px;
+    font-size: 20px;
+    color: #fff;
+}
+.haitai .color .list ul li span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.haitai .color .list ul li.c_main{
+    width: 50%;
+    background-color: #ED2985;
+}
+.haitai .color .list ul li.pink::before,
+.haitai .color .list ul li.black::before,
+.haitai .color .list ul li.blue::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 90px;
+    width: 500px;
+    border-radius: 90px;
+    background-color: #FEDCDB;
+    content: "";
+}
+.haitai .color .list ul li.black::before {
+    z-index: -2;
+    background-color: #1D1D1D;
+}
+.haitai .color .list ul li.pink {
+    color: #3d3d3d;
+}
+.haitai .color .list ul li.pink::before{
+    z-index: -3;
+    background-color: #FEDCDB;
+}
+.haitai .color .list ul li.blue{
+    color: #3d3d3d;
+}
+.haitai .color .list ul li.blue::before{
+    z-index: -4;
+    background-color: #DEFFFD;
+}
+.haitai > .detail {
+    z-index: -1;
+    background: url(../images/contents/h_detail_bg.png) no-repeat center center/ cover;
+} 
+.haitai .detail .main {
+    position: relative;
+    margin-top: 200px;
+    text-align: center;
+}
+.haitai .detail .main::before {
+    position: absolute;
+    left: -20%;
+    top: 0;
+    z-index: -10;
+    width: 140%;
+    height: 900px;
+    content: "";
+    background: url(../images/contents/h_main_bg.png) no-repeat center center / cover;
+}
+.haitai .detail .main h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+    padding-top: 100px;
+}
+.haitai .detail .main h1::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.haitai .detail .main p {
+    margin: 10px 0 40px 0;
+}
+.haitai .detail .main .photo {
+    width: 100%;
+    height: 600px;
+    border-radius: 30px;
+    border: 7px solid #1d1d1d;
+    box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.haitai .detail .main .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.haitai .detail .nav_bar {
+    margin-top: 100px;
+    text-align: center;
+}
+.haitai .detail .nav_bar h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+    padding-top: 100px;
+}
+.haitai .detail .nav_bar h1::before {
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.haitai .detail .nav_bar p {
+    margin: 13px 0 40px 0;
+}
+.haitai .detail .nav_bar .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.haitai .detail .company {
+    margin-top: 100px;
+}
+.haitai .detail .company h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+    padding-top: 100px;
+}
+.haitai .detail .company h1::before {
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.haitai .detail .company p {
+    margin: 13px 0 40px 0;
+}
+.haitai .detail .company .inner {
+    padding: 80px 0 0 100px;
+    background-color: #fff;
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
+    border: 7px solid #1d1d1d;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.haitai .detail .company .inner strong {
+    display: block;
+    font-size: 100px;
+    font-weight: 900;
+    font-family: 'Montserrat Alternates';
+    color: #1d1d1d;
+}
+.haitai .detail .company .inner .text01 {
+    position: relative; 
+}
+.haitai .detail .company .inner .text02 {
+    position: relative;
+    margin-bottom: 20px;
+}
+.haitai .detail .company .inner span {
+    position: relative; 
+    display: block;
+    width: 170px;
+    line-height: 35px;
+    padding-left: 45px;
+    border-radius: 50px;
+}
+.haitai .detail .company .inner .text01 span {
+    position: absolute;
+    right: 50%;
+    top: 20%;
+    background-color: #DEFFFD;
+}
+.haitai .detail .company .inner .text02 span {
+    position: absolute;
+    right: 60%;
+    top: 20%;
+    background-color: #FEDCDB;
+}
+.haitai .detail .company .inner span::after {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: "";
+}
+.haitai .detail .company .inner .text01 span::after {
+    left:11px;
+    top: 8px;
+    width: 26px;
+    height: 14px;
+    background-image: url("data:image/svg+xml,%3Csvg width='27' height='14' viewBox='0 0 27 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_58_601)'%3E%3Cpath d='M20.231 6.92872C20.276 8.91693 21.8742 10.1961 23.7652 10.4512C26.4627 10.8151 25.7949 9.23954 26.4139 8.48928C26.9467 7.84029 24.8382 7.75026 24.8194 6.83118C24.8007 5.91961 26.7854 5.04555 26.2376 4.42282C25.5885 3.68756 25.7874 2.50214 23.6151 3.25616C21.8105 3.88263 20.1934 4.94051 20.2347 6.92872H20.231Z' fill='%2370CACD'/%3E%3Cpath d='M21.6564 5.23311C21.6564 5.23311 23.9375 3.13611 24.5115 3.68005C25.0856 4.224 23.7086 6.40353 24.2076 7.00749C24.7066 7.60771 25.0818 7.52518 25.1681 8.0091C25.2544 8.49302 25.003 9.04447 24.9017 9.63718C24.8004 10.2299 22.0391 9.05197 21.7277 8.49677C21.4163 7.94158 19.728 6.66612 21.6564 5.23686V5.23311Z' fill='%233BC0CB'/%3E%3Cpath d='M20.5272 6.84999C20.6098 10.7139 17.5671 13.9138 13.7327 14C9.89462 14.0826 6.71684 11.0177 6.63055 7.15385C6.54801 3.28621 9.59072 0.0863223 13.4288 4.14645e-05C17.2669 -0.082488 20.4447 2.98236 20.5272 6.84624V6.84999Z' fill='%2398D5CC'/%3E%3Cpath d='M6.93066 7.07127C6.88563 5.08306 5.28736 3.80386 3.3927 3.54877C0.695158 3.18489 1.36298 4.7642 0.747683 5.51072C0.214927 6.1597 2.49602 6.7374 1.73441 7.25509C0.106125 8.36173 0.380006 8.95445 0.92777 9.57717C1.57683 10.3124 1.37799 11.4979 3.55028 10.7438C5.3549 10.1174 6.97192 9.05948 6.93066 7.07127Z' fill='%2370CACD'/%3E%3Cpath d='M18.7524 6.85372C17.6493 8.58309 15.9048 7.4727 13.9538 6.2235C11.9991 4.9743 10.5697 4.05898 11.6765 2.33336C12.7795 0.607744 15.2594 0.217605 17.2141 1.4668C19.1688 2.716 19.8592 5.12811 18.7524 6.85748V6.85372Z' fill='%23ACDBCF'/%3E%3Cpath opacity='0.3' d='M9.3616 1.77441C9.3616 1.77441 7.68079 4.85426 8.8326 7.28138C9.9844 9.7085 13.8563 8.26423 13.6349 9.62972C13.4135 10.9952 18.0958 10.3575 19.3789 9.50593C20.6583 8.65062 17.6381 14.1763 12.6707 13.4448C6.75035 12.5708 5.67358 4.50914 9.36535 1.77441H9.3616Z' fill='%23008EA7'/%3E%3Cpath d='M18.4299 3.51122C18.4299 3.51122 17.9309 1.22665 15.6835 1.31293C13.4362 1.39921 19.1089 4.82794 18.4299 3.51122Z' fill='%23F3EAC7'/%3E%3Cpath d='M4.87089 4.47904C4.87089 4.47904 6.26656 5.12052 6.63049 7.15C6.7618 7.88151 4.51447 9.956 3.76036 10.0835C3.00624 10.2111 3.09629 9.19823 3.08128 8.44796C3.06627 7.69769 4.03799 7.59641 4.10552 7.20627C4.17305 6.81238 2.52226 6.81238 2.85617 6.61731C3.19008 6.42224 4.89715 6.49726 4.70581 5.97583C4.51822 5.45439 3.90292 3.64249 4.87089 4.47904Z' fill='%233BC0CB'/%3E%3Cpath opacity='0.3' d='M20.5084 5.96837C20.5084 5.96837 21.4802 4.20524 22.4631 4.42657C23.0297 4.55412 22.1292 6.41853 22.2493 6.65862C22.3656 6.90245 23.4611 6.65111 23.3598 7.4614C23.2585 8.27169 22.8271 9.10824 23.1647 9.13825C23.5024 9.16826 23.9563 9.64468 23.4161 9.65969C22.8758 9.67094 19.3979 8.39549 20.5084 5.97212V5.96837Z' fill='%23008EA7'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_58_601'%3E%3Crect width='26' height='14' fill='white' transform='translate(0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.haitai .detail .company .inner .text02 span::after {
+    left:18px;
+    top: 8px;
+    width: 17px;
+    height: 15px;
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='15' viewBox='0 0 18 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_58_611)'%3E%3Cpath d='M9.27468 15.0001C9.27468 15.0001 -2.02529 9.52912 1.0214 2.47107C2.39109 -0.703078 7.38872 -0.988949 9.01303 2.99846C9.01303 2.99846 10.1123 -1.28139 14.7464 0.387831C19.7774 2.19999 17.8897 11.0833 9.27468 15.0017V15.0001Z' fill='%23F6BC9F'/%3E%3Cpath d='M9.18887 11.6699C9.18887 11.6699 3.28865 9.13319 4.86907 5.47437C5.58026 3.82815 8.14755 3.60964 9.13795 6.02147C9.13795 6.02147 9.58222 3.52749 11.9862 4.39332C14.5956 5.33308 13.6562 9.63757 9.18887 11.6699Z' fill='%23EE3A3D'/%3E%3Cpath opacity='0.2' d='M16.5814 3.89044C16.5814 3.89044 16.5814 0.966011 12.3231 0.995584C9.75226 1.01366 9.76104 3.71464 11.5504 5.02242C13.338 6.33184 17.1381 6.43863 16.5832 3.89044H16.5814Z' fill='%23FDFADB'/%3E%3Cpath d='M12.8112 0.47479C12.8112 0.47479 15.7859 0.576652 16.5955 2.8669C17.268 4.77435 16.8957 6.26778 16.4111 6.46165C15.9264 6.65387 17.1188 4.06789 15.3838 2.30666C13.6489 0.545436 11.3573 0.381143 12.8112 0.476433V0.47479Z' fill='%23FDFADB'/%3E%3Cpath opacity='0.2' d='M1.66406 5.03393C1.66406 5.03393 1.69918 0.169198 4.94079 1.22889C8.1824 2.28858 8.99895 5.22615 8.99895 5.22615C8.99895 5.22615 10.7918 0.00161862 13.756 1.67413C19.9688 5.17851 12.0966 13.3735 9.27464 13.3735C6.45272 13.3735 1.86249 8.37237 1.66406 5.03393Z' fill='%23FDFADB'/%3E%3Cpath opacity='0.2' d='M1.08149 4.60031C1.08149 4.60031 0.97788 1.34237 3.03769 1.00722C5.09574 0.670413 5.39075 8.43821 8.71665 9.59977C12.0443 10.763 14.7609 10.1288 14.652 10.6841C14.5431 11.2394 10.2163 14.1441 9.27506 14.3199C8.33384 14.4941 0.926956 9.65563 1.08149 4.59867V4.60031Z' fill='%23EF5451'/%3E%3Cpath opacity='0.2' d='M10.0019 5.53022C10.0019 5.53022 10.5849 4.15015 11.8545 5.24106C13.1241 6.33197 13.1575 7.65289 12.06 7.94041C10.9625 8.22628 9.65071 6.00667 10.0019 5.53022Z' fill='%23FDFADB'/%3E%3Cpath d='M16.4518 7.35538C16.4518 7.35538 15.99 8.42658 15.6019 8.39536C15.2156 8.36415 16.3868 5.97368 16.4518 7.35538Z' fill='%23FDFADB'/%3E%3Cpath opacity='0.2' d='M2.32809 8.13091C2.32809 8.13091 7.04299 14.8522 9.27489 14.3198C10.9975 13.9091 14.0513 11.3971 13.8458 10.7103C13.6404 10.0236 10.5515 13.7793 8.66555 13.0416C6.77784 12.304 1.13575 5.99181 2.32984 8.13091H2.32809Z' fill='%23EF5451'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_58_611'%3E%3Crect width='17' height='15' fill='white' transform='translate(0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.haitai .detail .company .inner p {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.detail .product {
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+}
+.haitai .detail .product::before {
+    position: absolute;
+    left: -260px;
+    top: 200px;
+    z-index: 10;
+    width: 270px;
+    height: 720px   ;
+    content: "";
+    background: url(../images/contents/h_product_ani.png) no-repeat center center / cover;
+    animation-name: product_move; animation-duration:3s; animation-iteration-count:infinite; animation-timing-function:linear;
+}
+.haitai .detail .product::after {
+    position: absolute;
+    right: -250px;
+    top: 200px;
+    z-index: 10;
+    width: 281px;
+    height: 930px   ;
+    content: "";
+    background: url(../images/contents/h_product_ani2.png) no-repeat center center / cover;
+    animation-name: h_product_move; animation-duration:3s; animation-iteration-count:infinite; animation-timing-function:linear;
+}
+
+@keyframes h_product_move { /* 애니메이션을 효과를 미리 설정함 */
+	0% { transform:translate(0, 0) }  /* 애니메이션을 시작할때의 속성 */
+	50% { transform:translate(0, 50px) } /* 중간값은 %를 조절하여 추가/삭제 가능 */
+	100% { transform:translate(0, 0) } /* 애니메이션이 종료될때의 속성 */
+}
+.haitai .detail .product h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+    padding-top: 100px;
+}
+.haitai .detail .product h1::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.haitai .detail .product p {
+    margin: 10px 0 40px 0;
+}
+.haitai .detail .product .photo {
+    width: 100%;
+    height: 870px;
+    border-radius: 30px;
+    border: 7px solid #1d1d1d;
+    box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.haitai .detail .product .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.haitai .grup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+.haitai .grup .left_g {
+    width: 30%;
+} 
+.haitai .grup img {
+    font-size: 0;
+    line-height: 0;
+}
+.haitai .grup .left_g .m_envet {
+    position: relative;
+}
+.haitai .grup .left_g .m_envet::after {
+    position: absolute;
+    left: 240px;
+    top: 80px;
+    width: 700px;
+    height: 330px;
+    content: "";
+    background: url(../images/contents/h_m_event2.png) no-repeat center center / contain;
+}
+.haitai .grup .left_g .sns h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.haitai .grup .left_g .sns h1::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.haitai .grup .left_g .sns p {
+    margin: 10px 0 40px 0;
+}
+.haitai .grup .left_g .sns.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.haitai .grup .left_g .move_txt {
+    position: relative;
+    height: 80px;
+}
+.haitai .grup .left_g .move_txt span {
+    position: absolute;
+    left: 0;
+    top: -200px;
+    font-size: 30px;
+    line-height: 100px;
+    animation:rolling; 
+    animation-duration:15s; 
+    animation-timing-function:linear; 
+    animation-iteration-count:infinite;
+    white-space:nowrap;
+    border-top: 1px solid #ED2985;
+    border-bottom: 1px solid #ED2985;    
+}
+@keyframes rolling {
+0% { transform:translate(0, 0) }
+100% { transform:translate(-33.32%, 0) } /* 글자가 움직여서 처음과 동일한 위치가 되는 값 (동일한 문장을 여러번 쓰기 때문에 3-4번째 문장이 다시 시작하는 위치로 하면 됨) */
+}
+.haitai .grup .right_g {
+    text-align: right;
+    margin-left: 150px;
+    width: 70%;
+}
+.haitai .grup .right_g .event h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.haitai .grup .right_g .event h1::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.haitai .grup .right_g .event p {
+    margin: 10px 0 40px 0;
+}
+.haitai .grup .right_g .event .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.haitai .grup .right_g .news h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin-top: 500px;
+}
+.haitai .grup .right_g .news h1::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.haitai .grup .right_g .news  p {
+    margin: 10px 0 40px 0;
+}
+.haitai .grup .right_g .news .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.haitai .grup .right_g .h_footer h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin-top: 100px;
+}
+.haitai .grup .right_g .h_footer h1::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.haitai .grup .right_g .h_footer  p {
+    margin: 10px 0 40px 0;
+}
+.haitai .grup .right_g .h_footer .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 서울특별시체육회*/
+.sport .visual {
+    position: relative;
+    z-index: -100;
+    height: 900px;
+    background: url(../images/contents/sport_bg.png) no-repeat center center/ cover;
+    color: #fff;
+}
+.sport .visual .inner {
+    padding-top: 200px;
+}
+.sport .visual .inner strong {
+    font-size: 20px;
+    font-weight: 700;
+}
+.sport .visual .inner h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #0069B5;
+    margin: 10px 0 15px 0;
+}
+.sport .visual .inner p {
+    width: 320px;
+    margin-bottom: 30px;
+}
+.sport .visual .inner .link a{
+    display: inline-block;
+    position: relative;
+    padding: 0 40px 0 15px;
+    border-radius: 10px;
+    line-height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: #fff;
+    color: #2d2d2d;
+}
+.sport .visual .inner .link  a:hover {
+    transform: translate(7px, -7px);
+}
+.sport .visual .inner .link a::before {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.7438 10.5166H4.70215V9.93327H14.7438L9.86881 5.05827L10.2855 4.6416L15.8688 10.2249L10.2855 15.8083L9.86881 15.3916L14.7438 10.5166Z' fill='%231D1D1D'/%3E%3C/svg%3E%0A");
+}
+.sport .visual .inner .link a::after {
+    position: absolute;
+    right: -7px;
+    top: 7px;
+    z-index: -1;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #0069B5;
+    content: "";
+}
+.sport .visual .detail {
+    margin-top: 100px;
+}
+.haitai .visual .detail > ul > li {
+    margin-bottom: 10px;
+}
+.sport .visual .detail strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+} 
+.sport .visual .detail .tool ul {
+    display: flex;
+    align-items: center;
+}
+.sport .visual .detail .tool ul li {
+    margin-right: 5px;
+}
+
+.sport .concept {
+    position: relative;
+    margin-top: 260px;
+    text-align: center;
+}
+.sport .concept strong {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -70px;
+    width: 100%;
+    transform: translate(-50%, 0);
+    font-size: 100px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.1);
+}
+.sport .concept h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.sport .concept span {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #0069B5;
+    margin: 10px 0 20px 0;
+}
+.sport .type_grup {
+    margin-top: 150px;
+    text-align: center;
+}
+.sport .type_grup .wrapper {
+    display: flex;
+}
+.sport .type_grup .typography, 
+.sport .type_grup .color{
+    width: 50%;
+    height: 450px;
+    margin-right: 30px;
+    background-color: #ededed;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.sport .type_grup .typography h1, 
+.sport .type_grup .color h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0069B5;
+    padding-top: 40px;
+    margin-bottom: 15px;
+}
+.sport .type_grup .typography ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.sport .type_grup .typography ul li strong {
+    display: block;
+    color: #1d1d1d;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.sport .type_grup .typography ul li span {
+    display: block;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+}
+.sport .type_grup .color .list {
+    padding: 0 40px;
+    margin-top: 40px;
+}
+.sport .type_grup .color strong {
+    display: block;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin-bottom: 10px;
+    text-align: left;
+} 
+.sport .type_grup .color .main {
+    position: relative;
+    margin-bottom: 30px;
+}
+.sport .type_grup .color .main span {
+    display: block;
+    color: #fff;
+    width: 100%;
+    line-height: 80px;
+    background-color: #BBC3CE;
+    border-radius: 10px;
+}
+.sport .type_grup .color .sub ul {
+    display: flex;
+    justify-content: space-between;
+}
+.sport .type_grup .color .sub ul li {
+    line-height: 50px;
+    width: 50%;
+    color: #fff;
+    border-radius: 10px;
+}
+.sport .type_grup .color .sub ul li.blue {
+    background-color: #1E1D3F;
+    margin-right: 10px;
+} 
+.sport .type_grup .color .sub ul li.black {
+    background-color: #1d1d1d;
+} 
+.sport > .detail {
+    margin-top: 200px;
+    z-index: -1;
+    background: url(../images/contents/s_detail_bg.png) no-repeat center center/ cover;
+}
+.sport .main h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 100px;
+}
+.sport .main .swiper ul li {
+    width: 840px;
+    height: 392px;
+}
+.sport .main .swiper ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* contents 공통 footer*/
+.footer .f_nav {
+    margin: 200px 0 150px 0 ;
+}
+.footer .f_nav .tit {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 100px;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+}
+.footer .f_nav .list .wrapper  {
+    position: relative;
+    margin-top: 100px;
+}
+.footer .f_nav .list .wrapper::after {
+    position: absolute;
+    left: 30%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.footer .f_nav .list .wrapper  > ul > li {
+    position: relative;
+}
+.footer .f_nav .list .wrapper > ul > li::after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 80px;
+    height: 80px;
+    content: "";
+    transform: translate(0, -50%);
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='85' height='86' viewBox='0 0 85 86' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M52.5026 33.8799L31.201 55.1815L29.9636 53.9441L51.2652 32.6425H30.5823V30.8747H54.2704V54.5628H52.5026V33.8799Z' fill='black' fill-opacity='0.7'/%3E%3C/svg%3E%0A");
+    transition: 0.5s;
+}
+.footer .f_nav .list .wrapper > ul > li:hover::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='85' height='85' viewBox='0 0 85 85' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M52.5026 33.5869L31.201 54.8885L29.9636 53.6511L51.2652 32.3495H30.5823V30.5817H54.2704V54.2698H52.5026V33.5869Z' fill='white' fill-opacity='0.7'/%3E%3C/svg%3E%0A");
+    background-color: #1d1d1d;
+    border: 0px;
+} 
+.footer .f_nav .list .wrapper > ul > li > a {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.footer .f_nav .list ul > li:last-child a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+} 
+.footer .f_nav .list .tite {
+    width: 30%;
+}
+.footer .f_nav .list .tite span {
+    display: block;
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    content: "";
+    padding: 5px 20px;
+    background-color: #fff;
+}
+.footer .f_nav .list .tite span::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%) rotate(10deg);
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    content: "";
+}
+.footer .f_nav.list .tite strong {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+}
+.footer .f_nav .list .detail {
+    width: 70%;
+    padding-left: 30px;
+}
+.footer .f_nav.list .detail strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.footer .f_nav .list .tag {
+    display: flex;
+    margin-top: 10px;
+}
+.footer .f_nav  .list .tag li {
+    margin-right: 20px;
+}
+.footer .f_nav .home {
+    text-align: center;
+    margin-top: 50px;
+}
+.footer .f_nav .home a {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: #1d1d1d;
+    padding: 10px 15px 10px 35px ;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+.footer .f_nav .home a::before {
+    position: absolute;
+    left: 7px;
+    top: 10px;
+    width: 23px;
+    height: 23px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.37298 11.1637L17.9209 11.1637L17.9209 11.8345L6.37298 11.8345L11.9792 17.4408L11.5001 17.9199L5.07923 11.4991L11.5001 5.07825L11.9792 5.55742L6.37298 11.1637Z' fill='black' fill-opacity='0.8'/%3E%3C/svg%3E%0A");
+}
+.footer .f_inner {
+    height: 700px;
+    margin-top: 100px;
+    background-color: #1D1D1D;
+    color: #fff;
+}
+.footer .f_inner h1 {
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 20px;
+}
+.footer .f_inner h1 strong {
+    position: relative;
+    display: block;
+}
+.footer .f_inner h1 strong::before {
+    position: absolute;
+    left: calc(50% - 415px);
+    top: calc(50% - 145px);
+    width: 830px;
+    height: 290px;
+    border-radius: 70%;
+    content: "";
+    transform: rotate(-10deg);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.footer .f_inner p {
+    font-size: 20px;
+    text-align: center;
+}
+.footer .f_inner p strong {
+    font-weight: 700;
+}
+.footer .f_inner .f_contact {
+    text-align: right;
+    margin-top: 100px;
+}
+.footer .f_inner .f_contact strong {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.footer .f_inner .f_contact  ul li {
+    margin-bottom: 10px;
 }
