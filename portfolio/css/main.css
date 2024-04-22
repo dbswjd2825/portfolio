@@ -560,15 +560,21 @@
     top: calc(50% - 145px);
     width: 830px;
     height: 290px;
+    z-index: -1;
     border-radius: 70%;
     content: "";
     transform: rotate(-10deg);
     border: 1px solid rgba(237, 41, 133, 0.5);
 }
-.footer p {
+.footer .text {
+    text-align: center;
+}
+.footer .text p {
+    display: inline-block;
     font-size: 20px;
     color: #1d1d1d;
-    text-align: center;
+    background-color: #fff;
+    padding: 0 10px;
 }
 .footer p strong {
     font-weight: 700;
@@ -587,3 +593,11 @@
 .footer .f_contact  ul li {
     margin-bottom: 10px;
 }
+
+/*.grup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}*/

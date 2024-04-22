@@ -51,11 +51,17 @@
 }
 .header .nav .list ul .haitai {
     line-height: 50px;
-    background-color: #ED2985;
-    color: #fff;
     padding: 0 15px;
     border-radius: 10px;
     margin-right: 30px;
+    border: 1px solid #666;
+    color: #666;
+}
+.header .nav .list ul .on.haitai,
+.header .nav .list ul .haitai:hover {
+    border: 1px solid #ED2985;
+    background-color: #ED2985;
+    color: #fff;
 }
 .header .nav .list ul .sport {
     line-height: 50px;
@@ -63,6 +69,12 @@
     padding: 0 15px;
     border-radius: 10px;
     border: 1px solid #666;
+}
+.header .nav .list ul .on.sport,
+.header .nav .list ul .sport:hover {
+    border: 1px solid #0069B5;
+    background-color: #0069B5;
+    color: #fff;
 }
 
 /* 해태제과 */
@@ -339,23 +351,21 @@
     background-color: #DEFFFD;
 }
 .haitai > .detail {
-    z-index: -1;
-    background: url(../images/contents/h_detail_bg.png) no-repeat center center/ cover;
-} 
-.haitai .detail .main {
     position: relative;
+} 
+.haitai > .detail::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 6740px;
+    content: "";
+    background: url(../images/contents/h_detail_bg.png) no-repeat center center;
+}
+.haitai .detail .main {
     margin-top: 200px;
     text-align: center;
-}
-.haitai .detail .main::before {
-    position: absolute;
-    left: -20%;
-    top: 0;
-    z-index: -10;
-    width: 140%;
-    height: 900px;
-    content: "";
-    background: url(../images/contents/h_main_bg.png) no-repeat center center / cover;
 }
 .haitai .detail .main h1 {
     display: inline-block;
@@ -596,7 +606,7 @@
     line-height: 0;
 }
 
-.haitai .grup .left_g .m_news {
+.haitai .grup .left_g .m_envet {
     position: relative;
 }
 .haitai .grup .left_g .m_envet::after {
@@ -607,6 +617,9 @@
     height: 330px;
     content: "";
     background: url(../images/contents/h_m_event2.png) no-repeat center center / contain;
+}
+.haitai .grup .left_g .sns {
+    margin-top: 100px;
 }
 .haitai .grup .left_g .sns h1 {
     display: inline-block;
@@ -657,6 +670,9 @@
     text-align: right;
     margin-left: 150px;
     width: 70%;
+}
+.haitai .grup .right_g .event {
+    position: relative;
 }
 .haitai .grup .right_g .event h1 {
     display: inline-block;
@@ -986,7 +1002,7 @@
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: url(../images/contents/s_detail.png) no-repeat center center/ cover;
+    background: url(../images/contents/s_detail.png) no-repeat center center;
     content: "";
 }
 .sport .detail h1 {
@@ -1026,9 +1042,10 @@
 .sport .detail .main .swiper ul li.swiper-slide-active img {
     border-radius: 30px;
 }
+
 /* contents 공통 footer*/
 .footer .f_nav {
-    margin: 200px 0 150px 0 ;
+    margin: 250px 0 150px 0 ;
 }
 .footer .f_nav .tit {
     font-size: 30px;
@@ -1156,10 +1173,20 @@
     background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.37298 11.1637L17.9209 11.1637L17.9209 11.8345L6.37298 11.8345L11.9792 17.4408L11.5001 17.9199L5.07923 11.4991L11.5001 5.07825L11.9792 5.55742L6.37298 11.1637Z' fill='black' fill-opacity='0.8'/%3E%3C/svg%3E%0A");
 }
 .footer .f_inner {
+    position: relative;
     height: 700px;
     margin-top: 100px;
-    background-color: #1D1D1D;
     color: #fff;
+}
+.footer .f_inner::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    width: 100%;
+    height: 700px;
+    content: "";
+    background-color: #1D1D1D;
 }
 .footer .f_inner h1 {
     font-size: 80px;
@@ -1182,10 +1209,17 @@
     content: "";
     transform: rotate(-10deg);
     border: 1px solid rgba(255, 255, 255, 0.5);
+    z-index: -1;
 }
-.footer .f_inner p {
+.footer .f_inner .text {
+    text-align: center;
+}
+.footer .f_inner .text p {
+    display: inline-block;
     font-size: 20px;
     text-align: center;
+    background-color: #1d1d1d;
+    padding: 0 10px;
 }
 .footer .f_inner p strong {
     font-weight: 700;
