@@ -812,8 +812,20 @@
     color: #2d2d2d;
     transition: 0.5s;
 }
-.sport .visual .inner .link  a:hover {
+.sport .visual .inner .link a:hover {
     transform: translate(7px, 7px);
+}
+.sport .visual .inner .link a::before {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.7438 10.5166H4.70215V9.93327H14.7438L9.86881 5.05827L10.2855 4.6416L15.8688 10.2249L10.2855 15.8083L9.86881 15.3916L14.7438 10.5166Z' fill='%231D1D1D'/%3E%3C/svg%3E%0A");
 }
 .sport .visual .detail {
     margin-top: 100px;
