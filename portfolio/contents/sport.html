@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/contents.css">
     <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/common.js"></script>
     <script src="../js/contents.js"></script>
     <!--aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -15,7 +16,7 @@
     <title>서울특별시체육회 리뉴얼 프로젝트</title>
 </head>
 <body>
-    <id class="wrap">
+    <div id="wrap">
         <header class="header">
             <h1>서울특별시체육회 소개 페이지</h1>
             <div class="nav">
@@ -32,47 +33,61 @@
             <div class="sport">
                 <div class="visual">
                     <div class="wrapper">
-                        <div class="inner">
-                            <strong>RENEUAL WEBSITE</strong>
-                            <h1>서울특별시체육회</h1>
-                            <p>스포츠로 하나 되는 서울시를 위한 다양한 정책을 추진하는 ‘서울특별시체육회’ 사이트를 리뉴얼한 프로젝트입니다.
-                                여러 콘텐츠가 정리되지 않고 배치되어 있는기존의 웹사이트의 문제점 개선을 중점으로 개편하였습니다.</p>
-                            <div class="link"><a href="../../sport/index.html">Visit the website</a></div>
-                        </div>
-                        <div class="detail">
-                            <ul>
-                                <li>
-                                    <strong>Contribution</strong>
-                                    <sapn>1인 프로젝트(UX 기획, UI 디자인, 퍼블리싱 100%)</sapn>
-                                </li>
-                                <li>
-                                    <strong>Date</strong>
-                                    <sapn>2024.04(약7일)</sapn>
-                                </li>
-                                <li class="tool">
-                                    <strong>Tool</strong>
+                        <div class="v_grup">
+                            <div class="l_grup">
+                                <div class="inner">
+                                    <strong>RENEUAL WEBSITE</strong>
+                                    <h1>서울특별시체육회</h1>
+                                    <p>스포츠로 하나 되는 서울시를 위한 다양한 정책을 추진하는 ‘서울특별시체육회’ 사이트를 리뉴얼한 프로젝트입니다.
+                                        여러 콘텐츠가 정리되지 않고 배치되어 있는기존의 웹사이트의 문제점 개선을 중점으로 개편하였습니다.</p>
+                                    <div class="link"><a href="../../sport/index.html">Visit the website</a></div>
+                                </div>
+                                <div class="detail">
                                     <ul>
-                                        <li><img src="../images/contents/ai.png" alt="일러스트로고"></li>
-                                        <li><img src="../images/contents/figma.png" alt="피그마로고"></li>
-                                        <li><img src="../images/contents/html.png" alt="html로고"></li>
-                                        <li><img src="../images/contents/css.png" alt="css로고"></li>
+                                        <li>
+                                            <strong>Contribution</strong>
+                                            <sapn>1인 프로젝트(UX 기획, UI 디자인, 퍼블리싱 100%)</sapn>
+                                        </li>
+                                        <li>
+                                            <strong>Date</strong>
+                                            <sapn>2024.04 (약7일)</sapn>
+                                        </li>
+                                        <li class="tool">
+                                            <strong>Tool</strong>
+                                            <ul>
+                                                <li><img src="../images/contents/ai.png" alt="일러스트로고"></li>
+                                                <li><img src="../images/contents/figma.png" alt="피그마로고"></li>
+                                                <li><img src="../images/contents/html.png" alt="html로고"></li>
+                                                <li><img src="../images/contents/css.png" alt="css로고"></li>
+                                            </ul>
+                                        </li>
                                     </ul>
-                                </li>
-                            </ul>
-                        </div>
+                                </div>
+                            </div> <!--l_grup-->
+                            <div class="r_grup">
+                                <div class="pc">
+                                    <div class="m_pc"><img src="../images/contents/pc_mockup.png" ></div>
+                                    <div class="pc_photo"><img src="../images/contents/s_pc_capture.png" alt="pc 풀페이지 캡처"></div>
+                                </div>
+                                <div class="mobile">
+                                    <div class="m_m"><img src="../images/contents/m_mockup.png" alt="핸드폰 목업"></div>
+                                    <div class="m_photo"><img src="../images/contents/s_m_capture.png" alt="모바일 풀페이지 캡처"></div>
+                                </div>
+                            </div>
+                        </div> <!--v_grup-->
                     </div>
                 </div><!--visual-->
                 <div class="concept">
                     <div class="wrapper">
                         <strong>Seoul Sports Council</strong>
                         <h1 data-aos="fade-down">Concept</h1>
-                        <span data-aos="fade-down">“서울시민의 건강하고 행복한 삶!“</span>
-                        <p data-aos="fade-down">직선들을 활용하여 깔끔한 디자인과 아이콘을 활용하여 ~~~~~~~~~~~~~~~~~ </p>
+                        <span data-aos="fade-down" data-aos-delay="200">“서울시민의 건강하고 행복한 삶!“</span>
+                        <p data-aos="fade-down" data-aos-delay="400">직선들을 활용하여 깔끔하게 콘텐츠를 정리하여 서울특별시체육회의 정보들의 전달력을 높였습니다. </p>
                     </div>
                 </div><!--concept-->
                 <div class="type_grup">
                     <div class="wrapper">
-                        <div class="typography">
+                        <div class="typography" data-aos="fade-right" data-aos-delay="800">
                             <h1>Typography</h1>
                             <p>서체는 가독성과 판독성이 뛰어난 고딕체를 사용하여, <br>서울특별시체육회의 정보 전달을 용이하게 하였습니다.</p>
                             <ul>
@@ -88,7 +103,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="color">
+                        <div class="color" data-aos="fade-right" data-aos-delay="1000">
                             <h1>Color</h1>
                             <p>메인컬러는 로고의 색상보다 채도가 낮은 색상을 사용하여, <br>안정적인 이미지를 주었습니다.</p>
                             <div class="list">
@@ -109,18 +124,19 @@
                 </div><!--type_grup-->
                 <div class="detail">
                     <div class="wrapper">
-                        <div class="main">
-                            <h1>Main</h1>
-                            <div class="swiper">
-                                <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
-                                    <li class="swiper-slide"><img src="../images/contents/s_visual01.png" alt="서울특별시체육회 메인visual 사진"></li>
-                                    <li class="swiper-slide"><img src="../images/contents/s_visual02.png" alt="서울특별시체육회 메인visual 사진"></li>
-                                    <li class="swiper-slide"><img src="../images/contents/s_visual03.png" alt="서울특별시체육회 메인visual 사진"></li>
-                                    <li class="swiper-slide"><img src="../images/contents/s_visual04.png" alt="서울특별시체육회 메인visual 사진"></li>
-                                </ul>
-                            </div>
+                        <h1>Main</h1>
+                    </div>
+                    <div class="main">
+                        <div class="swiper">
+                            <ul class="swiper-wrapper"> <!-- 각 팝업 콘텐츠를 감싸는 요소-->
+                                <li class="swiper-slide"><img src="../images/contents/s_visual01.png" alt="서울특별시체육회 메인visual 사진"></li>
+                                <li class="swiper-slide"><img src="../images/contents/s_visual02.png" alt="서울특별시체육회 메인visual 사진"></li>
+                                <li class="swiper-slide"><img src="../images/contents/s_visual03.png" alt="서울특별시체육회 메인visual 사진"></li>
+                                <li class="swiper-slide"><img src="../images/contents/s_visual04.png" alt="서울특별시체육회 메인visual 사진"></li>
+                            </ul>
                         </div>
                     </div>
+
                 </div>
             </div><!--sport-->
         </div><!--contents-->
@@ -173,6 +189,6 @@
             easing: 'ease', 
             });
         </script>
-    </id>
+    </div>
 </body>
 </html>
