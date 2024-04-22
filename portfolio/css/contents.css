@@ -219,7 +219,7 @@
 }
 .haitai .visual .r_grup .m_photo img {
     width: 100%;
-    animation-name: pc_move;
+    animation-name: m_move;
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
@@ -229,7 +229,11 @@
     50% { transform: translate(0, calc(-100% + 350px)); } 
     100% { transform: translate(0, 0); } 
 }
-
+@keyframes m_move {
+    0% { transform: translate(0, 0); } 
+    50% { transform: translate(0, calc(-100% + 270px)); } 
+    100% { transform: translate(0, 0); } 
+}
 .haitai .concept {
     position: relative;
     margin-top: 260px;
