@@ -10,9 +10,9 @@ $(document).ready(function(){
         },
         centeredSlides: true, /* 팝업을 화면에 가운데 정렬(가운데 1번이 옴) */
         loop: true,  /* 마지막 팝업에서 첫번째 팝업으로 자연스럽게 넘기기 */
-        /** autoplay: { 
+        autoplay: { 
             delay: 2500,
             disableOnInteraction: true,
-        },**/
+        },
     });
 })

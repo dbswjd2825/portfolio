@@ -588,7 +588,15 @@
     font-size: 0;
     line-height: 0;
 }
-.haitai .grup .left_g .m_envet {
+.haitai .grup .left_g .m_best,
+.haitai .grup .left_g .m_envet,
+.haitai .grup .left_g .m_news,
+.haitai .grup .left_g .photo {
+    font-size: 0;
+    line-height: 0;
+}
+
+.haitai .grup .left_g .m_news {
     position: relative;
 }
 .haitai .grup .left_g .m_envet::after {
@@ -619,7 +627,7 @@
 .haitai .grup .left_g .sns p {
     margin: 10px 0 40px 0;
 }
-.haitai .grup .left_g .sns.photo img {
+.haitai .grup .left_g .sns .photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -970,8 +978,16 @@
     position: relative;
     margin-top: 200px;
     height: 5045px;
+}
+.sport > .detail::after {
+    position: absolute;
+    left: 0;
+    top: 0;
     z-index: -1;
+    width: 100%;
+    height: 100%;
     background: url(../images/contents/s_detail.png) no-repeat center center/ cover;
+    content: "";
 }
 .sport .detail h1 {
     font-size: 60px;
@@ -984,13 +1000,14 @@
 }
 .sport .detail .main .swiper {
     position: relative;
+    height: 392px;
 }
 .sport .detail .main .swiper::before {
     position: absolute;
     left: 50%;
     top: 0;
-    width: 840px;
-    height: 392px;
+    width: 826px;
+    height: 378px;
     z-index: 10;
     border-radius: 30px;
     transform: translate(-50%, 0);
@@ -1005,6 +1022,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.sport .detail .main .swiper ul li.swiper-slide-active img {
+    border-radius: 30px;
 }
 /* contents 공통 footer*/
 .footer .f_nav {
