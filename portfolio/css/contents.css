@@ -185,6 +185,14 @@
     position: relative;
     width: 70%;
 }
+.haitai .visual .r_grup .pc_link {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
 .haitai .visual .r_grup .m_pc {
     position: relative;
     width: 670px;
@@ -859,6 +867,14 @@
     align-items: flex-end;
     position: relative;
     width: 70%;
+}
+.sport .visual .r_grup .pc_link {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
 }
 .sport .visual .r_grup .m_pc {
     position: relative;
