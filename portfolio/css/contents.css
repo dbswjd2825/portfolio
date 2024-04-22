@@ -1208,6 +1208,13 @@
     background-size: contain;
     background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.37298 11.1637L17.9209 11.1637L17.9209 11.8345L6.37298 11.8345L11.9792 17.4408L11.5001 17.9199L5.07923 11.4991L11.5001 5.07825L11.9792 5.55742L6.37298 11.1637Z' fill='black' fill-opacity='0.8'/%3E%3C/svg%3E%0A");
 }
+.footer .f_nav .home a:hover {
+    color: #fff;
+    background: #1d1d1d;
+}
+.footer .f_nav .home a:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.37298 11.1637L17.9209 11.1637L17.9209 11.8345L6.37298 11.8345L11.9792 17.4408L11.5001 17.9199L5.07923 11.4991L11.5001 5.07825L11.9792 5.55742L6.37298 11.1637Z' fill='white'/%3E%3C/svg%3E%0A");
+}
 .footer .f_inner {
     position: relative;
     height: 700px;
