@@ -26,6 +26,10 @@
     font-size: 20px;
     height: 100px;
 }
+.header .nav .back:hover a {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
 .header .nav .back a {
     display: block;
     position: relative;
