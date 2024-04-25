@@ -159,7 +159,7 @@
 .event {
     margin-top: 200px;
 }
-.event strong {
+.event .tit strong {
     display: block;
     font-size: 30px;
     font-weight: 700;
@@ -172,11 +172,15 @@
     font-weight: 700;
     color: #FFBE1A;
     text-align: center;
+    margin-bottom: 50px;
 }
 .event .box {
     display: flex;
     justify-content: space-between;
     height: 400px;
+    border: 1px solid #999;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px
 }
 .event .photo {
     width: 50%;
@@ -190,35 +194,39 @@
 }
 .event .detail {
     width: 50%;
-    border-radius: 0 20px 20px 0;
-    border-top: 1px solid #999;
-    border-right: 1px solid #999;
-    border-bottom: 1px solid #999;
     padding: 40px;
 }
-.event .detail .tit strong {
+.event .detail .txt strong {
     display: block;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 50px;
     border-radius: 25px;
     background-color: #31394C;
     color: #fff;
     margin-bottom: 30px;
+    text-align: center;
 }
-.event .detail .tit strong em {
+.event .detail .txt strong em {
     font-weight: 700;
     color: #FC364D;
 }
-.event .detail .tit h3 {
+.event .detail .txt h3 {
     font-size: 30px;
     font-weight: 700;
     color: #1d1d1d;
     margin-bottom: 30px;
 }
+.event .detail .tag {
+    margin-bottom: 60px;
+}
 .event .detail .tag span {
     display: block;
     margin-bottom: 10px;
+}
+.event .detail .box_but {
+    display: flex;
+    justify-content: space-between;
 }
 .event .detail .count strong{
     display: block;
@@ -226,4 +234,319 @@
     font-weight: 400;
     color: #FC364D;
     text-align: left;
+    margin-bottom: 10px;
+}
+.event .detail .box_but .count ul {
+    display: flex;
+    align-items: flex-end;
+    font-size: 20px;
+    color: #2d2d2d;
+}
+.event .detail .box_but .count ul .timer {
+    position: relative;
+    margin-right: 30px;
+    font-weight: 700;
+    color: #FC364D;
+} 
+.event .detail .box_but .count ul .timer::after {
+    position: absolute;
+    right: -15px;
+    top: 6px;
+    width: 1px;
+    height: 16px; 
+    background-color: rgba(0, 0, 0, 0.2);
+    content: "";
+} 
+.event .detail .box_but .price {
+    text-align: right;
+}
+.event .detail .box_but .price span {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    color: #3d3d3d;
+    padding: 0 5px;
+}
+.event .detail .box_but .price span em{
+    font-size: 15px;
+}
+.event .detail .box_but .price span::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    height: 1px;
+    content: "";
+    background-color: #3d3d3d;
+}
+.event .detail .box_but .price strong {
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    color: #FC364D;
+}
+.event .detail .box_but .price strong em{
+    font-size: 20px;
+}
+.event .more {
+    text-align: center;
+    margin-top: 50px;
+}
+.event .more a {
+    display: inline-block;
+    font-size: 20px;
+    color: #3d3d3d;
+    padding: 12px 20px 8px 20px;
+    border-radius: 25px;
+    border: 1px solid #999;
+}
+.trip_family {
+    margin-top: 200px;
+}
+.trip_family h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.trip_family h2 strong {
+    color: #31394C;
+}
+.trip_family .txt {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 30px;
+    color: #1d1d1d;
+    text-align: center;
+}
+.trip_family .txt span {
+    display: block;
+    margin-right: 30px;
+}
+.trip_family .txt .current {
+    position: relative;
+    font-weight: 700;
+    padding: 0 40px 3px 10px;
+}
+.trip_family .txt .current::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background-color: #1d1d1d;
+}
+.trip_family .txt .current::after {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    width: 12px;
+    height: 6px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='6' viewBox='0 0 12 6'%3E%3Cpath id='arrow-down-s-fill' d='M12,16,6,10H18Z' transform='translate(-6 -10)'/%3E%3C/svg%3E%0A");
+}
+.trip_family .txt em {
+    margin-left: 30px;
+}
+.trip_family .list > ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.trip_family .list > ul > li {
+    width: 33.33%;
+    margin-right: 28px;
+    border-radius: 20px;
+    border: 1px solid #999;
+}
+.trip_family .list > ul > li:last-child {
+    margin-right: 0;
+}
+.trip_family .list > ul > li a {
+    display: block;
+    height: 437px;
+}
+.trip_family .list > ul > li a .photo {
+    height: 272px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+}
+.trip_family .list > ul > li a .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.trip_family .list > ul > li span {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin: 30px 0 20px 30px;
+}
+.trip_family .list .tag {
+    display: flex;
+    margin: 0 0 25px 30px;
+} 
+.trip_family .list .tag li {
+    margin-right: 15px;
+}
+.trip_family .list > ul > li em {
+    display: block;
+    font-size: 15px;
+    color: #FC364D;
+    text-align: right;
+    margin-right: 30px;
+}
+.trip_family .list > ul > li em strong {
+    font-size: 20px;
+    font-weight: 700;
+}
+.trip_family .more {
+    text-align: center;
+    margin-top: 50px;
+}
+.trip_family .more a {
+    display: inline-block;
+    font-size: 20px;
+    color: #3d3d3d;
+    padding: 12px 20px 8px 20px;
+    border-radius: 25px;
+    border: 1px solid #999;
+}
+
+.banner .swiper { 
+    height: 300px;
+    margin: 150px 0 250px 0;
+} 
+.banner .swiper .swiper-slide img { 
+    display:block;
+    width:100%; 
+    height:100%; 
+    object-fit:cover; 
+}
+.banner .swiper .swiper-button-next,
+.banner .swiper .swiper-button-prev {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.best {
+    position: relative;
+    text-align: center;
+}
+.best::before {
+    position: absolute;
+    left: calc(50% - 400px);
+    top: -100px;
+    width: 800px;
+    height: 800px;
+    content: "";
+    background: url(../images/best_bg.png) no-repeat center center/ contain;
+}
+.best h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 700;
+    color: #1d1d1d;
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+.best h2::before {
+    position: absolute;
+    left: -10px;
+    top: 15px;
+    width: 27px;
+    height: 42px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='26.653' height='41.275' viewBox='0 0 26.653 41.275'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_130' data-name='사각형 130' width='26.653' height='41.275' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_19' data-name='그룹 19' transform='translate(0 0)'%3E%3Cg id='그룹_18' data-name='그룹 18' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_33' data-name='패스 33' d='M13.264,41.275C2.989,31.849-10.591.031,13.3,0c24.356-.029,9.843,31.224-.033,41.275' transform='translate(0 -0.001)' fill='%2331394c'/%3E%3Cpath id='패스_34' data-name='패스 34' d='M8.893,15.042c8.006,0,8.006-12,0-12s-8.006,12,0,12' transform='translate(3.996 4.2)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.best h2 strong {
+    color: #FFBE1A;
+}
+.best .list ul li {
+    width: 299px;
+    margin: 0 14px;
+}
+.best .list ul li a {
+    display: block;
+    position: relative;
+}
+.best .list ul li a img { 
+    width:100%; 
+    border-radius: 20px;
+}
+.best .list ul li a .text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.best .list ul li a .text h3 {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.best .list ul li a strong {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    content: "";
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #31394C;
+    color: #fff;
+    padding-top: 20px;
+    border-radius: 0 20px 0 0;
+}
+
+.series {
+    margin: 200px 0 0 0;
+}
+.series h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #1d1d1d;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.series h2 strong {
+    color: #FFBE1A;
+}
+.series .inner {
+    display: flex;
+    justify-content: center;
+} 
+.series .inner button {
+    font-size: 20px;
+    color: #3d3d3d;
+    margin: 0 15px;
+} 
+.series .inner .on button,
+.series .inner button:hover {
+    font-weight: 700;
+    color: #FC364D;
+}
+.series .inner .detail {
+    display: none;
+}
+.series .inner .on .detail {
+    display: block;
+}
+.footer {
+    height: 1000px;
 }

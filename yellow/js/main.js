@@ -30,7 +30,8 @@ $(document).ready(function(){
             prevEl: '.swiper-button-prev',  
         },
 
-    });
+    }); //visual_swiper
+
 
     let item_name
 
@@ -42,4 +43,38 @@ $(document).ready(function(){
         $('.visual .quicktab .inner').find('[data-name = "'+item_name+'"]').show()
     })
 
+
+    const banner_swiper = new Swiper('.banner .swiper', { /* 팝업을 감싼는 요소의 class명 */
+
+        autoplay: {  /* 팝업 자동 실행 */
+            delay: 2500,
+            disableOnInteraction: true,
+        },
+
+        loop: true,  /* 마지막 팝업에서 첫번째 팝업으로 자연스럽게 넘기기 */
+
+        navigation: {  /* 이전, 다음 버튼 */
+            nextEl: '.swiper-button-next',  /* 다음 버튼의 클래스명 */
+            prevEl: '.swiper-button-prev',  
+        },
+    }); //banner_swiper
+
+
+    const best_swiper = new Swiper('.best .list .swiper', { /* 팝업을 감싼는 요소의 class명 */
+        slidesPerView: "auto", /* li의 넓이 비율로 안함 - css에서 준 넓이대로 함 */
+        spaceBetween: 16, /* li와 li사이 - 제일 작은 여백 */
+        breakpoints: {
+        },
+        centeredSlides: true, /* 팝업을 화면에 가운데 정렬(가운데 1번이 옴) */
+        loop: true,  /* 마지막 팝업에서 첫번째 팝업으로 자연스럽게 넘기기 */
+        autoplay: {  /* 팝업 자동 실행 */
+            delay: 2500,
+            disableOnInteraction: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+        
 }) //$(document).ready

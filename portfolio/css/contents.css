@@ -782,7 +782,7 @@
     height: 900px;
     content: "";
     background: url(../images/contents/sport_bg.png) no-repeat center center/ cover;
-}
+}   
 .sport .visual .v_grup {
     display: flex;
     justify-content: space-around;
