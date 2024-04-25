@@ -5,17 +5,26 @@
     설  명 : 모든 페이지의 레이아웃 요소 ( header/footer/서브레이아웃 )
              메뉴명, sub_visual 이미지스타일, 탭메뉴
 */
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
 .header_top {
     position: relative;
     height: 90px;
+}
+.header_top .wrapper {
     display: flex;
     justify-content: space-between;
 }
 .header_top::before {
     position: absolute;
-    left: -50%;
+    left: 0;
     bottom: 0;
-    width: 200%;
+    width: 100%;
     height: 1px;
     content: "";
     background-color: rgba(0, 0, 0, 0.2);
@@ -102,10 +111,12 @@
 
 
 .header_main {
-    position: relative;
+    z-index: 100;
+    font-size: 16px;
+}
+.header_main .wrapper {
     display: flex;
     justify-content: space-between;
-    font-size: 16px;
 }
 .header_main::before {
     position: absolute;
@@ -118,6 +129,7 @@
 }
 .header_main .gnb ul {
     display: flex;
+    justify-content: space-between;
 }
 .header_main .gnb ul li {
     margin: 0 15px;
@@ -161,4 +173,36 @@
 } 
 .header_main .gnb_sub ul li:last-child {
     margin: 0 0 0 15px;
+}
+
+/*fixed*/
+.header.fixed .header_top {
+    display: none;
+}
+.header.fixed .header_main {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+.header.fixed .header_main::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 65px;
+    content: "";
+    background-color: #fff;
+}
+.header.fixed .header_main::before {
+    position: absolute;
+    left: 20px;
+    top: 18px;
+    width: 102px;
+    height: 28px;
+    content: "";
+    background: url(../images/logo.png) no-repeat center center/ contain;
 }

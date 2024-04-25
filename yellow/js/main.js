@@ -43,7 +43,19 @@ $(document).ready(function(){
         $('.visual .quicktab .inner').find('[data-name = "'+item_name+'"]').show()
     })
 
+    $('.trip_family .txt .tit strong').on('click', function(){
+        $('.trip_family .txt .tit').toggleClass('open');
+        $('html').click(function(e) {   
+            if($(e.target).parents('.trip_family .txt .tit').length < 1){   
+                $('.trip_family .txt .tit').removeClass('open');
+            }
+        });
+    })
 
+    $('.trip_family .txt .tit .tit_list li').on('click', function(){
+        $('.trip_family .txt .tit strong').text($(this).text())
+        $('.trip_family .txt .tit').removeClass('open');
+    })
     const banner_swiper = new Swiper('.banner .swiper', { /* 팝업을 감싼는 요소의 class명 */
 
         autoplay: {  /* 팝업 자동 실행 */
@@ -60,7 +72,7 @@ $(document).ready(function(){
     }); //banner_swiper
 
 
-    const best_swiper = new Swiper('.best .list .swiper', { /* 팝업을 감싼는 요소의 class명 */
+    const best_swiper = new Swiper('.best .list.swiper', { /* 팝업을 감싼는 요소의 class명 */
         slidesPerView: "auto", /* li의 넓이 비율로 안함 - css에서 준 넓이대로 함 */
         spaceBetween: 16, /* li와 li사이 - 제일 작은 여백 */
         breakpoints: {
@@ -68,13 +80,31 @@ $(document).ready(function(){
         centeredSlides: true, /* 팝업을 화면에 가운데 정렬(가운데 1번이 옴) */
         loop: true,  /* 마지막 팝업에서 첫번째 팝업으로 자연스럽게 넘기기 */
         autoplay: {  /* 팝업 자동 실행 */
-            delay: 2500,
+            delay: 1500,
             disableOnInteraction: true,
         },
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.next',
+            prevEl: '.prev',
         },
     });
-        
+       
+    $('.visual .quicktab .air_inner .air_bts button').on('click', function(){
+        $('.visual .quicktab .air_inner .air_bts button').removeClass('active')
+        $(this).addClass('active')
+    })
+
+    $('.series .inner button').on('click', function(){
+        $('.series .inner > div').removeClass('on')
+        $(this).parent().addClass('on')
+    })
+
+    let reviwe_name
+    $('.reviwe .list ul li a').on('click', function(){
+        reviwe_name = $(this).attr('data-name')
+        $('.reviwe').attr('data-name', reviwe_name )
+        $('.reviwe .list ul li a').removeClass('on')
+        $(this).addClass('on')
+    })
+
 }) //$(document).ready
