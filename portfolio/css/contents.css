@@ -1109,7 +1109,7 @@
 .footer .f_nav .list .wrapper  > ul > li {
     position: relative;
 }
-.footer .f_nav .list .wrapper > ul > li::after {
+.footer .f_nav .list .wrapper > ul > li a::after {
     position: absolute;
     right: 0;
     top: 50%;

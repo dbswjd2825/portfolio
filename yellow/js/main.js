@@ -95,9 +95,9 @@ $(document).ready(function(){
             nextEl: '.next',
             prevEl: '.prev',
         },
+        
     });
     
-
     $('.series .inner button').on('click', function(){
         $('.series .inner > div').removeClass('on')
         $(this).parent().addClass('on')

@@ -25,8 +25,9 @@
 .visual .swiper-slide .txt {
     position: absolute;
     right: 17%;
-    top: 50%;
+    top: 60%;
     color: #fff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);    
     text-align: right;
 }
 .visual .swiper-slide .txt h2 {
@@ -146,6 +147,9 @@
     border-radius: 25px;
     text-align: center;
     margin-top: 50px;
+}
+.visual .quicktab .pkg_inner .pkg_search {
+    margin-top: 90px;
 }
 .visual .quicktab .hotel_inner span {
     display: block;
@@ -875,7 +879,6 @@
     border-radius: 0 100px 100px 0;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
-
 .homeshopping .list ul {
     display: flex;
 }
@@ -957,11 +960,15 @@
 .homeshopping .list .more a {
     display: inline-block;
     font-size: 20px;
-    background-color: #2D4B89;
-    color: #fff;
+    color: #3d3d3d;
     padding: 12px 20px 8px 20px;
     border-radius: 25px;
     border: 1px solid #999;
+}
+.homeshopping .list .more a:hover {
+    background-color: #2D4B89;
+    border: 1px solid #2D4B89;
+    color: #fff;
 }
 .partner {
     margin: 350px 0 200px 0;
@@ -1151,8 +1158,8 @@
     float: right;
     display: inline-block;
     font-size: 20px;
-    background-color: #1d1d1d;
-    color: #fff;
+    border: 1px solid #999;
+    color: #3d3d3d;
     padding: 12px 20px 8px 20px;
     border-radius: 25px;
     margin-right: 40px;
