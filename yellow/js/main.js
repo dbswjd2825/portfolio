@@ -42,6 +42,12 @@ $(document).ready(function(){
         $('.visual .quicktab .inner .item').hide()
         $('.visual .quicktab .inner').find('[data-name = "'+item_name+'"]').show()
     })
+       
+    $('.visual .quicktab .air_inner .air_bts button').on('click', function(){
+        $('.visual .quicktab .air_inner .air_bts button').removeClass('active')
+        $(this).addClass('active')
+    })
+
 
     $('.trip_family .txt .tit strong').on('click', function(){
         $('.trip_family .txt .tit').toggleClass('open');
@@ -56,6 +62,8 @@ $(document).ready(function(){
         $('.trip_family .txt .tit strong').text($(this).text())
         $('.trip_family .txt .tit').removeClass('open');
     })
+
+
     const banner_swiper = new Swiper('.banner .swiper', { /* 팝업을 감싼는 요소의 class명 */
 
         autoplay: {  /* 팝업 자동 실행 */
@@ -88,16 +96,13 @@ $(document).ready(function(){
             prevEl: '.prev',
         },
     });
-       
-    $('.visual .quicktab .air_inner .air_bts button').on('click', function(){
-        $('.visual .quicktab .air_inner .air_bts button').removeClass('active')
-        $(this).addClass('active')
-    })
+    
 
     $('.series .inner button').on('click', function(){
         $('.series .inner > div').removeClass('on')
         $(this).parent().addClass('on')
     })
+
 
     let reviwe_name
     $('.reviwe .list ul li a').on('click', function(){

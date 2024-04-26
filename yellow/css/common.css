@@ -38,7 +38,7 @@ html, body {
     margin: 0 auto; /* 가운데 정렬 */
 }
 #wrap { /* id="wrap"에 적용되는 스타일 */
-    min-width: 100%;
+    min-width: 1280px;
     overflow: hidden; 
 }
 .skipnav {
@@ -67,34 +67,6 @@ a태그중에서 href="#gnb"인 a태그의 스타일 */
 }
 .skipnav a:focus {
     top: 100px;
-}
-
-@media screen and (max-width:1320px){
-    .wrapper { 
-        width: auto; 
-        margin: 0 40px; 
-    }
-} 
-@media screen and (max-width:1024px){
-    .wrapper { 
-        width: auto; 
-        margin: 0 20px; 
-    }
-}
-@media screen and (max-width:1320px){
-    html, body {
-        font-size: 15px;  /* 글자크기 */
-    }  
-}
-@media screen and (max-width:1024px){
-    html, body {
-        font-size: 14px;  /* 글자크기 */
-    }   
-}
-@media screen and (max-width:768px){
-    html, body {
-        font-size: 13px;  /* 글자크기 */
-    } 
 }
 
 /* 
