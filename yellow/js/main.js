@@ -97,6 +97,18 @@ $(document).ready(function(){
         },
         
     });
+    $('.best .ctrl_btn .stop').on('click', function(){
+        best_swiper.autoplay.stop();
+        $(this).hide()
+        $('.best .ctrl_btn .play').show()
+    })
+    $('.best .ctrl_btn .play').on('click', function(){
+        best_swiper.autoplay.start();
+        $(this).hide()
+        $('.best .ctrl_btn .stop').show()
+    })
+
+
     
     $('.series .inner button').on('click', function(){
         $('.series .inner > div').removeClass('on')
