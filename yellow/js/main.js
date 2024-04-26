@@ -88,12 +88,18 @@ $(document).ready(function(){
         centeredSlides: true, /* 팝업을 화면에 가운데 정렬(가운데 1번이 옴) */
         loop: true,  /* 마지막 팝업에서 첫번째 팝업으로 자연스럽게 넘기기 */
         autoplay: {  /* 팝업 자동 실행 */
-            delay: 1500,
+            delay: 0,
             disableOnInteraction: true,
         },
+        speed: 1500,
+        spaceBetween: 0,
         navigation: {
             nextEl: '.next',
             prevEl: '.prev',
+        },
+        pagination: {
+            el: ".best .ctrl_btn .loadingbar",
+            type: "progressbar",
         },
         
     });

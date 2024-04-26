@@ -605,6 +605,9 @@
 .best h2 strong {
     color: #FFBE1A;
 }
+.best .swiper-wrapper {
+    transition-timing-function: linear;
+}
 .best .list ul {
     position: relative;
 }
@@ -701,6 +704,7 @@
     border-radius: 1px;
     background-color: #999;
     margin-right: 10px;
+    position: relative;
 }
 .best .ctrl_btn .play,
 .best .ctrl_btn .stop {
