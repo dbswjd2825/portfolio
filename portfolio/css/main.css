@@ -467,7 +467,7 @@
 }
 .index .list .wrapper > ul > li > a {
     position: relative;
-    height: 180px;
+    height: 150px;
     display: flex;
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
