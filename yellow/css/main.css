@@ -654,44 +654,6 @@
 .best .list ul li:nth-child(even) a strong {
     background-color: #FFBE1A;
 }
-.best .prev,    
-.best .next {
-    position: absolute;
-    top: 50px;
-    width: 50px;
-    height: 50px;
-    background-color: #EDEDED;
-    border-radius: 100%;
-}
-.best .prev {
-    left: 2%;
-}
-.best .next {
-    right: 2%;
-}
-.best .prev::after,
-.best .next::after { 
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 10px;
-    height: 16px;
-    content: "";
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-}
-.best .prev::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='16.364' viewBox='0 0 10 16.364'%3E%3Cpath id='arrow-left-s-line' d='M11.636,13.819,18,20.182,16.182,22,8,13.819l8.182-8.182L18,7.455Z' transform='translate(-8 -5.637)' fill='%2331394c'/%3E%3C/svg%3E%0A");
-}
-.best .next::after { 
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='16.364' viewBox='0 0 10 16.364'%3E%3Cpath id='arrow-left-s-line' d='M14.364,13.819,8,20.182,9.818,22,18,13.819,9.818,5.637,8,7.455Z' transform='translate(-8 -5.637)' fill='%2331394c'/%3E%3C/svg%3E%0A");
-}
-.best .prev:hover,    
-.best .next:hover {
-    background-color: #FFEEA8;
-}
 .best .ctrl_btn {
     display: flex;
     align-items: center;
@@ -705,6 +667,9 @@
     background-color: #999;
     margin-right: 10px;
     position: relative;
+}
+.best .ctrl_btn .loadingbar span {
+    background-color: #FFBE1A;
 }
 .best .ctrl_btn .play,
 .best .ctrl_btn .stop {
