@@ -485,7 +485,7 @@
 .haitai .visual .r_grup .pc_photo img {
     width: 100%;
     animation-name: pc_move;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 .haitai .visual .r_grup .mobile {
@@ -505,7 +505,7 @@
 .haitai .visual .r_grup .m_photo img {
     width: 100%;
     animation-name: m_move;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 @keyframes pc_move {
@@ -835,10 +835,10 @@
     background: url(../images/contents/h_product_ani2.png) no-repeat center center / cover;
     animation-name: h_product_move; animation-duration:3s; animation-iteration-count:infinite; animation-timing-function:linear;
 }
-@keyframes h_product_move { /* 애니메이션을 효과를 미리 설정함 */
-	0% { transform:translate(0, 0) }  /* 애니메이션을 시작할때의 속성 */
-	50% { transform:translate(0, 50px) } /* 중간값은 %를 조절하여 추가/삭제 가능 */
-	100% { transform:translate(0, 0) } /* 애니메이션이 종료될때의 속성 */
+@keyframes h_product_move { 
+	0% { transform:translate(0, 0) }  
+	50% { transform:translate(0, 50px) } 
+	100% { transform:translate(0, 0) } 
 }
 .haitai .detail .product h1 {
     display: inline-block;
@@ -1165,7 +1165,7 @@
 .sport .visual .r_grup .pc_photo img {
     width: 100%;
     animation-name: pc_move;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 .sport .visual .r_grup .mobile {
@@ -1185,7 +1185,7 @@
 .sport .visual .r_grup .m_photo img {
     width: 100%;
     animation-name: pc_move;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
 }
 .sport .concept {
