@@ -1268,7 +1268,7 @@
 .notice .col ul li h3::before {
     position: absolute;
     left: 0;
-    top: 2px;
+    top: -2px;
     width: 35px;
     height: 35px;
     content: "";
@@ -1280,8 +1280,8 @@
 }
 .notice .col ul li.package::after {
     position: absolute;
-    right: -20%;
-    top: 0;
+    right: -20px;
+    top: -2px;
     width: 1px;
     height: 100%;
     content: "";

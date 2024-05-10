@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!--swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <title>노랑풍선 [여행을 가볍게]</title>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            <div class="header_top">
+                <div class="wrapper">
+                    <div class="inner">
+                        <h1 class="logo"><img src="images/logo.png" alt="노랑풍선 로고"></h1>
+                        <div class="search">도시나 상품을 검색해보세요.</div>
+                    </div>
+                    <div class="tnb">
+                        <ul>
+                            <li class="login"><a href="#n">로그인</a></li>
+                            <li class="membership"><a href="#n">회원가입</a></li>
+                            <li class="reservation"><a href="#n">예약확인/결제</a></li>
+                            <li class="interest"><a href="#n">관심상품</a></li>
+                            <li class="customercenter"><a href="#n">고객센터</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header_main">
+                <div class="wrapper">
+                    <div class="gnb">
+                        <ul>
+                            <li><a href="#n">해외패키지</a></li>
+                            <li><a href="#n">국내여행</a></li>
+                            <li><a href="#n">항공</a></li>
+                            <li><a href="#n">호텔</a></li>
+                            <li><a href="#n">허니문</a></li>
+                            <li><a href="#n">골프</a></li>
+                            <li><a href="#n">크루즈</a></li>
+                            <li><a href="#n">프리미엄</a></li>
+                            <li><a href="#n">투어&티켓</a></li>
+                            <li><a href="#n">렌터카</a></li>
+                            <li><a href="#n">기업/단체</a></li>
+                        </ul>
+                    </div>
+                    <div class="gnb_sub">
+                        <ul>
+                            <li><a href="#n">기획전</a></li>
+                            <li><a href="#n">이벤트</a></li>
+                            <li><a href="#n">홈쇼핑</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="visual">
+                <div class="swiper">
+                    <ul class="swiper-wrapper"> 
+                        <li class="swiper-slide">
+                            <div class="txt">
+                                <h2>전 세계인이 집중하는 여행지<br>두바이</h2>
+                                <span>대한항공 왕복직항 / 대한항공 마일리지 80% 적립가능</span>
+                            </div>
+                            <img src="images/visual01.png" alt="두바이 사진">
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="txt">
+                                <h2>인원이 뭉치면 뭉칠수록<br>발칸 여행 예산 SAVE</h2>
+                                <span>3인 이상 여행 시 최대 15만원 상당의 할인&혜택</span>
+                            </div>
+                            <img src="images/visual02.png" alt="발칸 사진">
+                        </li>
+                    </ul>
+                </div>
+                <div class="quicktab">
+                    <div class="wrapper">
+                        <strong class="quicktab_tit">노랑풍선과<br>함께 떠나볼까요?</strong>
+                        <div class="quicktab_bts">
+                            <button class="pkg on" data-name="pkg">패키지</button>
+                            <button class="air" data-name="air">항공</button>
+                            <button class="hotel" data-name="hotel">호텔</button>
+                        </div>
+                        <div class="inner">
+                            <div class="pkg_inner item" data-name="pkg">
+                                <span class="spot">여행지 입력</span>
+                                <span class="date">여행시작일 선택</span>
+                                <div class="pkg_search">패키지 검색</div>
+                            </div>
+                            <div class="air_inner item" data-name="air">
+                                <div class="air_bts">
+                                    <button class="active">왕복</button>
+                                    <button data-name="one">편도</button>
+                                </div>
+                                <div class="city">
+                                    <span class="start">인천/김포(SEL)</span>
+                                    <span>도착지</span>
+                                </div>
+                                <span class="date">여행일정</span>
+                                <span class="nember"><strong>일반석</strong>성인1, 소아0, 유아0</span>
+                                <div class="Air_search">항공 검색</div>
+                            </div>
+                            <div class="hotel_inner item" data-name="hotel">
+                                <span class="spot">도시명 혹은 호텔명</span>
+                                <span class="date">숙박 일정 선택</span>
+                                <span class="nember"><strong>객실1</strong>성인2, 아동0</span>
+                                <div class="search_bts">호텔 검색</div>
+                            </div>
+                        </div>
+                    </div> <!--wrapper-->
+                </div> <!--quicktab-->
+            </div> <!--visual-->
+            <div class="event">
+                <div class="wrapper">
+                    <div class="tit">
+                        <strong>망설이면 솔드아웃!</strong>
+                        <h2>옐로팡딜</h2>
+                    </div>
+                    <div class="box">
+                        <div class="photo"><img src="images/event01.png" alt="나고야 사진"></div>
+                        <div class="detail">
+                            <div class="txt">
+                                <strong>30명 한정 잔여 <em>21석</em> 남았습니다.</strong>
+                                <h3>[선택형] 나고야 4일</h3>
+                            </div>
+                            <div class="tag">
+                                <span>#100% 출발확정</span>
+                                <span>#(선택 01) 특가 항공권</span>
+                                <span>#(선택 02) 도심형 에어텔</span>
+                            </div>
+                            <div class="box_but">
+                                <div class="count">
+                                    <strong>최대 20만원 즉시 할인</strong>
+                                    <ul>
+                                        <li class="timer">잔여 21석</li>
+                                        <li>30명 한정</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    <span>399,000 <em>원~</em></span>
+                                    <strong>199,000 <em>원~</em></strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more"><a href="#n">전체보기</a></div>
+                </div>
+            </div> <!--event-->
+            <div class="trip_family">
+                <div class="wrapper">
+                    <h2><strong>가족여행</strong>하기 좋은 달</h2>
+                    <div class="txt">
+                        <span>나는</span>
+                        <div class="tit">
+                            <strong>부모님과 함께</strong>
+                            <ul class="tit_list">
+                                <li>부모님과 함께</li>
+                                <li>부부끼리</li>
+                                <li>아이와 함께</li>
+                                <li>자매/형제끼리</li>
+                            </ul>
+                        </div>
+                        <em>여행을 떠나고 싶어요.</em>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="#n">
+                                    <div class="photo"><img src="images/trip_f01.png" alt="발칸 사진"></div>
+                                    <span>발칸 4국 10일</span>
+                                    <ul class="tag">
+                                        <li>#MD추천</li>
+                                        <li>#베스트셀러</li>
+                                    </ul>
+                                    <em><strong>2,099,000</strong> 원~</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <div class="photo"><img src="images/trip_f02.png" alt="튀르키예 사진"></div>
+                                    <span>튀르키예 9,10일</span>
+                                    <ul class="tag">
+                                        <li>#전일정 특급호텔</li>
+                                        <li>#3대옵션+5대특식</li>
+                                    </ul>
+                                    <em><strong>1,199,000</strong> 원~</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <div class="photo"><img src="images/trip_f03.png" alt="이탈리아 사진"></div>
+                                    <span>이탈리아 일주 9일</span>
+                                    <ul class="tag">
+                                        <li>#소도시까지 완벽일주</li>
+                                    </ul>
+                                    <em><strong>3,090,000</strong> 원~</em>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more"><a href="#n">전체보기</a></div>
+                </div>
+            </div> <!--trip_family-->
+            <div class="banner">
+                <div class="swiper"> 
+                    <ul class="swiper-wrapper"> 
+                        <li class="swiper-slide"><a href="#n"><img src="images/banner01.png" alt="노랑풍선 포인트 event 배너"></a></li> 
+                        <li class="swiper-slide"><a href="#n"><img src="images/banner02.png" alt="노랑풍선 포인트 event 배너"></a></li> 
+                    </ul>
+                    <button class="swiper-button-prev"></button>
+                    <button class="swiper-button-next"></button>
+                </div>
+            </div>
+            <div class="best">
+                <h2><strong>인기 급상승</strong> 여행지</h2>
+                <div class="list swiper">
+                    <ul class="swiper-wrapper"> 
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <img src="images/best01.png" alt="다낭 사진">
+                                <strong>1</strong>
+                                <div class="text">
+                                    <h3>다낭</h3>
+                                    <span>#호이안 #바나힐 #미케비치</span>
+                                </div>
+                            </a>
+                        </li> 
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <img src="images/best02.png" alt="나트랑 사진">
+                                <strong>2</strong>
+                                <div class="text">
+                                    <h3>나트랑</h3>
+                                    <span>#달랏야시장 #라비앙전망대 #죽림사</span>
+                                </div>
+                            </a>
+                        </li> 
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <img src="images/best03.png" alt="장가계 사진">
+                                <strong>3</strong>
+                                <div class="text">
+                                    <h3>장가계</h3>
+                                    <span>#북경 #만리장성 #원가계</span>
+                                </div>
+                            </a>
+                        </li> 
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <img src="images/best04.png" alt="장가계 사진">
+                                <strong>4</strong>
+                                <div class="text">
+                                    <h3>스페인</h3>
+                                    <span>#포르투갈 #바르셀로나 #그라나</span>
+                                </div>
+                            </a>
+                        </li> 
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <img src="images/best05.png" alt="장가계 사진">
+                                <strong>5</strong>
+                                <div class="text">
+                                    <h3>싱가포르</h3>
+                                    <span>#센토사섬 #리버원더스 #바탐</span>
+                                </div>
+                            </a>
+                        </li> 
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <img src="images/best06.png" alt="장가계 사진">
+                                <strong>6</strong>
+                                <div class="text">
+                                    <h3>오사카</h3>
+                                    <span>#간사이 #고베 #교토</span>
+                                </div>
+                            </a>
+                        </li> 
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <img src="images/best07.png" alt="장가계 사진">
+                                <strong>7</strong>
+                                <div class="text">
+                                    <h3>몽골</h3>
+                                    <span>#테렐지 #홍고린엘스 #욜링암</span>
+                                </div>
+                            </a>
+                        </li> 
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <img src="images/best08.png" alt="장가계 사진">
+                                <strong>8</strong>
+                                <div class="text">
+                                    <h3>코타키나발루</h3>
+                                    <span>#호핑투어 # 반딧불 #선셋요트</span>
+                                </div>
+                            </a>
+                        </li> 
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <img src="images/best09.png" alt="장가계 사진">
+                                <strong>9</strong>
+                                <div class="text">
+                                    <h3>괌</h3>
+                                    <span>#더츠바키타워 #스노쿨링 #카약</span>
+                                </div>
+                            </a>
+                        </li> 
+                        <li class="swiper-slide">
+                            <a href="#n">
+                                <img src="images/best10.png" alt="장가계 사진">
+                                <strong>10</strong>
+                                <div class="text">
+                                    <h3>보라카이</h3>
+                                    <span>#헤난라가든 #세일링보트 #화이트비치</span>
+                                </div>
+                            </a>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="ctrl_btn">
+                    <div class="loadingbar"><span></span></div>
+                    <div class="play"></div>
+                    <div class="stop"></div>
+                </div>
+            </div>
+            <div class="series">
+                <div class="wrapper">
+                    <h2><strong>Yellow</strong> series</h2>
+                    <div class="inner">
+                        <div class="tab01 on">
+                            <button>#이달의 여행 키워드</button>
+                            <div class="detail">
+                                <div class="left">
+                                    <h3>#이달의 여행 키워드</h3>
+                                    <strong>섬 여행</strong>
+                                    <p>섬 여행의 매력 <br> 어디까지 알고있섬? <br>  멋진 섬 추천해드려요!</p>
+                                    <div class="more"><a href="#n">더알아보기</a></div>
+                                </div>
+                                <div class="list01">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/tab01_01.png" alt="시칠리아섬사진"></div>
+                                        <span>시칠리아 일주 9일</span>
+                                        <strong>'시칠리아 섬'</strong>
+                                    </a>
+                                </div>
+                                <div class="list02">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/tab01_02.png" alt="산토리니섬사진"></div>
+                                        <span>그리스 9일</span>
+                                        <strong>'산토리니 섬'</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab02">
+                            <button>#MBN 떴다 캡틴킴</button>
+                            <div class="detail">
+                                <div class="left">
+                                    <h3>#MBN 떴다 캡틴킴</h3>
+                                    <strong>MBN 힐링</strong>
+                                    <p>뉴질랜드를 바라보는 <br>새로운 패러다임, <br>그 속으로 떠나본다!</p>
+                                    <div class="more"><a href="#n">더알아보기</a></div>
+                                </div>
+                                <div class="list01">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/tab02_01.png" alt="와이헤케섬 사진"></div>
+                                        <span>뉴질랜드 북섬 7일</span>
+                                        <strong>'와이헤케섬</strong>
+                                    </a>
+                                </div>
+                                <div class="list02">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/tab02_02.png" alt="호빗마을 사진"></div>
+                                        <span>뉴질랜드 남북섬 9일</span>
+                                        <strong>'호빗마을'</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab03">
+                            <button>#KBS 배틀트립2</button>
+                            <div class="detail">
+                                <div class="left">
+                                    <h3>#KBS 배틀트립2</h3>
+                                    <strong>베스트 상품</strong>
+                                    <p>가장 많이 사랑받은<br> 지역별 핫플 상품을<br> 확인해보세요!</p>
+                                    <div class="more"><a href="#n">더알아보기</a></div>
+                                </div>
+                                <div class="list01">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/tab03_01.png" alt="스위스 사진"></div>
+                                        <span>스위스 9/10일</span>
+                                        <strong>'알프스온천'</strong>
+                                    </a>
+                                </div>
+                                <div class="list02">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/tab03_02.png" alt="싱가포르 사진"></div>
+                                        <span>싱가포르 5일</span>
+                                        <strong>'싱가포르'</strong>
+                                    </a>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab04">
+                            <button>#클럽메드 미니클럽+</button>
+                            <div class="detail">
+                                <div class="left">
+                                    <h3>#클럽메드 미니클럽+</h3>
+                                    <strong>미니클럽 플러스</strong>
+                                    <p>아빠는 스포츠, 엄마는 스파<br> 아이는 키즈클럽!<br> 클럽메드 올 인클루시브 여행!</p>
+                                    <div class="more"><a href="#n">더알아보기</a></div>
+                                </div>
+                                <div class="list01">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/tab04_01.png" alt="푸켓 사진"></div>
+                                        <span>클럽메드 자유여행</span>
+                                        <strong>'푸켓'</strong>
+                                    </a>
+                                </div>
+                                <div class="list02">
+                                    <a href="#n">
+                                        <div class="photo"><img src="images/tab04_02.png" alt="북해도 사진"></div>
+                                        <span>토마무, 삿포로, 오타루 4일</span>
+                                        <strong>'북해도'</strong>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--series-->
+            <div class="homeshopping">
+                <div class="wrapper">
+                    <h2><strong>홈쇼핑</strong> 방영상품</h2>
+                    <div class="list">
+                        <ul>
+                            <li class="on">
+                                <a href="#n">
+                                    <strong class="date">2024.04.21(일) 17:15 방영</strong>
+                                    <h3>인생 여행지 <br>그리스 9/10일</h3>
+                                    <div class="b_grup">
+                                        <span>#4성급 호텔 #산토리니 2박 #10대 특식</span>
+                                        <span class="price"><strong>1,999,000</strong> 원~</span>
+                                    </div>
+                                    <div class="photo">
+                                        <div class="main"><img src="images/home_01.png" alt="그리스사진"></div>
+                                        <div class="h_logo"><img src="images/home_logo01.png" alt="cjonstyle 로고"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <strong class="date">2024.04.21(일) 01:10 방영</strong>
+                                    <h3>대한항공 직항, <br>베이징 북경/만리장성/이화원 4일</h3>
+                                    <div class="b_grup">
+                                        <span>#대한항공 #월드체인호텔</span>
+                                        <span class="price"><strong>399,000</strong> 원~</span>
+                                    </div>
+                                    <div class="photo">
+                                        <div class="main"><img src="images/home_02.png" alt="그리스사진"></div>
+                                        <div class="h_logo"><img src="images/home_logo02.png" alt="현대홈쇼핑 로고"></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="more"><a href="#n">전체보기</a></div>
+                    </div>
+                </div>
+            </div> <!--homeshopping-->
+            <div class="partner">
+                <div class="wrapper">
+                    <h2>놓칠 수 없는 기회!</h2>
+                    <div class="list">
+                        <ul>
+                            <li class="kb">
+                                <a href="#n">
+                                    <div class="icon"><img src="images/partner_kb.png" alt="저금통아이콘"></div>
+                                    <h3>KB두근두근 <br>여행적금</h3>
+                                    <span>최대 3만원 & <br>4% 할인혜택까지!</span>
+                                </a>
+                            </li>
+                            <li class="sinra">
+                                <a href="#n">
+                                    <div class="icon"><img src="images/partner_sinra.png" alt="저금통아이콘"></div>
+                                    <h3>신라면세점 <br>단독혜택</h3>
+                                    <span>여행은 가볍게 <br>혜택은 풍성하게</span>
+                                </a>
+                            </li>
+                            <li class="wifi">
+                                <a href="#n">
+                                    <div class="icon"><img src="images/partner_wifi.png" alt="저금통아이콘"></div>
+                                    <h3>와이파이 도시락 <br>10% 할인</h3>
+                                    <span>해외 데이터를 저렴하게!</span>
+                                </a>
+                            </li>
+                            <li class="sinhan">
+                                <a href="#n">
+                                    <div class="icon"><img src="images/partner_sinhan.png" alt="저금통아이콘"></div>
+                                    <h3>신한은행 <br>환율우대쿠폰</h3>
+                                    <span>주요 통화 <br>최대 90% 우대</span>
+                                </a>
+                            </li>
+                            <li class="yellow">
+                                <a href="#n">
+                                    <div class="icon"><img src="images/partner_y.png" alt="저금통아이콘"></div>
+                                    <h3>여행의 시작은 <br>라운지에서부터!</h3>
+                                    <span>노랑풍선 고객 <br>단독 할인혜택</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!--partner-->
+            <div class="reviwe" data-name="europe01">
+                <div class="wrapper">
+                    <h2><strong>노랑풍선</strong>과 함께한 여행후기</h2>
+                    <div class="list">
+                        <ul>
+                            <li>
+                                <a href="#n" class="on" data-name="europe01">
+                                    <div class="photo"><img src="images/review_europe01.png" alt="유럽 사진"></div>
+                                    <strong>패키지-서유럽</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n" data-name="europe02">
+                                    <div class="photo"><img src="images/review_europe02.png" alt="유럽 사진"></div>
+                                    <strong>패키지-서유럽</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n" data-name="namerica">
+                                    <div class="photo"><img src="images/review_namerica.png" alt="북미 사진"></div>
+                                    <strong>패키지-북미</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="detail">
+                        <ul>
+                            <li>
+                                <a href="#n">
+                                    <h3>서유럽에서 보물찾기 - 정은주 가이드쌤과 함께한 8박 10일 서유럽 4개국 여행기</h3>
+                                    <p>코로나 때문에 미뤄졌던 서유럽 여행을 오늘 시작한다니 믿기지가 않는다. 초등학교 때  보물찾기 시리즈 책 (영국에서 보물찾기, 이탈리아에서 보물찾기, 프랑스에서 보물찾기,  스위스에서 보물찾기  등 )을 정말 재미있게 읽은 적이 있다. 드디어 나는 오늘 그 보물들을 직접 찾기 위해 서유럽으로 떠난다. 아시아나 항공으로 14시간의 긴 비행 끝에 저녁 7시경  런던 히드로 공항에  도착했다.  밖은 이미 어둠이 내려 앉았고 비가 내리고 있어서 으슬으슬 춥고 스산한 느낌이 들었다. 흐린 날씨가 signature인 영국은 어쩌면 비가 내리는 게 어울리고 운치가 있을지도 모르겠다. 숙소는 히드로 공항에서 버스로 약 30분 거리에  있는  Copthorne Hotel(콥톤 호텔),  4성급 호텔로 제법 크고 분위기 있는 호텔이었다. 내일은 본격적인 여행을 시작하기 때문에  비가 멈춰주기를 기도하면서 잠에 들었다. </p>
+                                    <div class="more">자세히보기</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <h3>첫 유럽 여행 패키지 이탈리아 일주 여행기 솔직후기</h3>
+                                    <p>코로나 때문에 미뤄졌던 서유럽 여행을 오늘 시작한다니 믿기지가 않는다. 초등학교 때  보물찾기 시리즈 책 (영국에서 보물찾기, 이탈리아에서 보물찾기, 프랑스에서 보물찾기,  스위스에서 보물찾기  등 )을 정말 재미있게 읽은 적이 있다. 드디어 나는 오늘 그 보물들을 직접 찾기 위해 서유럽으로 떠난다. 아시아나 항공으로 14시간의 긴 비행 끝에 저녁 7시경  런던 히드로 공항에  도착했다.  밖은 이미 어둠이 내려 앉았고 비가 내리고 있어서 으슬으슬 춥고 스산한 느낌이 들었다. 흐린 날씨가 signature인 영국은 어쩌면 비가 내리는 게 어울리고 운치가 있을지도 모르겠다. 숙소는 히드로 공항에서 버스로 약 30분 거리에  있는  Copthorne Hotel(콥톤 호텔),  4성급 호텔로 제법 크고 분위기 있는 호텔이었다. 내일은 본격적인 여행을 시작하기 때문에  비가 멈춰주기를 기도하면서 잠에 들었다. </p>
+                                    <div class="more">자세히보기</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#n">
+                                    <h3>또 가고싶은 신혼여행!! 노랑풍선 미주팀 감사해요 ☺️</h3>
+                                    <p>코로나 때문에 미뤄졌던 서유럽 여행을 오늘 시작한다니 믿기지가 않는다. 초등학교 때  보물찾기 시리즈 책 (영국에서 보물찾기, 이탈리아에서 보물찾기, 프랑스에서 보물찾기,  스위스에서 보물찾기  등 )을 정말 재미있게 읽은 적이 있다. 드디어 나는 오늘 그 보물들을 직접 찾기 위해 서유럽으로 떠난다. 아시아나 항공으로 14시간의 긴 비행 끝에 저녁 7시경  런던 히드로 공항에  도착했다.  밖은 이미 어둠이 내려 앉았고 비가 내리고 있어서 으슬으슬 춥고 스산한 느낌이 들었다. 흐린 날씨가 signature인 영국은 어쩌면 비가 내리는 게 어울리고 운치가 있을지도 모르겠다. 숙소는 히드로 공항에서 버스로 약 30분 거리에  있는  Copthorne Hotel(콥톤 호텔),  4성급 호텔로 제법 크고 분위기 있는 호텔이었다. 내일은 본격적인 여행을 시작하기 때문에  비가 멈춰주기를 기도하면서 잠에 들었다. </p>
+                                    <div class="more">자세히보기</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!--reviwe-->
+            <div class="notice">
+                <div class="wrapper">
+                    <div class="news">
+                        <h2>공지사항</h2>
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <a href="#n">
+                                        <h3>[항공권소식] [진에어항공] 시스템 점검으로 인한 서비스 중단 안내 (2024.04.29)</h3>
+                                        <span>2024.04.23</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#n">
+                                        <h3>[항공권소식] [티웨이항공] 시스템 점검으로 인한 서비스 중단 안내 (2024.04.26)</h3>
+                                        <span>2024.04.22</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#n">
+                                        <h3>[항공권소식] [해외항공] 4월 유류할증료 공지</h3>
+                                        <span>2024.03.27</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="more"><a href="#n">전체보기</a></div>
+                    </div>
+                    <div class="col">
+                        <h2>고객센터</h2>
+                        <ul>
+                            <li class="package">
+                                <h3>패키지여행 상담</h3>
+                                <strong>1544-2288</strong>
+                                <div class="link"><a href="#n">지역별 상담 번호 안내</a></div>
+                            </li>
+                            <li class="free">
+                                <h3>자유여행 상담</h3>
+                                <strong>1644-3399</strong>
+                                <div class="link"><a href="#n">1:1 문의하기</a></div>
+                            </li>
+                        </ul>
+                        <em>상담시간 : 평일 오전 9시 ~ 오후6시 (토,일요일 및 공휴일 휴무)</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="f_top">
+                    <div class="f_nav">
+                        <ul>
+                            <li><a href="#n">회사소개</a></li>
+                            <li><a href="#n">개인정보처리방침</a></li>
+                            <li><a href="#n">이용약관</a></li>
+                            <li><a href="#n">여행약관</a></li>
+                            <li><a href="#n">여행자보험</a></li>
+                            <li><a href="#n">대리점안내</a></li>
+                            <li><a href="#n">신문광고</a></li>
+                            <li><a href="#n">오시는 길</a></li>
+                        </ul>
+                    </div>
+                    <div class="sns">
+                        <ul>
+                            <li class="facebook"><a href="#n"></a></li>
+                            <li class="youtube"><a href="#n"></a></li>
+                            <li class="insta"><a href="#n"></a></li>
+                            <li class="naver"><a href="#n"></a></li>
+                            <li class="kakao"><a href="#n"></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="f_boutom">
+                    <div class="f_info">
+                        <h2>노랑풍선 Information</h2>
+                        <ul>
+                            <li>대표이사 : 김진국</li>
+                            <li>주소 : 서울특별시 중구 수표로 31, 노랑풍선빌딩</li>
+                            <li>사업자등록번호 : 104-81-64440</li>
+                            <li>관광사업자등록증번호 : 제2006-000003호</li>
+                            <li>통신판매업신고번호 : 제2008-서울중구-0278 사업자 정보확인</li>
+                        </ul>
+                        <ul>
+                            <li>[부산지사] 부산광역시 부산진구 중앙대로668, 9층 912호 (부전동, 에이원프라자)</li>
+                            <li>사업자등록번호 870-85-01900</li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <h2>Address & Contact</h2>
+                        <ul>
+                            <li>패키지여행 상담 :1544-2288</li>
+                            <li>자유여행 상담 : 1644-3399</li>
+                            <li>부산지사 상담 : 051-713-0710</li>
+                        </ul>
+                    </div>
+                    <div class="follow">
+                        <h2>Follow Us</h2>
+                        <ul>
+                            <li>영업배상책임보험가입 총 20억원</li>
+                            <li>한국관광협회중앙회 여행공제회 공제영업보증가입 10억원</li>
+                            <li>공제기획여행보증가입 5억원</li>
+                        </ul>
+                        <div class="copyrights">copyrights Yellow Balloon tour. All Rights Reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div> <!--wrap-->
+</body>
+</html>

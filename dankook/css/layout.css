@@ -1,0 +1,323 @@
+/* 
+    파일명 : layout.css 
+    작성자 : 이윤정
+    작성일 : 24.04.24
+    설  명 : 모든 페이지의 레이아웃 요소 ( header/footer/서브레이아웃 )
+             메뉴명, sub_visual 이미지스타일, 탭메뉴
+*/
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.header_top {
+    position: relative;
+    height: 90px;
+}
+.header_top .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.header_top::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.header_top .inner {
+    display: flex;
+}
+.header_top .logo {
+    width: 154px;
+    height: 42px;
+    margin-top: 24px;
+}
+.header_top .logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.header_top .search {
+    position: relative;
+    padding: 13px 0 0 25px;
+    margin: 25px 0 0 30px;
+}
+.header_top .search::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 320px;
+    height: 40px;
+    content: "";
+    border: 1px solid #999;
+    border-radius: 25px;
+}
+.header_top .search::after {
+    position: absolute;
+    right: -95px;
+    top: 13px;
+    width: 16px;
+    height: 16px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20.314' height='20.314' viewBox='0 0 20.314 20.314'%3E%3Cpath id='search-line' d='M18.031,16.617,22.314,20.9,20.9,22.314l-4.283-4.283a9,9,0,1,1,1.414-1.414Zm-2.006-.742a7,7,0,1,0-.15.15Z' transform='translate(-2 -2)' fill='%23999'/%3E%3C/svg%3E%0A");
+}
+.header_top .tnb ul {
+    display: flex;
+    font-size: 13px;
+}
+.header_top .tnb ul li a {
+    position: relative;
+    display: block;
+    margin: 55px 10px 0 10px;
+}
+.header_top .tnb ul li a::before {
+    position: absolute;
+    left: 0;
+    bottom: 23px;
+    width: 100%;
+    height: 35px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header_top .tnb ul li.login a::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='21' viewBox='0 0 16 21'%3E%3Cpath id='user-line' d='M4,22a8,8,0,0,1,16,0H18A6,6,0,0,0,6,22Zm8-9a6,6,0,1,1,6-6A6,6,0,0,1,12,13Zm0-2A4,4,0,1,0,8,7,4,4,0,0,0,12,11Z' transform='translate(-4 -1)' fill='%231d1d1d'/%3E%3C/svg%3E%0A");
+    background-size: 16px auto;
+}
+.header_top .tnb ul li.membership a::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='21' viewBox='0 0 19 21'%3E%3Cpath id='user-add-line' d='M14,14.252v2.089A6,6,0,0,0,6,22H4a8.007,8.007,0,0,1,10-7.748ZM12,13a6,6,0,1,1,6-6A6,6,0,0,1,12,13Zm0-2A4,4,0,1,0,8,7,4,4,0,0,0,12,11Zm6,6V14h2v3h3v2H20v3H18V19H15V17Z' transform='translate(-4 -1)' fill='%231d1d1d'/%3E%3C/svg%3E%0A");
+    background-size: 19px auto;
+}
+.header_top .tnb ul li.reservation a::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45' height='18' viewBox='0 0 45 18'%3E%3Cg id='그룹_174' data-name='그룹 174' transform='translate(-1402 -28)'%3E%3Cpath id='list-view' d='M2,4A1,1,0,0,1,3,3H21a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1ZM4,5V19H20V5ZM6,7H8V9H6Zm2,4H6v2H8ZM6,15H8v2H6ZM18,7H10V9h8Zm-8,8h8v2H10Zm8-4H10v2h8Z' transform='translate(1400 25)' fill='%231d1d1d'/%3E%3Cpath id='bank-card-line' d='M3,3H21a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3Zm17,8H4v8H20Zm0-2V5H4V9Zm-6,6h4v2H14Z' transform='translate(1424.995 25)' fill='%231d1d1d'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-size: 45px auto;
+}
+.header_top .tnb ul li.interest a::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='18.5' viewBox='0 0 20 18.5'%3E%3Cpath id='heart-3-line' d='M16.5,3C19.538,3,22,5.5,22,9c0,7-7.5,11-10,12.5C9.5,20,2,16,2,9A5.675,5.675,0,0,1,7.5,3,6.617,6.617,0,0,1,12,5,6.617,6.617,0,0,1,16.5,3ZM12.934,18.6a26.752,26.752,0,0,0,2.421-1.7C18.334,14.533,20,11.943,20,9c0-2.359-1.537-4-3.5-4a4.6,4.6,0,0,0-3.086,1.414L12,7.828,10.586,6.414A4.6,4.6,0,0,0,7.5,5C5.559,5,4,6.656,4,9c0,2.943,1.666,5.533,4.645,7.9a26.746,26.746,0,0,0,2.421,1.7c.3.188.6.369.934.571C12.339,18.973,12.635,18.792,12.934,18.6Z' transform='translate(-2 -3)' fill='%231d1d1d'/%3E%3C/svg%3E%0A");
+    background-size: 20px auto;
+}
+.header_top .tnb ul li.customercenter a::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22'%3E%3Cpath id='customer-service-2-line' d='M19.938,8H21a2,2,0,0,1,2,2v4a2,2,0,0,1-2,2H19.938A8,8,0,0,1,12,23V21a6,6,0,0,0,6-6V9A6,6,0,0,0,6,9v7H3a2,2,0,0,1-2-2V10A2,2,0,0,1,3,8H4.062A8,8,0,0,1,19.938,8ZM3,10v4H4V10Zm17,0v4h1V10ZM7.759,15.785l1.06-1.7a6.005,6.005,0,0,0,6.361,0l1.06,1.7a8.007,8.007,0,0,1-8.481,0Z' transform='translate(-1 -1)' fill='%231d1d1d'/%3E%3C/svg%3E%0A");
+    background-size: 22px auto;
+}
+.header_top .tnb ul li.login a:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='21' viewBox='0 0 16 21'%3E%3Cpath id='user-line' d='M4,22a8,8,0,0,1,16,0H18A6,6,0,0,0,6,22Zm8-9a6,6,0,1,1,6-6A6,6,0,0,1,12,13Zm0-2A4,4,0,1,0,8,7,4,4,0,0,0,12,11Z' transform='translate(-4 -1)' fill='%23FFBE1A'/%3E%3C/svg%3E%0A");
+}
+.header_top .tnb ul li.membership a:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19' height='21' viewBox='0 0 19 21'%3E%3Cpath id='user-add-line' d='M14,14.252v2.089A6,6,0,0,0,6,22H4a8.007,8.007,0,0,1,10-7.748ZM12,13a6,6,0,1,1,6-6A6,6,0,0,1,12,13Zm0-2A4,4,0,1,0,8,7,4,4,0,0,0,12,11Zm6,6V14h2v3h3v2H20v3H18V19H15V17Z' transform='translate(-4 -1)' fill='%23FFBE1A'/%3E%3C/svg%3E%0A");
+}
+.header_top .tnb ul li.reservation a:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45' height='18' viewBox='0 0 45 18'%3E%3Cg id='그룹_174' data-name='그룹 174' transform='translate(-1402 -28)'%3E%3Cpath id='list-view' d='M2,4A1,1,0,0,1,3,3H21a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1ZM4,5V19H20V5ZM6,7H8V9H6Zm2,4H6v2H8ZM6,15H8v2H6ZM18,7H10V9h8Zm-8,8h8v2H10Zm8-4H10v2h8Z' transform='translate(1400 25)' fill='%23FFBE1A'/%3E%3Cpath id='bank-card-line' d='M3,3H21a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3Zm17,8H4v8H20Zm0-2V5H4V9Zm-6,6h4v2H14Z' transform='translate(1424.995 25)' fill='%23FFBE1A'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.header_top .tnb ul li.interest a:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='18.5' viewBox='0 0 20 18.5'%3E%3Cpath id='heart-3-line' d='M16.5,3C19.538,3,22,5.5,22,9c0,7-7.5,11-10,12.5C9.5,20,2,16,2,9A5.675,5.675,0,0,1,7.5,3,6.617,6.617,0,0,1,12,5,6.617,6.617,0,0,1,16.5,3ZM12.934,18.6a26.752,26.752,0,0,0,2.421-1.7C18.334,14.533,20,11.943,20,9c0-2.359-1.537-4-3.5-4a4.6,4.6,0,0,0-3.086,1.414L12,7.828,10.586,6.414A4.6,4.6,0,0,0,7.5,5C5.559,5,4,6.656,4,9c0,2.943,1.666,5.533,4.645,7.9a26.746,26.746,0,0,0,2.421,1.7c.3.188.6.369.934.571C12.339,18.973,12.635,18.792,12.934,18.6Z' transform='translate(-2 -3)' fill='%23FFBE1A'/%3E%3C/svg%3E%0A");
+}
+.header_top .tnb ul li.customercenter a:hover::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22'%3E%3Cpath id='customer-service-2-line' d='M19.938,8H21a2,2,0,0,1,2,2v4a2,2,0,0,1-2,2H19.938A8,8,0,0,1,12,23V21a6,6,0,0,0,6-6V9A6,6,0,0,0,6,9v7H3a2,2,0,0,1-2-2V10A2,2,0,0,1,3,8H4.062A8,8,0,0,1,19.938,8ZM3,10v4H4V10Zm17,0v4h1V10ZM7.759,15.785l1.06-1.7a6.005,6.005,0,0,0,6.361,0l1.06,1.7a8.007,8.007,0,0,1-8.481,0Z' transform='translate(-1 -1)' fill='%23FFBE1A'/%3E%3C/svg%3E%0A");
+}
+
+.header_main {
+    z-index: 100;
+    font-size: 16px;
+}
+.header_main .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.header_main::before {
+    position: absolute;
+    left: -50%;
+    bottom: 0;
+    width: 200%;
+    height: 1px;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.header_main .gnb ul {
+    display: flex;
+    justify-content: space-between;
+}
+.header_main .gnb ul li {
+    margin: 0 15px;
+}
+.header_main .gnb ul li:first-child {
+    margin: 0 15px 0 0;
+}
+.header_main .gnb ul li a {
+    display: block;
+    line-height: 65px;
+    color: #1d1d1d;
+}
+.header_main .gnb ul li:hover a {
+    position: relative;
+    font-weight: 700;
+    color: #FFBE1A;
+} 
+.header_main .gnb ul li:hover a::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    content: "";
+    background-color: #FFBE1A;
+    border-radius: 1.5px;
+}
+.header_main .gnb_sub ul {
+    display: flex;
+}
+.header_main .gnb_sub ul li {
+    margin: 0 15px;
+}
+.header_main .gnb_sub ul li a {
+    display: block;
+    line-height: 65px;
+}
+.header_main .gnb_sub ul li:hover a {
+    font-weight: 700;
+    color: #FFBE1A;
+} 
+.header_main .gnb_sub ul li:last-child {
+    margin: 0 0 0 15px;
+}
+
+/*fixed*/
+.header.fixed .header_top {
+    display: none;
+}
+.header.fixed .header_main {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+.header.fixed .header_main::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 65px;
+    content: "";
+    background-color: #fff;
+}
+.header.fixed .header_main::before {
+    position: absolute;
+    left: 20px;
+    top: 18px;
+    width: 102px;
+    height: 28px;
+    content: "";
+    background: url(../images/logo.png) no-repeat center center/ contain;
+}
+
+
+.footer {
+    margin: 200px 0 100px 0 ;
+    color: #3d3d3d;
+}
+.footer .f_top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+}
+.footer .f_top::before {
+    position: absolute;
+    left: -50%;
+    top: 0;
+    width: 200%;
+    height: 1px;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.footer .f_top::after {
+    position: absolute;
+    left: -50%;
+    bottom: 0;
+    width: 200%;
+    height: 1px;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.footer .f_top .f_nav ul {
+    display: flex;
+}
+.footer .f_top .f_nav ul li {
+    margin-right: 20px;
+}
+.footer .f_top .f_nav ul li:hover {
+    font-weight: 700;
+}
+.footer .f_top .sns ul {
+    display: flex;
+}
+.footer .f_top .sns ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 36px auto;
+}
+.footer .f_top .sns ul li:last-child {
+    margin-right: 0;
+}
+.footer .f_top .sns .facebook a {
+    background-image: url("data:image/svg+xml,%3Csvg id='그룹_173' data-name='그룹 173' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36.065' height='36.065' viewBox='0 0 36.065 36.065'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_325' data-name='사각형 325' width='36.065' height='36.065' transform='translate(0 0)' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_172' data-name='그룹 172' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_339' data-name='패스 339' d='M26.937,36.065H20.822l-2.789-.921-2.767.921H9.129A9.129,9.129,0,0,1,0,26.937V9.128A9.129,9.129,0,0,1,9.129,0H26.937a9.128,9.128,0,0,1,9.128,9.128V26.937a9.128,9.128,0,0,1-9.128,9.128' fill='%231d1d1d'/%3E%3Cpath id='패스_340' data-name='패스 340' d='M15.249,14.108v3.924H10.726v5.15h4.523V36.065h5.566V23.182h4.151l.79-5.15H20.815V14.691a2.575,2.575,0,0,1,2.9-2.782h2.247V7.525a27.474,27.474,0,0,0-3.988-.347c-4.069,0-6.728,2.465-6.728,6.93' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.footer .f_top .sns .facebook a:hover {
+    background-image: url("data:image/svg+xml,%3Csvg id='그룹_173' data-name='그룹 173' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36.065' height='36.065' viewBox='0 0 36.065 36.065'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_325' data-name='사각형 325' width='36.065' height='36.065' transform='translate(0 0)' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_172' data-name='그룹 172' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_339' data-name='패스 339' d='M26.937,36.065H20.822l-2.789-.921-2.767.921H9.129A9.129,9.129,0,0,1,0,26.937V9.128A9.129,9.129,0,0,1,9.129,0H26.937a9.128,9.128,0,0,1,9.128,9.128V26.937a9.128,9.128,0,0,1-9.128,9.128' fill='%23FFBE1A'/%3E%3Cpath id='패스_340' data-name='패스 340' d='M15.249,14.108v3.924H10.726v5.15h4.523V36.065h5.566V23.182h4.151l.79-5.15H20.815V14.691a2.575,2.575,0,0,1,2.9-2.782h2.247V7.525a27.474,27.474,0,0,0-3.988-.347c-4.069,0-6.728,2.465-6.728,6.93' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.footer .f_top .sns .youtube a {
+    background-image: url("data:image/svg+xml,%3Csvg id='그룹_135' data-name='그룹 135' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36.065' height='36.065' viewBox='0 0 36.065 36.065'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_307' data-name='사각형 307' width='36.065' height='36.065' transform='translate(0 0)' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_134' data-name='그룹 134' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_315' data-name='패스 315' d='M26.937,36.065H9.129A9.129,9.129,0,0,1,0,26.937V9.128A9.129,9.129,0,0,1,9.129,0H26.937a9.128,9.128,0,0,1,9.128,9.128V26.937a9.128,9.128,0,0,1-9.128,9.128' fill='%231d1d1d'/%3E%3Cpath id='패스_316' data-name='패스 316' d='M27.569,15.857a4.277,4.277,0,0,0-4.277-4.278H12.354a4.277,4.277,0,0,0-4.277,4.278v5.09a4.277,4.277,0,0,0,4.277,4.277H23.292a4.277,4.277,0,0,0,4.277-4.277Zm-6.432,2.926-4.9,2.427c-.192.1-.846-.036-.846-.254V15.975c0-.222.659-.361.852-.251l4.695,2.554c.2.112.4.4.2.505' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.footer .f_top .sns .youtube a:hover {
+    background-image: url("data:image/svg+xml,%3Csvg id='그룹_135' data-name='그룹 135' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36.065' height='36.065' viewBox='0 0 36.065 36.065'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_307' data-name='사각형 307' width='36.065' height='36.065' transform='translate(0 0)' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_134' data-name='그룹 134' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_315' data-name='패스 315' d='M26.937,36.065H9.129A9.129,9.129,0,0,1,0,26.937V9.128A9.129,9.129,0,0,1,9.129,0H26.937a9.128,9.128,0,0,1,9.128,9.128V26.937a9.128,9.128,0,0,1-9.128,9.128' fill='%23FFBE1A'/%3E%3Cpath id='패스_316' data-name='패스 316' d='M27.569,15.857a4.277,4.277,0,0,0-4.277-4.278H12.354a4.277,4.277,0,0,0-4.277,4.278v5.09a4.277,4.277,0,0,0,4.277,4.277H23.292a4.277,4.277,0,0,0,4.277-4.277Zm-6.432,2.926-4.9,2.427c-.192.1-.846-.036-.846-.254V15.975c0-.222.659-.361.852-.251l4.695,2.554c.2.112.4.4.2.505' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.footer .f_top .sns .insta a {
+    background-image: url("data:image/svg+xml,%3Csvg id='그룹_133' data-name='그룹 133' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36.065' height='36.065' viewBox='0 0 36.065 36.065'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_306' data-name='사각형 306' width='36.065' height='36.065' transform='translate(0 0)' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_132' data-name='그룹 132' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_311' data-name='패스 311' d='M26.937,36.065H9.129A9.129,9.129,0,0,1,0,26.937V9.128A9.129,9.129,0,0,1,9.129,0H26.937a9.128,9.128,0,0,1,9.128,9.128V26.937a9.128,9.128,0,0,1-9.128,9.128' fill='%231d1d1d'/%3E%3Cpath id='패스_312' data-name='패스 312' d='M23.562,11.355a1.225,1.225,0,1,0,1.224,1.224,1.225,1.225,0,0,0-1.224-1.224' fill='%23fff'/%3E%3Cpath id='패스_313' data-name='패스 313' d='M18.118,12.926a5.143,5.143,0,1,0,5.144,5.143,5.149,5.149,0,0,0-5.144-5.143m0,8.438a3.295,3.295,0,1,1,3.3-3.3,3.3,3.3,0,0,1-3.3,3.3' fill='%23fff'/%3E%3Cpath id='패스_314' data-name='패스 314' d='M22.2,28.512H13.863A6.28,6.28,0,0,1,7.59,22.238V13.9a6.28,6.28,0,0,1,6.273-6.274H22.2A6.28,6.28,0,0,1,28.475,13.9v8.338A6.28,6.28,0,0,1,22.2,28.512M13.863,9.591A4.314,4.314,0,0,0,9.554,13.9v8.338a4.314,4.314,0,0,0,4.309,4.309H22.2a4.314,4.314,0,0,0,4.309-4.309V13.9A4.314,4.314,0,0,0,22.2,9.591Z' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.footer .f_top .sns .insta a:hover {
+    background-image: url("data:image/svg+xml,%3Csvg id='그룹_133' data-name='그룹 133' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36.065' height='36.065' viewBox='0 0 36.065 36.065'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_306' data-name='사각형 306' width='36.065' height='36.065' transform='translate(0 0)' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_132' data-name='그룹 132' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_311' data-name='패스 311' d='M26.937,36.065H9.129A9.129,9.129,0,0,1,0,26.937V9.128A9.129,9.129,0,0,1,9.129,0H26.937a9.128,9.128,0,0,1,9.128,9.128V26.937a9.128,9.128,0,0,1-9.128,9.128' fill='%23FFBE1A'/%3E%3Cpath id='패스_312' data-name='패스 312' d='M23.562,11.355a1.225,1.225,0,1,0,1.224,1.224,1.225,1.225,0,0,0-1.224-1.224' fill='%23fff'/%3E%3Cpath id='패스_313' data-name='패스 313' d='M18.118,12.926a5.143,5.143,0,1,0,5.144,5.143,5.149,5.149,0,0,0-5.144-5.143m0,8.438a3.295,3.295,0,1,1,3.3-3.3,3.3,3.3,0,0,1-3.3,3.3' fill='%23fff'/%3E%3Cpath id='패스_314' data-name='패스 314' d='M22.2,28.512H13.863A6.28,6.28,0,0,1,7.59,22.238V13.9a6.28,6.28,0,0,1,6.273-6.274H22.2A6.28,6.28,0,0,1,28.475,13.9v8.338A6.28,6.28,0,0,1,22.2,28.512M13.863,9.591A4.314,4.314,0,0,0,9.554,13.9v8.338a4.314,4.314,0,0,0,4.309,4.309H22.2a4.314,4.314,0,0,0,4.309-4.309V13.9A4.314,4.314,0,0,0,22.2,9.591Z' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.footer .f_top .sns .naver a {
+    background-image: url("data:image/svg+xml,%3Csvg id='그룹_137' data-name='그룹 137' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36.6' height='36.6' viewBox='0 0 36.6 36.6'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_308' data-name='사각형 308' width='36.6' height='36.6' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_136' data-name='그룹 136' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_317' data-name='패스 317' d='M29.488,36.6H7.112A7.112,7.112,0,0,1,0,29.488V7.112A7.112,7.112,0,0,1,7.112,0H29.488A7.112,7.112,0,0,1,36.6,7.112V29.488A7.112,7.112,0,0,1,29.488,36.6' fill='%231d1d1d'/%3E%3Cpath id='패스_318' data-name='패스 318' d='M46.224,30.274V46.988h-6.1l-5.978-8.413v8.413h-6.1V30.274h6.1l5.978,8.754V30.274Z' transform='translate(-18.835 -20.331)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.footer .f_top .sns .naver a:hover {
+    background-image: url("data:image/svg+xml,%3Csvg id='그룹_137' data-name='그룹 137' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36.6' height='36.6' viewBox='0 0 36.6 36.6'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_308' data-name='사각형 308' width='36.6' height='36.6' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_136' data-name='그룹 136' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_317' data-name='패스 317' d='M29.488,36.6H7.112A7.112,7.112,0,0,1,0,29.488V7.112A7.112,7.112,0,0,1,7.112,0H29.488A7.112,7.112,0,0,1,36.6,7.112V29.488A7.112,7.112,0,0,1,29.488,36.6' fill='%23FFBE1A'/%3E%3Cpath id='패스_318' data-name='패스 318' d='M46.224,30.274V46.988h-6.1l-5.978-8.413v8.413h-6.1V30.274h6.1l5.978,8.754V30.274Z' transform='translate(-18.835 -20.331)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.footer .f_top .sns .kakao a {
+    background-image: url("data:image/svg+xml,%3Csvg id='그룹_154' data-name='그룹 154' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36.6' height='36.81' viewBox='0 0 36.6 36.81'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_309' data-name='사각형 309' width='36.6' height='36.81' fill='none'/%3E%3C/clipPath%3E%3CclipPath id='clip-path-2'%3E%3Cpath id='패스_322' data-name='패스 322' d='M34.479,58.266H36s.009,4.178,0,5.152c0,.711,1.583.72,1.581.01l.007-5.107s.51,0,1.514,0a.745.745,0,0,0,0-1.488c-1.065,0-4.626-.03-4.626-.03a.732.732,0,0,0,0,1.459' transform='translate(-33.809 -56.807)' fill='none'/%3E%3C/clipPath%3E%3CclipPath id='clip-path-4'%3E%3Cpath id='패스_324' data-name='패스 324' d='M54.105,58.614l.846,2.652H53.187Zm-.949-1.242c-.374.824-1.726,4.717-2.175,5.75-.325.747,1.075,1.355,1.4.609l.3-1.064h2.783s-.1.043.274,1.019c.3.789,1.744.242,1.445-.548-.427-1.129-1.906-5.19-2.175-5.766a1.149,1.149,0,0,0-1-.457.881.881,0,0,0-.854.457' transform='translate(-50.933 -56.915)' fill='none'/%3E%3C/clipPath%3E%3CclipPath id='clip-path-6'%3E%3Cpath id='패스_326' data-name='패스 326' d='M75.255,57.619c0,1.323.008,5.587.008,5.587s-.122.848.6.848,2.339-.008,3.054-.008.711-1.521,0-1.521-2.02-.008-2.02-.008.006-3.944,0-4.9a.835.835,0,0,0-1.647,0' transform='translate(-75.254 -56.92)' fill='none'/%3E%3C/clipPath%3E%3CclipPath id='clip-path-8'%3E%3Cpath id='패스_328' data-name='패스 328' d='M91.589,57.416c.016.58-.019,5.827-.018,6.215,0,.614,1.562.612,1.562,0,0-.712,0-2.064,0-2.064l.459-.368L95.6,63.935c.406.534,1.681-.431,1.276-.966l-2.13-2.8s1.446-1.563,2.015-2.13c.333-.33-.7-1.367-1.029-1.036s-2.586,2.586-2.586,2.586.02-1.423,0-2.21c-.008-.3-.375-.443-.75-.443-.4,0-.812.166-.8.485' transform='translate(-91.571 -56.931)' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_139' data-name='그룹 139'%3E%3Cg id='그룹_138' data-name='그룹 138' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_319' data-name='패스 319' d='M36.6,28.62a8.166,8.166,0,0,1-8.143,8.19H8.143A8.166,8.166,0,0,1,0,28.62V8.19A8.166,8.166,0,0,1,8.143,0H28.457A8.166,8.166,0,0,1,36.6,8.19Z' fill='%231d1d1d'/%3E%3Cpath id='패스_320' data-name='패스 320' d='M33.362,27.876c-7.27,0-13.164,4.659-13.164,10.407,0,3.741,2.5,7.02,6.245,8.855-.275,1.027-1,3.724-1.141,4.3-.179.716.262.707.551.515.227-.151,3.607-2.45,5.066-3.443a16.608,16.608,0,0,0,2.444.18c7.27,0,13.164-4.659,13.164-10.407S40.633,27.876,33.362,27.876' transform='translate(-15.177 -20.947)' fill='%23fff'/%3E%3Cpath id='패스_321' data-name='패스 321' d='M34.406,58.106h1.355s.008,3.722,0,4.589c0,.633,1.409.641,1.408.009l.006-4.55s.454,0,1.348,0a.663.663,0,0,0,0-1.325c-.949,0-4.121-.026-4.121-.026a.652.652,0,0,0,0,1.3' transform='translate(-25.405 -42.686)' fill='%231d1d1d'/%3E%3C/g%3E%3C/g%3E%3Cg id='그룹_141' data-name='그룹 141' transform='translate(8.228 13.759)'%3E%3Cg id='그룹_140' data-name='그룹 140' clip-path='url(%23clip-path-2)'%3E%3Crect id='사각형_310' data-name='사각형 310' width='6.465' height='7.331' transform='translate(-0.224)' fill='%231d1d1d'/%3E%3C/g%3E%3C/g%3E%3Cg id='그룹_143' data-name='그룹 143'%3E%3Cg id='그룹_142' data-name='그룹 142' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_323' data-name='패스 323' d='M53.759,58.428l.754,2.362H52.941Zm-.845-1.107c-.333.734-1.538,4.2-1.937,5.122-.289.665.957,1.207,1.246.542l.271-.948h2.479s-.086.039.244.908c.267.7,1.554.216,1.287-.488-.381-1.005-1.7-4.623-1.938-5.136a1.024,1.024,0,0,0-.892-.407.785.785,0,0,0-.761.407' transform='translate(-38.272 -42.767)' fill='%231d1d1d'/%3E%3C/g%3E%3C/g%3E%3Cg id='그룹_145' data-name='그룹 145' transform='translate(12.38 13.784)'%3E%3Cg id='그룹_144' data-name='그룹 144' clip-path='url(%23clip-path-4)'%3E%3Crect id='사각형_312' data-name='사각형 312' width='6.831' height='7.561' transform='translate(-0.276)' fill='%231d1d1d'/%3E%3C/g%3E%3C/g%3E%3Cg id='그룹_147' data-name='그룹 147'%3E%3Cg id='그룹_146' data-name='그룹 146' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_325' data-name='패스 325' d='M75.255,57.542c0,1.179.007,4.977.007,4.977s-.109.755.538.755,2.084-.007,2.72-.007.633-1.355,0-1.355-1.8-.007-1.8-.007.005-3.513,0-4.367a.744.744,0,0,0-1.467,0' transform='translate(-56.548 -42.771)' fill='%231d1d1d'/%3E%3C/g%3E%3C/g%3E%3Cg id='그룹_149' data-name='그룹 149' transform='translate(18.445 13.787)'%3E%3Cg id='그룹_148' data-name='그룹 148' clip-path='url(%23clip-path-6)'%3E%3Crect id='사각형_314' data-name='사각형 314' width='4.496' height='7.133' transform='translate(-0.114)' fill='%231d1d1d'/%3E%3C/g%3E%3C/g%3E%3Cg id='그룹_151' data-name='그룹 151'%3E%3Cg id='그룹_150' data-name='그룹 150' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_327' data-name='패스 327' d='M91.588,57.363c.014.517-.017,5.19-.016,5.536,0,.547,1.391.545,1.391,0,0-.634,0-1.838,0-1.838l.409-.327,1.786,2.437c.361.476,1.5-.385,1.137-.861l-1.9-2.5s1.287-1.393,1.795-1.9c.3-.294-.621-1.218-.917-.923s-2.3,2.3-2.3,2.3.018-1.268,0-1.969c-.007-.266-.334-.395-.667-.395-.357,0-.723.147-.716.432' transform='translate(-68.809 -42.779)' fill='%231d1d1d'/%3E%3C/g%3E%3C/g%3E%3Cg id='그룹_153' data-name='그룹 153' transform='translate(22.342 13.788)'%3E%3Cg id='그룹_152' data-name='그룹 152' clip-path='url(%23clip-path-8)'%3E%3Crect id='사각형_316' data-name='사각형 316' width='5.707' height='7.802' transform='translate(0 -0.264)' fill='%231d1d1d'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.footer .f_top .sns .kakao a:hover {
+    background-image: url("data:image/svg+xml,%3Csvg id='그룹_154' data-name='그룹 154' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36.6' height='36.81' viewBox='0 0 36.6 36.81'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_309' data-name='사각형 309' width='36.6' height='36.81' fill='none'/%3E%3C/clipPath%3E%3CclipPath id='clip-path-2'%3E%3Cpath id='패스_322' data-name='패스 322' d='M34.479,58.266H36s.009,4.178,0,5.152c0,.711,1.583.72,1.581.01l.007-5.107s.51,0,1.514,0a.745.745,0,0,0,0-1.488c-1.065,0-4.626-.03-4.626-.03a.732.732,0,0,0,0,1.459' transform='translate(-33.809 -56.807)' fill='none'/%3E%3C/clipPath%3E%3CclipPath id='clip-path-4'%3E%3Cpath id='패스_324' data-name='패스 324' d='M54.105,58.614l.846,2.652H53.187Zm-.949-1.242c-.374.824-1.726,4.717-2.175,5.75-.325.747,1.075,1.355,1.4.609l.3-1.064h2.783s-.1.043.274,1.019c.3.789,1.744.242,1.445-.548-.427-1.129-1.906-5.19-2.175-5.766a1.149,1.149,0,0,0-1-.457.881.881,0,0,0-.854.457' transform='translate(-50.933 -56.915)' fill='none'/%3E%3C/clipPath%3E%3CclipPath id='clip-path-6'%3E%3Cpath id='패스_326' data-name='패스 326' d='M75.255,57.619c0,1.323.008,5.587.008,5.587s-.122.848.6.848,2.339-.008,3.054-.008.711-1.521,0-1.521-2.02-.008-2.02-.008.006-3.944,0-4.9a.835.835,0,0,0-1.647,0' transform='translate(-75.254 -56.92)' fill='none'/%3E%3C/clipPath%3E%3CclipPath id='clip-path-8'%3E%3Cpath id='패스_328' data-name='패스 328' d='M91.589,57.416c.016.58-.019,5.827-.018,6.215,0,.614,1.562.612,1.562,0,0-.712,0-2.064,0-2.064l.459-.368L95.6,63.935c.406.534,1.681-.431,1.276-.966l-2.13-2.8s1.446-1.563,2.015-2.13c.333-.33-.7-1.367-1.029-1.036s-2.586,2.586-2.586,2.586.02-1.423,0-2.21c-.008-.3-.375-.443-.75-.443-.4,0-.812.166-.8.485' transform='translate(-91.571 -56.931)' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_139' data-name='그룹 139'%3E%3Cg id='그룹_138' data-name='그룹 138' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_319' data-name='패스 319' d='M36.6,28.62a8.166,8.166,0,0,1-8.143,8.19H8.143A8.166,8.166,0,0,1,0,28.62V8.19A8.166,8.166,0,0,1,8.143,0H28.457A8.166,8.166,0,0,1,36.6,8.19Z' fill='%23FFBE1A'/%3E%3Cpath id='패스_320' data-name='패스 320' d='M33.362,27.876c-7.27,0-13.164,4.659-13.164,10.407,0,3.741,2.5,7.02,6.245,8.855-.275,1.027-1,3.724-1.141,4.3-.179.716.262.707.551.515.227-.151,3.607-2.45,5.066-3.443a16.608,16.608,0,0,0,2.444.18c7.27,0,13.164-4.659,13.164-10.407S40.633,27.876,33.362,27.876' transform='translate(-15.177 -20.947)' fill='%23fff'/%3E%3Cpath id='패스_321' data-name='패스 321' d='M34.406,58.106h1.355s.008,3.722,0,4.589c0,.633,1.409.641,1.408.009l.006-4.55s.454,0,1.348,0a.663.663,0,0,0,0-1.325c-.949,0-4.121-.026-4.121-.026a.652.652,0,0,0,0,1.3' transform='translate(-25.405 -42.686)' fill='%23FFBE1A'/%3E%3C/g%3E%3C/g%3E%3Cg id='그룹_141' data-name='그룹 141' transform='translate(8.228 13.759)'%3E%3Cg id='그룹_140' data-name='그룹 140' clip-path='url(%23clip-path-2)'%3E%3Crect id='사각형_310' data-name='사각형 310' width='6.465' height='7.331' transform='translate(-0.224)' fill='%23FFBE1A'/%3E%3C/g%3E%3C/g%3E%3Cg id='그룹_143' data-name='그룹 143'%3E%3Cg id='그룹_142' data-name='그룹 142' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_323' data-name='패스 323' d='M53.759,58.428l.754,2.362H52.941Zm-.845-1.107c-.333.734-1.538,4.2-1.937,5.122-.289.665.957,1.207,1.246.542l.271-.948h2.479s-.086.039.244.908c.267.7,1.554.216,1.287-.488-.381-1.005-1.7-4.623-1.938-5.136a1.024,1.024,0,0,0-.892-.407.785.785,0,0,0-.761.407' transform='translate(-38.272 -42.767)' fill='%23FFBE1A'/%3E%3C/g%3E%3C/g%3E%3Cg id='그룹_145' data-name='그룹 145' transform='translate(12.38 13.784)'%3E%3Cg id='그룹_144' data-name='그룹 144' clip-path='url(%23clip-path-4)'%3E%3Crect id='사각형_312' data-name='사각형 312' width='6.831' height='7.561' transform='translate(-0.276)' fill='%23FFBE1A'/%3E%3C/g%3E%3C/g%3E%3Cg id='그룹_147' data-name='그룹 147'%3E%3Cg id='그룹_146' data-name='그룹 146' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_325' data-name='패스 325' d='M75.255,57.542c0,1.179.007,4.977.007,4.977s-.109.755.538.755,2.084-.007,2.72-.007.633-1.355,0-1.355-1.8-.007-1.8-.007.005-3.513,0-4.367a.744.744,0,0,0-1.467,0' transform='translate(-56.548 -42.771)' fill='%23FFBE1A'/%3E%3C/g%3E%3C/g%3E%3Cg id='그룹_149' data-name='그룹 149' transform='translate(18.445 13.787)'%3E%3Cg id='그룹_148' data-name='그룹 148' clip-path='url(%23clip-path-6)'%3E%3Crect id='사각형_314' data-name='사각형 314' width='4.496' height='7.133' transform='translate(-0.114)' fill='%23FFBE1A'/%3E%3C/g%3E%3C/g%3E%3Cg id='그룹_151' data-name='그룹 151'%3E%3Cg id='그룹_150' data-name='그룹 150' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_327' data-name='패스 327' d='M91.588,57.363c.014.517-.017,5.19-.016,5.536,0,.547,1.391.545,1.391,0,0-.634,0-1.838,0-1.838l.409-.327,1.786,2.437c.361.476,1.5-.385,1.137-.861l-1.9-2.5s1.287-1.393,1.795-1.9c.3-.294-.621-1.218-.917-.923s-2.3,2.3-2.3,2.3.018-1.268,0-1.969c-.007-.266-.334-.395-.667-.395-.357,0-.723.147-.716.432' transform='translate(-68.809 -42.779)' fill='%23FFBE1A'/%3E%3C/g%3E%3C/g%3E%3Cg id='그룹_153' data-name='그룹 153' transform='translate(22.342 13.788)'%3E%3Cg id='그룹_152' data-name='그룹 152' clip-path='url(%23clip-path-8)'%3E%3Crect id='사각형_316' data-name='사각형 316' width='5.707' height='7.802' transform='translate(0 -0.264)' fill='%23FFBE1A'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.footer .f_boutom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.footer .f_boutom h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.footer .f_boutom .f_info ul {
+    margin-bottom: 8px;
+}
+.footer .f_boutom .follow ul {
+    margin-bottom: 8px;
+}
