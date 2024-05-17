@@ -1,7 +1,7 @@
 /* 
     파일명 : common.js 
     작성자 : 이윤정
-    작성일 : 24.04.24
+    작성일 : 24.05.10
     설  명 : 모든 페이지에서 작동되는 jqeury (header와 footer에서 작동)
 */
 
@@ -18,5 +18,9 @@ $(document).ready(function(){
     scroll_chk() // 문서가 로드되었을때 1번 실행
     $(window).scroll(function(){
         scroll_chk()
+    })
+
+    $('.header .tnb .lang').on('click', function(){
+        $('.header .tnb .lang .list').toggle()
     })
 }) //$(document).ready

@@ -1,19 +1,40 @@
 @charset "utf-8"; /*이 css 문서는 UTF-8 방식으로 인코딩되어 있습니다. */
+
 /* 한글웹폰트 */
 @font-face {
-    font-family: 'TourEasy';
+    font-family: 'GmarketSans';
+    font-weight: 300;
     font-style: normal;
-    font-weight: 400;
-    src: url(../fonts/TourEasy_Easy_TTF.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/TourEasy_Easy_OTF.otf) format('truetype');
-}
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf') format("truetype");
+    font-display: swap;
+} 
 @font-face {
-    font-family: 'TourEasy';
+    font-family: 'GmarketSans';
+    font-weight: 500;
     font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf') format("truetype");
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'GmarketSans';
     font-weight: 700;
-    src: url(../fonts/TourEasy_Trust_TTF.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/TourEasy_Trust_OTF.otf) format('truetype');
-}
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.ttf') format("truetype");
+    font-display: swap;
+} 
+
 *::selection {
     background-color: #1d1d1d;
     color: #fff;
@@ -24,17 +45,17 @@
 }
 
 html, body {
-    font-family: 'TourEasy', sans-serif; 
+    font-family: 'GmarketSans', sans-serif; 
     /* 서체 - serif:명조  sans-serif : 고딕 */
     font-size: 15px;  /* 글자크기 */
     color: #3D3D3D; /* 글자색상 */
-    font-weight: 400; /* 글자의 두께 */
+    font-weight: 500; /* 글자의 두께 */
     line-height: 1.2; /* auto */
     word-break: keep-all;  /* 단어를 묶어서 줄바꿈 */
     word-wrap: break-word; /* 만약 단어가 엄청 길면 분리해서 줄바꿈 허용 */
 }
 .wrapper { /* 홈페이지의 넓이를 제한하고 가운데 정렬 */
-    width: 1280PX; /* 홈페이지 넓이 */
+    width: 1600PX; /* 홈페이지 넓이 */
     margin: 0 auto; /* 가운데 정렬 */
 }
 #wrap { /* id="wrap"에 적용되는 스타일 */
