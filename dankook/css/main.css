@@ -397,12 +397,25 @@
     justify-content: space-between;
 }
 .contents .popupzon {
+    position: relative;
     width: 50%;
+}
+.contents .popupzon::before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -2;
+    width: 150%;
+    height: 700px;
+    content: "";
+    background-color: #DFF6FF;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 100px 100px 0;
 }
 .contents .popupzon h2 {
     font-size: 50px;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin: 50px 0 40px 0;
 }
 .contents .popupzon .swiper { 
     width: 720px;
@@ -429,7 +442,24 @@
     background-image: url("data:image/svg+xml,%3Csvg width='39' height='39' viewBox='0 0 39 39' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.0873 19.9356L24.3706 12.6522L23.25 11.5316L14.8461 19.9356L23.25 28.3395L24.3706 27.2189L17.0873 19.9356Z' fill='%233D3D3D'/%3E%3C/svg%3E%0A");
 }
 .contents .donate {
+    position: relative;
     width: 50%;
+    margin-top: 200px;
+}
+.contents .donate::before {
+    position: absolute;
+    left: -20%;
+    top: 0;
+    z-index: -10;
+    width: 150%;
+    height: 620px;
+    content: "";
+    background-color: #F4F7FC;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 100px 0 0 100px;
+}
+.contents .donate .inner {
+    padding: 75px 0 0 50px;
 }
 .contents .donate .tit span {
     display: block;
@@ -441,18 +471,71 @@
     font-size: 50px;
     font-weight: 700;
     color: #1d1d1d;
+    margin-bottom: 40px;
+}
+.contents .donate .detail {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.contents .donate .detail .person {
+    margin-bottom: 10px;
+}
+.contents .donate .detail .person span,
+.contents .donate .detail .money span { 
+    position: relative;
+    font-size: 50px;
+    padding: 0 10px 0 60px;
+}
+.contents .donate .detail .person span {
+    color: #FF97B0;
+}
+.contents .donate .detail .money span {
+    font-size: 50px;
+    color: #F6B44F;
+}
+.contents .donate .detail .person span::before,
+.contents .donate .detail .money span::before { 
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 45px;
+    height: 40px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.contents .donate .detail .person span::before {
+    background-image: url(../images/donate_person_icon.png);
+}
+.contents .donate .detail .money span::before {
+    background-image: url(../images/donate_money_icon.png);
+}
+.contents .donate .link {
+    position: relative;
+}
+.contents .donate .link::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 247px;
+    height: 256px;
+    content: "";
+    background: url(../images/donate_cha.png) no-repeat center center / contain;
 }
 .contents .donate .link a {
-    width: 460px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    width: 465px;
     height: 145px;
+    padding: 0 20px 0 10px;
     background-color: #fff;
     border-radius: 30px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-}
-.contents .donate .link a {
-    display: flex;
-    justify-content: space-around;
-    align-items: center
 }
 .contents .donate .link .txt span {
     display: block;
@@ -467,3 +550,122 @@
 .contents .donate .link .txt span strong.c_pink {
     color: #FF97B0;
 } 
+.contents .donate .link .bts strong {
+    display: block;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.contents .donate .link .bts strong::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    width: 85px;
+    height: 85px;
+    content: "";
+    background-color: #444E69;
+    border-radius: 100%;
+}
+
+.schedule {
+    position: relative;
+    color: #fff;
+}
+.schedule::before {
+    position: absolute;
+    left: 0;
+    top: -100px;
+    z-index: -20;
+    width: 100%;
+    height: 500px;
+    content: "";
+    background: url(../images/schedule_bg.png) no-repeat center center;
+}
+.schedule .inner {
+    padding: 180px 0;
+}
+
+.youtube {
+    margin-top: 180px;
+}
+.youtube .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end
+}
+.youtube .tit span {
+    font-size: 20px;
+    color: #3d3d3d;
+}
+.youtube .tit h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.youtube .link strong {
+    position: relative;
+    font-weight: 700;
+    padding-left: 30px;
+    color: #FF0000;
+}
+.youtube .link strong::before {
+    position: absolute;
+    left: -10px;
+    top: -8px;
+    width: 32px;
+    height: 32px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='23' viewBox='0 0 32 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_28_251)'%3E%3Cpath d='M31.3312 3.93554C30.9627 2.58373 29.8784 1.51874 28.502 1.15689C26.0067 0.5 15.9995 0.5 15.9995 0.5C15.9995 0.5 5.99326 0.5 3.49799 1.15689C2.12161 1.51874 1.03725 2.58373 0.668825 3.93554C0 6.38627 0 11.4995 0 11.4995C0 11.4995 0 16.6127 0.668825 19.0645C1.03725 20.4163 2.12161 21.4813 3.49799 21.8431C5.99326 22.5 15.9995 22.5 15.9995 22.5C15.9995 22.5 26.0057 22.5 28.501 21.8431C29.8773 21.4813 30.9617 20.4163 31.3301 19.0645C31.9989 16.6137 31.999 11.4995 31.999 11.4995C31.999 11.4995 31.9989 6.38627 31.3301 3.93451L31.3312 3.93554Z' fill='%23FF0000'/%3E%3Cpath d='M12.7998 16.2138L21.1135 11.5005L12.7998 6.78613V16.2138Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_28_251'%3E%3Crect width='32' height='22' fill='white' transform='translate(0 0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.youtube .link button {
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    padding: 10px 40px 10px 20px;
+    background-color: #FF0000;
+    border-radius: 20px;
+    color: #fff;
+}
+.youtube .link button::before {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_28_255)'%3E%3Cpath d='M8.16677 9.00005H4.83344C4.69177 9.00005 4.57302 8.95212 4.47719 8.85625C4.38135 8.76037 4.33344 8.64157 4.33344 8.49985C4.33344 8.35811 4.38135 8.23939 4.47719 8.14366C4.57302 8.04794 4.69177 8.00008 4.83344 8.00008H8.16677V4.66675C8.16677 4.52508 8.2147 4.40633 8.31057 4.3105C8.40645 4.21466 8.52525 4.16675 8.66697 4.16675C8.8087 4.16675 8.92743 4.21466 9.02315 4.3105C9.11887 4.40633 9.16673 4.52508 9.16673 4.66675V8.00008H12.5001C12.6417 8.00008 12.7605 8.04801 12.8563 8.14388C12.9522 8.23976 13.0001 8.35856 13.0001 8.50028C13.0001 8.64201 12.9522 8.76074 12.8563 8.85646C12.7605 8.95219 12.6417 9.00005 12.5001 9.00005H9.16673V12.3334C9.16673 12.475 9.1188 12.5938 9.02293 12.6896C8.92706 12.7855 8.80826 12.8334 8.66653 12.8334C8.5248 12.8334 8.40607 12.7855 8.31035 12.6896C8.21463 12.5938 8.16677 12.475 8.16677 12.3334V9.00005Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_28_255'%3E%3Crect width='16' height='16' fill='white' transform='translate(0.666748 0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-size: 16px auto;
+} 
+.youtube .list {
+    display: flex;
+    text-align: center;
+}
+.youtube .list .list_t,
+.youtube .list .list_b {
+    display: flex;
+}
+.youtube .list .best {
+    background-color: #DFF6FF;
+    border-radius: 30px;
+}
+.youtube .list .best iframe {
+    margin: 40px 35px 15px 35px;
+}
+.youtube .list .best h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1d1d1d;
+}
+.youtube .list .best span {
+    display: block;
+    margin-bottom: 35px;
+    color: #2d2d2d;
+}
