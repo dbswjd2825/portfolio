@@ -572,19 +572,84 @@
 .schedule {
     position: relative;
     color: #fff;
+    padding: 250px 0 180px 0;
 }
 .schedule::before {
     position: absolute;
     left: 0;
-    top: -100px;
+    top: -50px;
     z-index: -20;
     width: 100%;
-    height: 500px;
+    height: 700px;
     content: "";
     background: url(../images/schedule_bg.png) no-repeat center center;
 }
-.schedule .inner {
-    padding: 180px 0;
+.schedule .tit {
+    margin-right: 100px;
+}
+.schedule .tit h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.schedule .wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+.schedule  ul li a {
+    display: block;
+    position: relative;
+    margin-top: 55px;
+}
+.schedule  ul li .top span {
+    position: absolute;
+    left: 30px;
+    top: -40px;
+    display: block;
+    text-align: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    background-color: #fff;
+    color: #1d1d1d;
+    padding-top: 10px;
+}
+.schedule  ul li .top span strong {
+    font-size: 25px;
+    font-weight: 700;
+}
+.schedule  ul li .detail {
+    font-size: 20px;
+    text-align: center;
+    height: 160px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 35px 20px;
+}
+.schedule  ul li .detail h3 {
+    font-weight: 700;
+    margin-top: 20px;
+}
+.schedule .tit .more a {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 40px 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+.schedule .tit .more a::before {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_30_5)'%3E%3Cpath d='M8.46767 8.56255H5.13434C4.99267 8.56255 4.87392 8.51462 4.77809 8.41875C4.68226 8.32287 4.63434 8.20407 4.63434 8.06235C4.63434 7.92061 4.68226 7.80189 4.77809 7.70616C4.87392 7.61044 4.99267 7.56258 5.13434 7.56258H8.46767V4.22925C8.46767 4.08758 8.5156 3.96883 8.61147 3.873C8.70735 3.77716 8.82615 3.72925 8.96787 3.72925C9.1096 3.72925 9.22833 3.77716 9.32405 3.873C9.41978 3.96883 9.46764 4.08758 9.46764 4.22925V7.56258H12.801C12.9426 7.56258 13.0614 7.61051 13.1572 7.70638C13.2531 7.80226 13.301 7.92106 13.301 8.06278C13.301 8.20451 13.2531 8.32324 13.1572 8.41896C13.0614 8.51469 12.9426 8.56255 12.801 8.56255H9.46764V11.8959C9.46764 12.0375 9.4197 12.1563 9.32384 12.2521C9.22796 12.348 9.10916 12.3959 8.96744 12.3959C8.8257 12.3959 8.70698 12.348 8.61125 12.2521C8.51553 12.1563 8.46767 12.0375 8.46767 11.8959V8.56255Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_30_5'%3E%3Crect width='16' height='16' fill='white' transform='translate(0.967651 0.0626221)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-size: 16px auto;
 }
 
 .youtube {
@@ -593,7 +658,8 @@
 .youtube .top {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end
+    align-items: flex-end;
+    margin-bottom: 50px;
 }
 .youtube .tit span {
     font-size: 20px;
@@ -647,9 +713,11 @@
     display: flex;
     text-align: center;
 }
-.youtube .list .list_t,
-.youtube .list .list_b {
+.youtube .list .list_g {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 20px;
 }
 .youtube .list .best {
     background-color: #DFF6FF;
@@ -668,4 +736,25 @@
     display: block;
     margin-bottom: 35px;
     color: #2d2d2d;
+}
+.youtube .list_g .list01,
+.youtube .list_g .list02,
+.youtube .list_g .list03,
+.youtube .list_g .list04 {
+    background-color: #F4F7FC;
+    border-radius: 15px;
+}
+.youtube .list_g .list01,
+.youtube .list_g .list02 {
+    margin-bottom: 20px;
+}
+.youtube .list_g iframe {
+    margin: 20px 20px 10px 20px;
+}
+.youtube .list_g h3 {
+    font-weight: 700;
+    color: #1d1d1d;
+    text-align: center;
+    width: 350px;
+    margin-left: 20px;
 }
