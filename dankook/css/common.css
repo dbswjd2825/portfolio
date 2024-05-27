@@ -59,7 +59,7 @@ html, body {
     margin: 0 auto; /* 가운데 정렬 */
 }
 #wrap { /* id="wrap"에 적용되는 스타일 */
-    min-width: 1280px;
+    min-width: 1600px;
     overflow: hidden; 
 }
 .skipnav {
