@@ -108,7 +108,7 @@ $(document).ready(function(){
         centeredSlides: true, /* 팝업을 화면에 가운데 정렬(가운데 1번이 옴) */
         loop: true,  /* 마지막 팝업에서 첫번째 팝업으로 자연스럽게 넘기기 */
         autoplay: {  /* 팝업 자동 실행 */
-            delay: 2500,
+            delay: 1500,
             disableOnInteraction: true,
         },
         navigation: {
@@ -121,7 +121,16 @@ $(document).ready(function(){
             type: 'fraction',  /* type fraction을 주면 paging이 숫자로 표시됨 */
         },
     });
-    swiper.autoplay.stop();  /* 일시정지 기능 */
-    swiper.autoplay.start();  /* 재생 기능 */
+    $('.schedule .tit .stop').on('click', function(){
+        $(this).hide()
+        $('.schedule .tit .start').show()
+        swiper.autoplay.stop();  /* 일시정지 기능 */
+    })
+    $('.schedule .tit .start').on('click', function(){
+        $(this).hide()
+        $('.schedule .tit .stop').show()
+        swiper.autoplay.start();  /* 재생 기능 */
+    })
+
 
     }) //$(document).ready
