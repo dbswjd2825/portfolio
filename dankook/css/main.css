@@ -39,6 +39,80 @@
     font-size: 20px; /*단국대체로 지정해야됨*/
 }
 
+.quick_menu {
+    position: absolute;
+    right: 20px;
+    top: 200px;
+}
+.quick_menu ul {
+    position: relative;
+    background-color: #F4F7FC;
+    padding: 15px 10px;
+    border-radius: 180px;
+    z-index: 2;
+}
+.quick_menu::before {
+    position: absolute;
+    left: 0;
+    top: -100px;
+    width: 100px;
+    height: 233px;
+    content: "";
+    background: url(../images/q_menu_icon.png) no-repeat center center / contain;
+}
+.quick_menu ul li a {
+    position: relative;
+    display: block;
+    font-size: 12px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #273D88;
+    color: #fff;
+    text-align: center;
+    padding-top: 45px;
+    margin-bottom: 10px;
+}
+.quick_menu ul li.q_top a {
+    height: 40px;
+    border-radius: 5px 5px 40px 40px;
+    padding: 12px 0 0 20px;
+    background-color: #FF97B0;
+    margin-bottom: 0;
+}
+.quick_menu ul li a::after {
+    position: absolute;
+    left: 50%;
+    top: 15px;
+    transform: translate(-50%, 0);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    content: "";
+}
+.quick_menu ul li.q_search a::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.155 17.1212L22.4377 21.4039L21.0235 22.8181L16.7408 18.5354C15.2009 19.7674 13.248 20.5044 11.124 20.5044C6.15602 20.5044 2.12402 16.4724 2.12402 11.5044C2.12402 6.53639 6.15602 2.50439 11.124 2.50439C16.092 2.50439 20.124 6.53639 20.124 11.5044C20.124 13.6284 19.387 15.5813 18.155 17.1212ZM16.1487 16.3792C17.3715 15.119 18.124 13.4 18.124 11.5044C18.124 7.63689 14.9915 4.50439 11.124 4.50439C7.25652 4.50439 4.12402 7.63689 4.12402 11.5044C4.12402 15.3719 7.25652 18.5044 11.124 18.5044C13.0196 18.5044 14.7386 17.7519 15.9988 16.5291L16.1487 16.3792Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+.quick_menu ul li.q_student a::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.2693 14.4443V16.4443C8.95558 16.4443 6.26929 19.1306 6.26929 22.4443H4.26929C4.26929 18.026 7.85101 14.4443 12.2693 14.4443ZM12.2693 13.4443C8.95429 13.4443 6.26929 10.7593 6.26929 7.44434C6.26929 4.12934 8.95429 1.44434 12.2693 1.44434C15.5843 1.44434 18.2693 4.12934 18.2693 7.44434C18.2693 10.7593 15.5843 13.4443 12.2693 13.4443ZM12.2693 11.4443C14.4793 11.4443 16.2693 9.65434 16.2693 7.44434C16.2693 5.23434 14.4793 3.44434 12.2693 3.44434C10.0593 3.44434 8.26929 5.23434 8.26929 7.44434C8.26929 9.65434 10.0593 11.4443 12.2693 11.4443ZM18.2693 21.9443L15.3304 23.4894L15.8917 20.2168L13.514 17.8992L16.7998 17.4218L18.2693 14.4443L19.7388 17.4218L23.0246 17.8992L20.6469 20.2168L21.2082 23.4894L18.2693 21.9443Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+.quick_menu ul li.q_prospect a::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.2693 14.4344V16.5238C13.6437 16.3027 12.9706 16.1824 12.2693 16.1824C8.95558 16.1824 6.26929 18.8687 6.26929 22.1824H4.26929C4.26929 17.7641 7.85101 14.1824 12.2693 14.1824C12.9599 14.1824 13.6301 14.2699 14.2693 14.4344ZM12.2693 13.1824C8.95429 13.1824 6.26929 10.4974 6.26929 7.18237C6.26929 3.86737 8.95429 1.18237 12.2693 1.18237C15.5843 1.18237 18.2693 3.86737 18.2693 7.18237C18.2693 10.4974 15.5843 13.1824 12.2693 13.1824ZM12.2693 11.1824C14.4793 11.1824 16.2693 9.39237 16.2693 7.18237C16.2693 4.97237 14.4793 3.18237 12.2693 3.18237C10.0593 3.18237 8.26929 4.97237 8.26929 7.18237C8.26929 9.39237 10.0593 11.1824 12.2693 11.1824ZM18.2693 17.1824V14.1824H20.2693V17.1824H23.2693V19.1824H20.2693V22.1824H18.2693V19.1824H15.2693V17.1824H18.2693Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+.quick_menu ul li.q_employee a::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.8356 16.4324L18.0116 16.6094L18.1891 16.4324C19.0678 15.5537 20.4924 15.5537 21.3711 16.4324C22.2498 17.3111 22.2498 18.7357 21.3711 19.6144L18.0124 22.9731L14.6536 19.6144C13.7749 18.7357 13.7749 17.3111 14.6536 16.4324C15.5323 15.5537 16.9569 15.5537 17.8356 16.4324ZM11.9946 14.7734V16.7734C8.68092 16.7734 5.99463 19.4597 5.99463 22.7734H3.99463C3.99463 18.4385 7.44247 14.9089 11.7454 14.7772L11.9946 14.7734ZM11.9946 1.77344C15.3096 1.77344 17.9946 4.45844 17.9946 7.77344C17.9946 11.0131 15.4303 13.651 12.2196 13.7693L11.9946 13.7734C8.67963 13.7734 5.99463 11.0884 5.99463 7.77344C5.99463 4.53378 8.55897 1.89581 11.7696 1.77758L11.9946 1.77344ZM11.9946 3.77344C9.7842 3.77344 7.99463 5.56301 7.99463 7.77344C7.99463 9.98387 9.7842 11.7734 11.9946 11.7734C14.205 11.7734 15.9946 9.98387 15.9946 7.77344C15.9946 5.56301 14.205 3.77344 11.9946 3.77344Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+.quick_menu ul li.q_top a::after {
+    left: 12px;
+    top: 8px;
+    transform: translate(0, 0);
+    background-size: 24px auto;
+    background-image: url("data:image/svg+xml,%3Csvg width='26' height='25' viewBox='0 0 26 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.6806 15.625L7.86337 15.625L13.272 7.13151L18.6806 15.625Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
 .service {
     margin-bottom: 130px;
 }
@@ -103,6 +177,7 @@
     color: #1d1d1d;
     border-radius: 20px;
     padding-top: 110px;
+    transition: 0.5s;
 }
 .service .detail ul li a::before {
     position: absolute;
@@ -135,6 +210,12 @@
     background-image: url(../images/service_cooperation.png);
     background-size: 58px auto;
 }
+.service .detail ul li a:hover {
+    font-weight: 700;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    transform: translate(0, -10px); 
+}
+
 
 .notice .wrapper {
     display: flex;
@@ -220,6 +301,12 @@
     background-position: center center;
     background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_30_5)'%3E%3Cpath d='M8.46767 8.56255H5.13434C4.99267 8.56255 4.87392 8.51462 4.77809 8.41875C4.68226 8.32287 4.63434 8.20407 4.63434 8.06235C4.63434 7.92061 4.68226 7.80189 4.77809 7.70616C4.87392 7.61044 4.99267 7.56258 5.13434 7.56258H8.46767V4.22925C8.46767 4.08758 8.5156 3.96883 8.61147 3.873C8.70735 3.77716 8.82615 3.72925 8.96787 3.72925C9.1096 3.72925 9.22833 3.77716 9.32405 3.873C9.41978 3.96883 9.46764 4.08758 9.46764 4.22925V7.56258H12.801C12.9426 7.56258 13.0614 7.61051 13.1572 7.70638C13.2531 7.80226 13.301 7.92106 13.301 8.06278C13.301 8.20451 13.2531 8.32324 13.1572 8.41896C13.0614 8.51469 12.9426 8.56255 12.801 8.56255H9.46764V11.8959C9.46764 12.0375 9.4197 12.1563 9.32384 12.2521C9.22796 12.348 9.10916 12.3959 8.96744 12.3959C8.8257 12.3959 8.70698 12.348 8.61125 12.2521C8.51553 12.1563 8.46767 12.0375 8.46767 11.8959V8.56255Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_30_5'%3E%3Crect width='16' height='16' fill='white' transform='translate(0.967651 0.0626221)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
     background-size: 16px auto;
+}
+.notice .detail {
+    display: none;
+}
+.notice .detail[data-name="n_common"] {
+    display: block;
 }
 .notice .detail ul {
     display: flex;
@@ -412,14 +499,52 @@
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 0 100px 100px 0;
 }
+.contents .popupzon .top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-right: 80px;
+}
 .contents .popupzon h2 {
     font-size: 50px;
     font-weight: 700;
     margin: 50px 0 40px 0;
 }
+.contents .popupzon .page {
+    display: flex;
+    align-items: center;
+}
+.contents .popupzon .pagination {
+    font-size: 25px;
+    color: #333;
+    width: auto;
+    margin-right: 30px;    
+}
+.contents .popupzon .pagination .swiper-pagination-current {
+    font-weight: 700;
+    color: #1d1d1d;
+}
+
+.contents .popupzon .prev,
+.contents .popupzon .next {
+    width: 38px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.contents .popupzon .prev {
+    background-image: url("data:image/svg+xml,%3Csvg width='39' height='39' viewBox='0 0 39 39' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.0873 19.9356L24.3706 12.6522L23.25 11.5316L14.8461 19.9356L23.25 28.3395L24.3706 27.2189L17.0873 19.9356Z' fill='%233D3D3D'/%3E%3C/svg%3E%0A");
+}
+.contents .popupzon .next {
+    background-image: url("data:image/svg+xml,%3Csvg width='39' height='39' viewBox='0 0 39 39' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_29_288)'%3E%3Cpath d='M21.1795 19.5864L13.8961 12.3031L15.0167 11.1825L23.4207 19.5864L15.0167 27.9904L13.8961 26.8698L21.1795 19.5864Z' fill='%233D3D3D'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_29_288'%3E%3Crect width='38' height='38' fill='white' transform='translate(0.133362 0.586426)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
 .contents .popupzon .swiper { 
     width: 720px;
     height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-left: 0;
 }
 .contents .popupzon .swiper-slide img {
     display: block; 
@@ -427,20 +552,7 @@
     height: 100%; 
     object-fit: cover; 
 } 
-.contents .popupzon .swiper .prev,
-.contents .popupzon .swiper .next {
-    position: absolute;
-    width: 38px;
-    height: 38px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 38px auto;
-} 
-.contents .popupzon .swiper .prev {
-    right: 0;
-    top: -50px;
-    background-image: url("data:image/svg+xml,%3Csvg width='39' height='39' viewBox='0 0 39 39' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.0873 19.9356L24.3706 12.6522L23.25 11.5316L14.8461 19.9356L23.25 28.3395L24.3706 27.2189L17.0873 19.9356Z' fill='%233D3D3D'/%3E%3C/svg%3E%0A");
-}
+
 .contents .donate {
     position: relative;
     width: 50%;
@@ -457,6 +569,16 @@
     background-color: #F4F7FC;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 100px 0 0 100px;
+}
+.contents .donate::after {
+    position: absolute;
+    left: 50px;
+    top: -150px;
+    width: 825px;
+    height: 171px;
+    background: url(../images/donate_txt.png) no-repeat center center / contain;
+    content: "";
+
 }
 .contents .donate .inner {
     padding: 75px 0 0 50px;
