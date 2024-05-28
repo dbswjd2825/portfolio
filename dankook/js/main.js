@@ -6,6 +6,15 @@
 */
 $(document).ready(function(){
 
+
+    //top 버튼 눌러서 상단으로 이동
+    $('.quick_menu ul li.q_top').on('click', function(){
+        $('html,body').animate({
+            scrollTop:0
+        }, 500)
+    })
+
+
     let item_name
 
     $('.notice .tit .tap_menu ul li').on('click', function(){

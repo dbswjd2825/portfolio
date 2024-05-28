@@ -23,4 +23,12 @@ $(document).ready(function(){
     $('.header .tnb .lang').on('click', function(){
         $('.header .tnb .lang .list').toggle()
     })
+
+    //top 버튼 눌러서 상단으로 이동
+    $('aside button').on('click', function(){
+        $('html,body').animate({
+            scrollTop:0
+        }, 500)
+    })
+
 }) //$(document).ready
