@@ -658,7 +658,7 @@
 .contents .donate .detail .money span { 
     position: relative;
     font-size: 50px;
-    padding: 0 10px 0 60px;
+    padding: 0 10px 0 60px; 
 }
 .contents .donate .detail .person span {
     color: #FF97B0;
