@@ -155,6 +155,7 @@
     background-color: #fff;
     color: #1d1d1d;
     margin-right: 10px;
+    cursor: pointer;
 }
 .service .tap_menu ul li.on {
     background-color: #00529C;
@@ -252,6 +253,7 @@
     line-height: 60px;
     padding: 0 45px 0 20px;
     white-space: nowrap;
+    cursor: pointer;
 }
 .notice .tit .tap_menu ul li::before {
     position: absolute;
@@ -740,8 +742,11 @@
     content: "";
     background-color: #444E69;
     border-radius: 100%;
+    transition: 0.5s;
 }
-
+.contents .donate .link .bts strong:hover::before {
+    background-color: #FF97B0;
+}
 .schedule {
     position: relative;
     color: #fff;

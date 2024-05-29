@@ -26,6 +26,11 @@ $(document).ready(function(){
     })
 
        
+    $('.service .tap_menu ul li').on('click', function(){
+        $('.service .tap_menu ul li').removeClass("on")
+        $(this).addClass("on")
+    })
+
     const popupzon_swiper = new Swiper('.popupzon .swiper', { /* 팝업을 감싼는 요소의 class명 */
 
         autoplay: {  /* 팝업 자동 실행 */

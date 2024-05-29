@@ -31,4 +31,9 @@ $(document).ready(function(){
         }, 500)
     })
 
+    $('.footer .family_site .list').hide()
+    $('.footer .family_site > ul > li').on('click', function(){
+        $(this).children('.list').toggle()
+        $(this).toggleClass('on')
+    })
 }) //$(document).ready

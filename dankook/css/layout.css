@@ -138,9 +138,19 @@
     background-image: url("data:image/svg+xml,%3Csvg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.8942 7.01074L5.1058 7.01074L8.99999 13.1261L12.8942 7.01074Z' fill='%231D1D1D'/%3E%3C/svg%3E%0A");
 }
 .footer {
-    margin-top: 200px;
-    background-color: #212634; 
+    position: relative;
+    margin-top: 200px; 
     color: rgba(255, 255, 255, 0.8);
+}
+.footer::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    width: 100%;
+    height: 800px;
+    content: "";
+    background-color: #212634;
 }
 .footer .f_logo {
     position: relative;
@@ -159,19 +169,21 @@
     padding-top: 250px;
     font-size: 20px;
 }
-.footer .family_site ul {
+.footer .family_site > ul {
     display: flex;
     justify-content: space-between;
 }
-.footer .family_site ul li {
+.footer .family_site > ul > li {
     position: relative;
     width: 33.33%;
+    height: 70px;
     margin-right: 20px;
-    padding: 20px 0 20px 50px;
+    padding-left: 50px;
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 20px;
+    cursor: pointer;
 }   
-.footer .family_site ul li::before {
+.footer .family_site > ul > li::before {
     position: absolute;
     right: 30px;
     top: 15px;
@@ -183,12 +195,46 @@
     background-size: contain;
     background-image: url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_30_118)'%3E%3Cpath d='M16.0551 15.0276L9.92172 21.1609L8.97806 20.2172L16.0551 13.1402L23.1321 20.2172L22.1884 21.1609L16.0551 15.0276Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_30_118'%3E%3Crect width='32' height='32' fill='white' transform='translate(0.0550537 32.7505) rotate(-90)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
 }
-.footer .family_site ul li:last-child {
+.footer .family_site > ul > li.on::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='33' viewBox='0 0 32 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.7' clip-path='url(%23clip0_30_115)'%3E%3Cpath d='M16 18.4734L22.1334 12.3401L23.077 13.2838L16 20.3608L8.92303 13.2838L9.86669 12.3401L16 18.4734Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_30_115'%3E%3Crect width='32' height='32' fill='white' transform='matrix(0 1 -1 0 32 0.750488)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.footer .family_site > ul > li span {
+    display: block;
+    line-height: 70px;
+}
+.footer .family_site > ul > li:last-child {
     margin-right: 0;
 }
-.footer .family_site ul li a {
-    display: block;
+.footer .family_site .list {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 69px;
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    background-color: #F4F7FC;
+    color: #3d3d3d;
+    border-radius: 20px;
 }
+.footer .family_site .list strong {
+    display: block;
+    color: #1d1d1d;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.footer .family_site .list ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+}
+.footer .family_site .list ul li a {
+    display: block;
+    font-size: 15px;
+    margin: 0 40px 10px 0;
+}
+
 .footer .f_nav {
     position: relative;
     padding: 50px 0 80px 0;
