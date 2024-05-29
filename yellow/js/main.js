@@ -50,7 +50,7 @@ $(document).ready(function(){
 
 
     $('.trip_family .txt .tit strong').on('click', function(){
-        $('.trip_family .txt .tit').toggleClass('open');
+        $('.trip_family .txt .tit').('open');
         $('html').click(function(e) {   
             if($(e.target).parents('.trip_family .txt .tit').length < 1){   
                 $('.trip_family .txt .tit').removeClass('open');
