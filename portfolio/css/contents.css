@@ -1036,6 +1036,14 @@
     object-fit: cover;
 }
 
+/* 단국대학교*/
+
+.dankook .visual {
+    position: relative;
+    height: 900px;
+    color: #fff;
+}
+
 /* 서울특별시체육회*/
 .sport .visual {
     position: relative;
