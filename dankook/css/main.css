@@ -60,6 +60,15 @@
     height: 233px;
     content: "";
     background: url(../images/q_menu_icon.png) no-repeat center center / contain;
+    animation-name: quick_menu_move; 
+    animation-duration:3s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear;
+}
+@keyframes quick_menu_move { /* 애니메이션을 효과를 미리 설정함 */
+	0% { transform:translate(0, 0) }  /* 애니메이션을 시작할때의 속성 */
+	50% { transform:translate(0, 20px) } /* 중간값은 %를 조절하여 추가/삭제 가능 */
+	100% { transform:translate(0, 0) } /* 애니메이션이 종료될때의 속성 */
 }
 .quick_menu ul li a {
     position: relative;
