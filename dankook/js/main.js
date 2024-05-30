@@ -21,15 +21,10 @@ $(document).ready(function(){
         $('.notice .tit .tap_menu ul li').removeClass("on")
         $(this).addClass("on")
         item_name = $(this).attr('data-name') 
-        $('.notice .tit .tap_menu .detail').hide()
-        $('.notice .tit .tap_menu .detail').find('[data-name = "'+item_name+'"]').show()
+        $('.notice .detail .item').hide()
+        $('.notice .detail').find('[data-name = "'+item_name+'"]').show()
     })
 
-       
-    $('.service .tap_menu ul li').on('click', function(){
-        $('.service .tap_menu ul li').removeClass("on")
-        $(this).addClass("on")
-    })
 
     const popupzon_swiper = new Swiper('.popupzon .swiper', { /* 팝업을 감싼는 요소의 class명 */
 
@@ -49,8 +44,8 @@ $(document).ready(function(){
         },
         
         navigation: {  /* 이전, 다음 버튼 */
-            nextEl: '.next',  /* 다음 버튼의 클래스명 */
-            prevEl: '.prev',  
+        nextEl: '.popupzon .next',  /* 다음 버튼의 클래스명 */
+        prevEl: '.popupzon .prev',  
         },
 
     });
@@ -114,7 +109,7 @@ $(document).ready(function(){
         slidesPerView: 3, /* 한번에 보일 팝업의 수 - 모바일 제일 작은 사이즈일때 */
         spaceBetween: 20, /* 팝업과 팝업 사이 여백 */
         breakpoints: {
-            1600: {    /* 1280px 이상일때 적용 */
+            1600: {   
                 slidesPerView: 3,
                 spaceBetween: 20,
             },
@@ -126,13 +121,8 @@ $(document).ready(function(){
             disableOnInteraction: true,
         },
         navigation: {
-            nextEl: '.next',
-            prevEl: '.prev',
-        },
-        pagination: {  /* 몇개의 팝업이 있는지 보여주는 동그라미 */
-            el: '.pagination', /* 해당 요소의 class명 */
-            clickable: true,  /* 클릭하면 해당 팝업으로 이동할 것인지 값 */
-            type: 'fraction',  /* type fraction을 주면 paging이 숫자로 표시됨 */
+            nextEl: '.schedule .next',
+            prevEl: '.schedule .prev',
         },
     });
     $('.schedule .tit .stop').on('click', function(){
@@ -146,5 +136,11 @@ $(document).ready(function(){
         swiper.autoplay.start();  /* 재생 기능 */
     })
 
+    let now = new Date()
+	let now_year = now.getFullYear()
+	let now_month = now.getMonth()+1
+	let now_date = now.getDate()
+	let now_day = now.getDay() //요일
+	$('.schedule .date span').text(now_year + '년' + now_month + '월' + now_date + '일')
 
     }) //$(document).ready

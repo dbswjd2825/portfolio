@@ -40,16 +40,17 @@
 }
 
 .quick_menu {
-    position: absolute;
+    position: fixed;
     right: 20px;
-    top: 200px;
+    top: 240px;
+    z-index: 100;
 }
 .quick_menu ul {
     position: relative;
     background-color: #F4F7FC;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     padding: 15px 10px;
     border-radius: 180px;
-    z-index: 2;
 }
 .quick_menu::before {
     position: absolute;
@@ -330,10 +331,10 @@
     width: 100%;
     z-index: -1;
 }
-.notice .detail {
+.notice .detail .item {
     display: none;
 }
-.notice .detail[data-name="n_common"] {
+.notice .detail .item[data-name="n_common"] {
     display: block;
 }
 .notice .detail ul {
@@ -780,6 +781,9 @@
     padding: 10px 20px;
     border-radius: 20px;
     display: inline-block;
+}
+.schedule .tit .date strong {
+    margin-right: 8px;
 }
 .schedule .tit .bts {
     display: flex;
