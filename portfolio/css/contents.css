@@ -1041,8 +1041,138 @@
 .dankook .visual {
     position: relative;
     height: 900px;
-    color: #fff;
+    color: #1D1D1D;
 }
+.dankook .visual::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    width: 100%; 
+    height: 900px;
+    content: "";
+    background: url(../images/contents/d_visual.png) no-repeat center center/ cover;
+}
+.dankook .visual .inner {
+    padding-top: 200px;
+    display: flex;
+}
+.dankook .visual .intro strong {
+    font-size: 20px;
+    font-weight: 700;
+    color: #3d3d3d;
+}
+.dankook .visual .intro h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #00529C;
+    margin: 10px 0 15px 0;
+}
+.dankook .visual .intro p {
+    width: 330px;
+    margin-bottom: 30px;
+}
+.dankook .visual .detail {
+    margin-top: 50px;
+}
+.dankook .visual .detail > ul > li {
+    margin-bottom: 10px;
+}
+.dankook .visual .detail strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin-bottom: 5px;
+} 
+.dankook .visual .detail .tool ul {
+    display: flex;
+    align-items: center;
+}
+.dankook .visual .detail .tool ul li {
+    margin-right: 5px;
+}
+.dankook .visual .detail .tool ul li {
+    position: relative;
+}
+.dankook .visual .inner .link {
+    position: relative;
+    margin-top: 50px;
+}
+.dankook .visual .link::after {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    z-index: -1;
+    width: 167px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #00529C;
+    content: "";
+}
+.dankook .visual .link a {
+    display: inline-block;
+    position: relative;
+    padding: 0 40px 0 15px;
+    border-radius: 20px;
+    line-height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: #fff;
+    color: #2d2d2d;
+    transition: 0.5s;
+}
+.dankook .visual .link a:hover {
+    transform: translate(7px, 7px);
+}
+.dankook .visual .link a::before {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.7438 10.5166H4.70215V9.93327H14.7438L9.86881 5.05827L10.2855 4.6416L15.8688 10.2249L10.2855 15.8083L9.86881 15.3916L14.7438 10.5166Z' fill='%231D1D1D'/%3E%3C/svg%3E%0A");
+}
+.dankook .visual .pc_mockup {
+    position: relative;
+}
+.dankook .visual .pc_mockup img {
+    position: absolute;
+    left: 0;
+    top: -50px;
+}
+.dankook .concept {
+    position: relative;
+    margin-top: 260px;
+    text-align: center;
+}
+.dankook .concept strong {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -80px;
+    width: 100%;
+    transform: translate(-50%, 0);
+    font-size: 100px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.1);
+}
+.dankook .concept h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.dankook .concept span {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #00529C;
+    margin: 10px 0 20px 0;
+}
+
 
 /* 서울특별시체육회*/
 .sport .visual {
