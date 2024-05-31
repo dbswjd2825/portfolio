@@ -1324,12 +1324,12 @@
     background-color: #8EE6D6;
     z-index: -5;
 }
-.dankook > .detail {
+.dankook .page_detail {
     position: relative;
     height: 3814px;
     margin-top: 200px;
 }
-.dankook .detail::before {
+.dankook .page_detail::before {
     position: absolute;
     left: 0;
     top: 0;
@@ -1337,7 +1337,7 @@
     height: 100%;
     content: "";
 }
-.dankook .detail::before {
+.dankook .page_detail::before {
     background: url(../images/contents/d_detail.png) no-repeat center center;
 }
 /* 서울특별시체육회*/
