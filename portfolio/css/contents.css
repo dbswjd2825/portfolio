@@ -1172,8 +1172,174 @@
     color: #00529C;
     margin: 10px 0 20px 0;
 }
-
-
+.dankook .type_grup {
+    margin-top: 150px;
+    text-align: center;
+}
+.dankook .type_grup .wrapper {
+    display: flex;
+}
+.dankook .type_grup .typography, 
+.dankook .type_grup .color{
+    width: 50%;
+    height: 450px;
+}
+.dankook .type_grup .typography {
+    margin-right: 30px;
+}
+.dankook .type_grup .typography h1, 
+.dankook .type_grup .color h1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1d1d1d;
+    padding-top: 40px;
+    margin-bottom: 15px;
+}
+.dankook .type_grup .typography ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.dankook .type_grup .typography ul li strong {
+    display: block;
+    color: #1d1d1d;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.dankook .type_grup .typography ul li span {
+    display: block;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+}
+.dankook .type_grup .color .list {
+    padding: 0 40px;
+    margin-top: 40px;
+}
+.dankook .type_grup .color strong {
+    display: block;
+    font-weight: 700;
+    color: #1d1d1d;
+    margin-bottom: 10px;
+    text-align: left;
+} 
+.dankook .type_grup .color .main {
+    margin-bottom: 20px;
+}
+.dankook .type_grup .color .list ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dankook .type_grup .color .list ul li {
+    position: relative;
+    color: #fff;
+}
+.dankook .type_grup .color .list .main ul li {
+    width: 25%;
+    height: 80px;
+    border-radius: 50px;
+}
+.dankook .type_grup .color .list .sub ul li {
+    width: 16.66%;
+    height: 50px;
+    border-radius: 25px;
+}
+.dankook .type_grup .color .list ul li span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.dankook .type_grup .color .list ul li.m_00529C {
+    width: 50%;
+    background-color: #00529C;
+}
+.dankook .type_grup .color .list ul li.m_DFF6FF::before,
+.dankook .type_grup .color .list ul li.m_F4F7FC::before, 
+.dankook .type_grup .color .list ul li.m_212634::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -2;
+    height: 80px;
+    width: 200px;
+    border-radius: 90px;
+    content: "";
+}
+.dankook .type_grup .color .list ul li.m_DFF6FF,
+.dankook .type_grup .color .list ul li.m_F4F7FC {
+    color: #212634;
+}
+.dankook .type_grup .color .list ul li.m_DFF6FF::before {
+    background-color: #DFF6FF; 
+}
+.dankook .type_grup .color .list ul li.m_F4F7FC::before {
+    background-color: #F4F7FC;
+    z-index: -3;
+}
+.dankook .type_grup .color .list ul li.m_212634::before {
+    background-color: #212634;
+    z-index: -4;
+}
+.dankook .type_grup .color .list ul li.s_FDD154 {
+    width: 25%;
+    background-color: #FDD154;
+}
+.dankook .type_grup .color .list ul li.s_FF97B0 {
+    width: 25%;
+}
+.dankook .type_grup .color .list ul li.s_C6B3E1 span, 
+.dankook .type_grup .color .list ul li.s_F7A185 span,
+.dankook .type_grup .color .list ul li.s_8EE6D6 span {
+    top: 70%;
+}
+.dankook .type_grup .color .list ul li.s_FF97B0::before,
+.dankook .type_grup .color .list ul li.s_C6B3E1::before, 
+.dankook .type_grup .color .list ul li.s_F7A185::before,
+.dankook .type_grup .color .list ul li.s_8EE6D6::before {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+    height: 30px;
+    width: 180px;
+    border-radius: 25px;
+    content: "";
+}
+.dankook .type_grup .color .list ul li.s_FF97B0::before {
+    background-color: #FF97B0;
+    height: 50px;
+    z-index: -2;
+}
+.dankook .type_grup .color .list ul li.s_C6B3E1::before {
+    background-color: #C6B3E1;
+    z-index: -3;
+}
+.dankook .type_grup .color .list ul li.s_F7A185::before {
+    background-color: #F7A185;
+    z-index: -4;
+}
+.dankook .type_grup .color .list ul li.s_8EE6D6::before {
+    background-color: #8EE6D6;
+    z-index: -5;
+}
+.dankook > .detail {
+    position: relative;
+    height: 3814px;
+    margin-top: 200px;
+}
+.dankook .detail::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+}
+.dankook .detail::before {
+    background: url(../images/contents/d_detail.png) no-repeat center center;
+}
 /* 서울특별시체육회*/
 .sport .visual {
     position: relative;
