@@ -299,6 +299,15 @@
 .event .detail .txt strong em {
     font-weight: 700;
     color: #FC364D;
+    animation-name:event_ani; 
+    animation-duration: 1.5s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear 
+}
+
+@keyframes event_ani { /* 애니메이션을 효과를 미리 설정함 */
+	0% { color: #FC364D; } 
+	50% { color: #fff; } 
 }
 .event .detail .txt h3 {
     font-size: 30px;
@@ -510,6 +519,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.5s;
+}
+.trip_family .list > ul > li:hover a .photo img {
+    transform: scale3d(1.2, 1.2, 1); 
 }
 .trip_family .list > ul > li span {
     display: block;
