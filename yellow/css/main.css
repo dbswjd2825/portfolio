@@ -422,6 +422,7 @@
 }
 .trip_family .txt .tit {
     position: relative;
+    cursor: pointer;
 }
 .trip_family .txt .tit strong {
     display: block;
