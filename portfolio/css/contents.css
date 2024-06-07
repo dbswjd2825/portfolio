@@ -311,6 +311,317 @@
     50% { transform:translate(0, 50px) }
     100% { transform:translate(0, 0) }
 }
+
+.yellow .y_main {
+    position: relative;
+    margin-top: 200px;
+}
+.yellow .y_main::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    width: 100%;
+    height: 1439px;
+    content: "";
+    background: url(../images/contents/y_main_bg.png) no-repeat center center;
+}
+.yellow .y_main .top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
+    margin-bottom: 10px;
+}
+.yellow .y_main .top::after {
+    position: absolute;
+    left: 18%;
+    bottom: 10px;
+    width: 305px;
+    height: 122px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='306' height='123' viewBox='0 0 306 123' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='3.92969' y1='121.324' x2='3.92969' y2='1.32422' stroke='%231E1D3F'/%3E%3Cline x1='3.42969' y1='0.824219' x2='305.404' y2='0.824192' stroke='%231E1D3F'/%3E%3Ccircle cx='4.42969' cy='119.324' r='3.5' fill='%231E1D3F'/%3E%3C/svg%3E%0A");
+}
+.yellow .y_main .tit {
+    width: 30%;
+}
+.yellow .y_main h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: #31394C;
+    color: #fff;
+    border-radius: 35px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.yellow .y_main .photo {
+    margin-left: 40px;
+}
+.yellow .y_main .photo img {
+    border-radius: 30px;
+    border: 5px solid #1d1d1d;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.yellow .y_main .sub ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.yellow .y_main .sub ul li img {
+    border-radius: 30px;
+    border: 2px solid #1d1d1d;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.yellow .y_navbar {
+    margin-top: 320px;
+    text-align: center;
+}
+.yellow .y_navbar h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: #2D4B89;
+    color: #fff;
+    border-radius: 35px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.yellow .y_navbar .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 30px;
+}
+.yellow .y_event,
+.yellow .y_reco,
+.yellow .y_best,
+.yellow .y_series,
+.yellow .y_home,
+.yellow .y_benefit,
+.yellow .y_review,
+.yellow .y_footer { 
+    margin-top: 180px;
+    text-align: center;
+}
+.yellow .y_event h2,
+.yellow .y_reco h2,
+.yellow .y_best h2,
+.yellow .y_series h2,
+.yellow .y_home h2,
+.yellow .y_benefit h2 ,
+.yellow .y_review h2,
+.yellow .y_news_service h2,
+.yellow .y_footer h2 {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: #FFBE1A;
+    color: #fff;
+    border-radius: 35px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.yellow .y_reco h2 {
+    background-color: #31394C;
+}
+.yellow .y_series h2 {
+    background-color: #BDFCFF;
+    color: #31394C;
+}
+.yellow .y_event .photo img,
+.yellow .y_reco .photo img,
+.yellow .y_best .photo img,
+.yellow .y_series .photo img,
+.yellow .y_home .photo img,
+.yellow .y_benefit .photo img,
+.yellow .y_review .photo img,
+.yellow .y_news_service .photo img,
+.yellow .y_footer .photo img {
+    border-radius: 30px;
+    border: 3px solid #1d1d1d;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.yellow .y_series {
+    position: relative;
+}
+.yellow .y_series::before {
+    position: absolute;
+    left: 0;
+    top: -70px;
+    z-index: -10;
+    width: 100%;
+    height: 1125px;
+    content: "";
+    background: url(../images/contents/y_series_bg.png) no-repeat center center/ cover;
+}
+.yellow .y_series .photo {
+    position: relative;
+}
+.yellow .y_series .photo::after {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    z-index: 10;
+    width: 7px;
+    height: 122px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 7px auto;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='122' viewBox='0 0 8 122' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='3.5' y1='120.137' x2='3.5' y2='0.136719' stroke='white'/%3E%3Ccircle cx='4' cy='118.137' r='3' fill='white' stroke='white'/%3E%3C/svg%3E%0A");
+}
+.yellow .y_series .sub ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.yellow .y_series .sub span {
+    display: block;
+    color: #fff;
+    margin-top: 20px;
+}
+.yellow .y_series .sub ul li img {
+    border-radius: 10px;
+    border: 2px solid #1d1d1d;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.yellow .y_home {
+    position: relative;
+}
+.yellow .y_home::before {
+    position: absolute;
+    left: 0;
+    top: -170px;
+    z-index: -20;
+    width: 100%;
+    height: 800px;
+    content: "";
+    background-color: #BDFCFF;
+}
+.yellow .y_home h2 {
+    background-color: #2D4B89;
+}
+.yellow .y_benefit .photo {
+    position: relative;
+}
+.yellow .y_benefit .photo::after {
+    position: absolute;
+    left: calc(50% - 420px);
+    top: 170px;
+    width: 840px;
+    height: 155px;
+    content: "";
+    background: url(../images/contents/y_benefit_icon.png) no-repeat center center;
+    animation-name: y_benefit_move;
+    animation-duration:3s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:linear
+}
+@keyframes y_benefit_move {
+    0% { transform:translate(0, 0) }
+    50% { transform:translate(0, 30px) }
+    100% { transform:translate(0, 0) }
+}
+.yellow .y_review {
+    position: relative;
+}
+.yellow .y_review::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    width: 100%;
+    height: 1509px;
+    content: "";
+    background: url(../images/contents/y_review_bg.png) no-repeat center center/ cover;
+}
+.yellow .y_review h2 {
+    background-color: #fff;
+    color: #1d1d1d;
+    margin-top: 100px;
+}
+.yellow .y_review .photo {
+    position: relative;
+}
+.yellow .y_review .photo::after {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    z-index: 10;
+    width: 7px;
+    height: 122px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 7px auto;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='122' viewBox='0 0 8 122' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='3.5' y1='120.137' x2='3.5' y2='0.136719' stroke='white'/%3E%3Ccircle cx='4' cy='118.137' r='3' fill='white' stroke='white'/%3E%3C/svg%3E%0A");
+}
+.yellow .y_review .sub ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.yellow .y_review .sub span {
+    display: block;
+    color: #fff;
+    margin-top: 30px;
+}
+.yellow .y_review .sub ul li img {
+    border-radius: 10px;
+    border: 2px solid #fff;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.yellow .y_news_service {
+    margin-top: 260px;
+    text-align: center;
+}
+.yellow .y_news_service h2 {
+    background-color: #31394C;
+}
+.yellow .y_footer .photo {
+    position: relative;
+}
+.yellow .y_footer .photo::after {
+    position: absolute;
+    right: 20px;
+    top: 160px;
+    width: 246px;
+    height: 77px;
+    content: "";
+    background: url(../images/contents/y_footer_sub.png) no-repeat center center / cover;
+    border-radius: 10px;
+    border: 1px solid #FFBE1A;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.yellow .y_footer .photo::before {
+    position: absolute;
+    right: 40px;
+    top: 110px;
+    width: 110px;
+    height: 36px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='112' height='36' viewBox='0 0 112 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='107.137' y1='32.8359' x2='107.137' y2='0.738281' stroke='%23FFBE1A'/%3E%3Cline x1='0.541016' y1='0.570312' x2='107.637' y2='0.570303' stroke='%23FFBE1A'/%3E%3Ccircle cx='107.637' cy='32.3359' r='3.5' fill='%23FFBE1A'/%3E%3C/svg%3E%0A");
+}
+/**
 .yellow > .detail {
     margin-top: 200px;
 }
@@ -355,6 +666,7 @@
     50% { transform:translate(0, 30px) }
     100% { transform:translate(0, 0) }
 }
+**/
 /* 해태제과 */
 .haitai .visual {
     position: relative;
