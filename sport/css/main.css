@@ -141,7 +141,6 @@
         font-size: 25px;
     }
 }
-
 .sport_list {
     margin-top: 160px;
     position: relative;
@@ -324,7 +323,7 @@
     transform: translate(-50%, -50%);
     color: #fff;
     font-size: 20px;
-    display: none; /* 마우스 오버시*/
+    display: none; 
 }
 .sport_list .list a:hover strong {
     display: block;
@@ -352,7 +351,6 @@
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.37516 10.625H4.5835V9.37504H9.37516V4.58337H10.6251V9.37504H15.4168V10.625H10.6251V15.4167H9.37516V10.625Z' fill='%233D3D3D'/%3E%3C/svg%3E%0A");
     content: "";
 }
-
 @media screen and (max-width:1320px){
     .sport_list .text {
         left: 40px;
@@ -506,7 +504,6 @@
         height: 15px;
     }
 }
-
 .program {
     margin-top: 180px;
 }
