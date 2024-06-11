@@ -287,11 +287,12 @@
     .header.menu_open .gnb .depth1 > li.on > .depth2 {
         display: block;
         font-size: 15px;
-        color: #fff;
+        font-weight: 400;
+        color: #2d2d2d;
         text-align: left;
         margin: 0 20px 0 0;
         padding: 30px 20px;
-        background-color: #BBC3CE;
+        background-color: #fff;
     }
 }
 @media screen and (max-width:768px){
