@@ -1332,7 +1332,7 @@
 .dankook .visual .intro h1 {
     font-size: 60px;
     font-weight: 700;
-    color: #00529C;
+    color: #004999;
     margin: 10px 0 15px 0;
 }
 .dankook .visual .intro p {
@@ -1374,7 +1374,7 @@
     width: 167px;
     height: 40px;
     border-radius: 20px;
-    background-color: #00529C;
+    background-color: #004999;
     content: "";
 }
 .dankook .visual .link a {
@@ -1436,7 +1436,7 @@
     display: block;
     font-size: 30px;
     font-weight: 700;
-    color: #00529C;
+    color: #004999;
     margin: 10px 0 20px 0;
 }
 .dankook .type_grup {
@@ -1518,9 +1518,9 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
-.dankook .type_grup .color .list ul li.m_00529C {
+.dankook .type_grup .color .list ul li.m_004999 {
     width: 50%;
-    background-color: #00529C;
+    background-color: #004999;
 }
 .dankook .type_grup .color .list ul li.m_DFF6FF::before,
 .dankook .type_grup .color .list ul li.m_F4F7FC::before, 
